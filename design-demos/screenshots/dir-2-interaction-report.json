@@ -1,0 +1,76 @@
+{
+  "file": "/Users/jackx/Documents/ChatGPT/宝宝计划/design-demos/dir-2.html",
+  "viewport": [
+    1440,
+    900,
+    375,
+    812
+  ],
+  "tests": [
+    {
+      "test": "Initial fixed demo state and unknown feedback",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "All four navigation tabs have real content",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Pantry check and confirm persists only explicitly checked items",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Dinner-only replacement confirms effect, preference and unchanged afternoon tea",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Activity detail, expandable content, source caveat, Escape and focus return",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Indoor substitution, optional feedback and reload persistence",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Large display is read-only and uses latest local state",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Print preview includes applicable date, Shanghai version timestamp and current dinner; print calls browser",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Weather details clearly disclose example state",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Outdoor replacement clears old feedback and keeps schedule identity",
+      "result": "pass",
+      "detail": ""
+    },
+    {
+      "test": "Console and page errors",
+      "result": "pass",
+      "detail": "[]"
+    },
+    {
+      "test": "Mobile width and all primary dialogs remain within 375 px viewport",
+      "result": "pass",
+      "detail": ""
+    }
+  ],
+  "caveats": [
+    "Local prototype only; no server, family sync, real weather, or professional activity validation.",
+    "OS print dialog was stubbed; invoking window.print was verified.",
+    "No automatic completion is assigned when demonstration time passes."
+  ]
+}

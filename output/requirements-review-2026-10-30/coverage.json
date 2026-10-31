@@ -1,0 +1,352 @@
+{
+  "version": "v1.0",
+  "checkedOn": "2026-10-30",
+  "sourceDocument": "specs/baby-plan/requirements.md",
+  "requirements": [
+    {
+      "id": "REQ-01",
+      "stage": "S1",
+      "userStory": "作为家人，我通过自己的邮箱账号和有效邀请加入正确家庭；失效、撤销及改密码后不会继续获得旧访问权",
+      "ruleLocation": "产品需求 §6.1；开发规格 §5",
+      "acceptanceIds": [
+        "AC-12",
+        "AC-13",
+        "AC-24",
+        "AC-33",
+        "AC-41",
+        "AC-49",
+        "SPEC-06",
+        "SPEC-08",
+        "SPEC-09",
+        "SPEC-10",
+        "MB-08"
+      ]
+    },
+    {
+      "id": "REQ-02",
+      "stage": "S1",
+      "userStory": "作为管理员，我能分步填写必要资料并继续未完成设置；未知限制、月龄和旧数据不会被当作当前确认事实",
+      "ruleLocation": "产品需求 §3.2、§6.1",
+      "acceptanceIds": [
+        "AC-01",
+        "AC-32",
+        "AC-34",
+        "AC-46",
+        "AC-47",
+        "SPEC-07"
+      ]
+    },
+    {
+      "id": "REQ-03",
+      "stage": "S1",
+      "userStory": "作为照护者，我能查看和局部调整某一天；夜间生成只补允许补缺的位置，保留人工选择、取消和删除",
+      "ruleLocation": "产品需求 §4.1、§4.10",
+      "acceptanceIds": [
+        "AC-01",
+        "AC-03",
+        "AC-04",
+        "AC-06",
+        "AC-09",
+        "AC-36",
+        "AC-37",
+        "AC-38",
+        "AC-40",
+        "SPEC-03"
+      ]
+    },
+    {
+      "id": "REQ-04",
+      "stage": "S1",
+      "userStory": "作为做饭的家人，我能确认库存、查看清楚做法并换一餐；购物需求与实际库存分别表示",
+      "ruleLocation": "产品需求 §4.2",
+      "acceptanceIds": [
+        "AC-02",
+        "AC-03",
+        "AC-07",
+        "AC-34",
+        "AC-35",
+        "AC-38"
+      ]
+    },
+    {
+      "id": "REQ-05",
+      "stage": "S1",
+      "userStory": "作为照护者，我能表达这次或近期的偏好，看到生效范围和期限；一次反应不变成永久排除",
+      "ruleLocation": "产品需求 §3.2、§4.10",
+      "acceptanceIds": [
+        "AC-02",
+        "AC-03",
+        "AC-37"
+      ]
+    },
+    {
+      "id": "REQ-06",
+      "stage": "S1",
+      "userStory": "作为管理员，我能保留旧菜谱草稿、核对来源并选择家庭启用；未审核内容和新版本不会静默进入推荐",
+      "ruleLocation": "产品需求 §5.1",
+      "acceptanceIds": [
+        "AC-25",
+        "AC-27",
+        "AC-35",
+        "AC-38",
+        "AC-47"
+      ]
+    },
+    {
+      "id": "REQ-07",
+      "stage": "S1",
+      "userStory": "作为陪玩的家人，我能了解材料、玩法、观察及调整，临时切换室内外，按实际情况自愿记录反馈",
+      "ruleLocation": "产品需求 §4.3",
+      "acceptanceIds": [
+        "AC-04",
+        "AC-05",
+        "AC-06",
+        "AC-25",
+        "AC-27",
+        "AC-38"
+      ]
+    },
+    {
+      "id": "REQ-08",
+      "stage": "S1",
+      "userStory": "作为带宝宝外出的家人，我能看到对应地点和活动时段的天气及穿搭依据，识别缺失或过时信息",
+      "ruleLocation": "产品需求 §4.4",
+      "acceptanceIds": [
+        "AC-10",
+        "AC-26"
+      ]
+    },
+    {
+      "id": "REQ-09",
+      "stage": "S1",
+      "userStory": "作为 AI 对话发起人，我能讨论今天或一周、核对最后方案后保存；家人只看到正式结果",
+      "ruleLocation": "产品需求 §4.6",
+      "acceptanceIds": [
+        "AC-15",
+        "AC-16",
+        "AC-17",
+        "AC-24",
+        "AC-40",
+        "SPEC-02"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "stage": "S1",
+      "userStory": "作为记录者，我能补记和回看某次实际活动，保留当时安排与原话；其他日常成员不能改我的记录",
+      "ruleLocation": "产品需求 §4.7",
+      "acceptanceIds": [
+        "AC-18",
+        "AC-19",
+        "AC-20",
+        "AC-21",
+        "AC-22",
+        "AC-46",
+        "SPEC-01",
+        "SPEC-05"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "stage": "S1",
+      "userStory": "作为使用平板或纸质菜谱的家人，我能读清计划、提醒和完整步骤，并保留和手机一致的权限",
+      "ruleLocation": "产品需求 §4.5、§4.11",
+      "acceptanceIds": [
+        "AC-07",
+        "AC-08",
+        "AC-13",
+        "AC-14",
+        "AC-48",
+        "SPEC-07"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "stage": "S1",
+      "userStory": "作为同时使用多设备的成员，我能知道是否已保存、离线或发生冲突，重试不会重复写入或覆盖家人修改",
+      "ruleLocation": "产品需求 §4.9",
+      "acceptanceIds": [
+        "AC-09",
+        "AC-10",
+        "AC-11",
+        "AC-12",
+        "AC-39",
+        "AC-40",
+        "AC-41",
+        "SPEC-06"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "stage": "S1",
+      "userStory": "作为有权限的成员，我能保留长期记录、删除后 30 天内恢复；到期和权限变化时不能越权恢复",
+      "ruleLocation": "产品需求 §4.8",
+      "acceptanceIds": [
+        "AC-21",
+        "AC-42",
+        "AC-43",
+        "AC-44",
+        "AC-45"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "stage": "S1",
+      "userStory": "作为管理员和维护者，我能确认备份确实可恢复，且恢复后不复活过期删除内容或旧成员权限",
+      "ruleLocation": "产品需求 §10；技术方案 §7、§9",
+      "acceptanceIds": [
+        "AC-50",
+        "SPEC-06"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "stage": "S2／S3",
+      "userStory": "作为试用或购买家庭，我能确认权益、期限和额度，家人共享权益，到期仍按告知规则取回已有数据",
+      "ruleLocation": "产品需求 §6；分享与家庭会员方案",
+      "acceptanceIds": [
+        "AC-28",
+        "AC-29",
+        "AC-30",
+        "MB-01",
+        "MB-02",
+        "MB-03",
+        "MB-04",
+        "MB-05",
+        "MB-06",
+        "MB-07",
+        "MB-09",
+        "MB-11"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "stage": "S4",
+      "userStory": "作为分享者，我能先预览公开快照并撤销，访客不能由快照访问家庭实时私有内容",
+      "ruleLocation": "产品需求 §6；分享与家庭会员方案",
+      "acceptanceIds": [
+        "AC-31",
+        "MB-10"
+      ]
+    }
+  ],
+  "activeAC": [
+    "AC-01",
+    "AC-02",
+    "AC-03",
+    "AC-04",
+    "AC-05",
+    "AC-06",
+    "AC-07",
+    "AC-08",
+    "AC-09",
+    "AC-10",
+    "AC-11",
+    "AC-12",
+    "AC-13",
+    "AC-14",
+    "AC-15",
+    "AC-16",
+    "AC-17",
+    "AC-18",
+    "AC-19",
+    "AC-20",
+    "AC-21",
+    "AC-22",
+    "AC-24",
+    "AC-25",
+    "AC-26",
+    "AC-27",
+    "AC-28",
+    "AC-29",
+    "AC-30",
+    "AC-31",
+    "AC-32",
+    "AC-33",
+    "AC-34",
+    "AC-35",
+    "AC-36",
+    "AC-37",
+    "AC-38",
+    "AC-39",
+    "AC-40",
+    "AC-41",
+    "AC-42",
+    "AC-43",
+    "AC-44",
+    "AC-45",
+    "AC-46",
+    "AC-47",
+    "AC-48",
+    "AC-49",
+    "AC-50"
+  ],
+  "retiredAC": [
+    "AC-23"
+  ],
+  "activeSPEC": [
+    "SPEC-01",
+    "SPEC-02",
+    "SPEC-03",
+    "SPEC-05",
+    "SPEC-06",
+    "SPEC-07",
+    "SPEC-08",
+    "SPEC-09",
+    "SPEC-10"
+  ],
+  "retiredSPEC": [
+    "SPEC-04"
+  ],
+  "s1AC": [
+    "AC-01",
+    "AC-02",
+    "AC-03",
+    "AC-04",
+    "AC-05",
+    "AC-06",
+    "AC-07",
+    "AC-08",
+    "AC-09",
+    "AC-10",
+    "AC-11",
+    "AC-12",
+    "AC-13",
+    "AC-14",
+    "AC-15",
+    "AC-16",
+    "AC-17",
+    "AC-18",
+    "AC-19",
+    "AC-20",
+    "AC-21",
+    "AC-22",
+    "AC-24",
+    "AC-25",
+    "AC-26",
+    "AC-27",
+    "AC-32",
+    "AC-33",
+    "AC-34",
+    "AC-35",
+    "AC-36",
+    "AC-37",
+    "AC-38",
+    "AC-39",
+    "AC-40",
+    "AC-41",
+    "AC-42",
+    "AC-43",
+    "AC-44",
+    "AC-45",
+    "AC-46",
+    "AC-47",
+    "AC-48",
+    "AC-49",
+    "AC-50"
+  ],
+  "s1MB": [
+    "MB-08"
+  ],
+  "allAcceptanceExecutionStatus": "not_executed"
+}

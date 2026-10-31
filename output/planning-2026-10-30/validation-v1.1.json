@@ -1,0 +1,54 @@
+{
+  "checkedOn": "2026-10-30",
+  "scheduleVersion": "v1.1",
+  "scope": "Schedule, unchanged product baseline, acceptance coverage, local links and calendar only; no application tests run.",
+  "passed": true,
+  "frozenFilesUnchanged": 7,
+  "taskIdentifiersRetained": 24,
+  "testGroupsAndEntryCriteriaUnchanged": true,
+  "acceptanceItems": 55,
+  "allAcceptanceItemsNotRun": true,
+  "engineeringWeekdaysBeforeTrial": 10,
+  "trialCalendarDays": 7,
+  "fixAndCloseoutWindowIncludedInTrial": [
+    "2026-11-19",
+    "2026-11-20"
+  ],
+  "firstRealFlowTarget": "2026-11-04",
+  "trialCandidateTarget": "2026-11-13",
+  "acceptanceTarget": "2026-11-20",
+  "localLinksChecked": 190,
+  "stages": [
+    {
+      "stage": "B0",
+      "start": "2026-11-02",
+      "end": "2026-11-02",
+      "workdays": 1
+    },
+    {
+      "stage": "B1",
+      "start": "2026-11-03",
+      "end": "2026-11-04",
+      "workdays": 2
+    },
+    {
+      "stage": "B2",
+      "start": "2026-11-05",
+      "end": "2026-11-09",
+      "workdays": 3
+    },
+    {
+      "stage": "B3",
+      "start": "2026-11-10",
+      "end": "2026-11-11",
+      "workdays": 2
+    },
+    {
+      "stage": "B4-regression",
+      "start": "2026-11-12",
+      "end": "2026-11-13",
+      "workdays": 2
+    }
+  ],
+  "errors": []
+}

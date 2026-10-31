@@ -1,0 +1,1815 @@
+{
+  "format": "baby-plan-reuse-review-v1",
+  "purpose": "Review artifact only; not an executable import payload.",
+  "reviewDate": "2026-10-30",
+  "scopeStatus": "confirmed",
+  "drafts": [
+    {
+      "reviewId": "R01",
+      "title": "10M+宝宝第1个吐司",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": false,
+        "platform": null,
+        "externalVerificationStatus": "source_not_recorded",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 10,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [
+        {
+          "itemRef": "R01-L01",
+          "original": {
+            "amountText": "250g",
+            "formText": "面粉",
+            "ingredientId": "ing_wheat"
+          },
+          "catalogName": "小麦",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R01-L02",
+          "original": {
+            "amountText": "50g",
+            "ingredientId": "ing_egg"
+          },
+          "catalogName": "鸡蛋",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R01-L03",
+          "original": {
+            "amountText": "20g",
+            "ingredientId": "ing_avocado_oil"
+          },
+          "catalogName": "牛油果油",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        }
+      ],
+      "freeformIngredients": [
+        {
+          "itemRef": "R01-F01",
+          "original": {
+            "amountText": "7.5g",
+            "displayOrder": 0,
+            "rawName": "鲜酵母",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留鲜酵母种类和克数；不能与干酵母直接等量替换。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R01-F02",
+          "original": {
+            "amountText": "140-150g",
+            "displayOrder": 1,
+            "rawName": "配方奶",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需明确产品及冲调后液体／粉的含义，保留140-150g原量；不直接改成牛奶或奶粉。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "酵母用少量奶化开，其他液体材料依次加入面粉搅拌至无干粉，盖保鲜膜静置水合30分钟，30分钟后形成粗膜，将面团折叠2-3圈，光面朝上收圆，继续静置30分钟，重复折叠步骤，收圆后发酵（28度60分钟）至2倍大。",
+        "将面团排气分割成3份，约150-158g/个，滚圆后松弛20分钟。",
+        "松弛好的面团依次拍扁、擀开、拍去两边大气泡，翻面，左右1/3处对折，再次擀长，底端压薄从上往下卷起放入吐司盒。",
+        "二次发酵（32度60分钟）至吐司模8分满，提前预热烤箱185度10分钟。",
+        "烤箱下层上下火185度28分钟（普通吐司盒增加10分钟），表面上色及时盖锡纸。",
+        "出炉震模，倒出放网架晾凉后切片。",
+        "吃不完冷冻保存，直接室温解冻即可食用。"
+      ],
+      "originalTips": [
+        "各种食材先确定排敏！",
+        "括号里有过敏食材的替代品；液体新手建议预留10-15g，视情况添加。"
+      ],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "明确配方奶产品及冲调状态；鲜酵母保持独立用量。",
+        "提示称有括号替代品，但本次结构化原料没有明确替换关系；不生成未经核对的替代方案。",
+        "步骤中的保存和解冻说法作为旧文保留，尚未复核。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R02",
+      "title": "原味麦芬",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": false,
+        "platform": null,
+        "externalVerificationStatus": "source_not_recorded",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [
+        {
+          "itemRef": "R02-L01",
+          "original": {
+            "amountText": "100g",
+            "formText": "面粉",
+            "ingredientId": "ing_wheat"
+          },
+          "catalogName": "小麦",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R02-L02",
+          "original": {
+            "amountText": "1个",
+            "ingredientId": "ing_egg"
+          },
+          "catalogName": "鸡蛋",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        }
+      ],
+      "freeformIngredients": [
+        {
+          "itemRef": "R02-F01",
+          "original": {
+            "amountText": "2g",
+            "displayOrder": 0,
+            "rawName": "酵母",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留原文；干／鲜或具体类型未说明时继续待核对。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R02-F02",
+          "original": {
+            "amountText": "80g",
+            "displayOrder": 1,
+            "rawName": "牛奶/配方奶",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "这是原文给出的两种选择，需明确所选版本；不能同时算入或自动选一种。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R02-F03",
+          "original": {
+            "amountText": "10g",
+            "displayOrder": 2,
+            "rawName": "油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "未写油种，需补实际使用种类。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "隔夜常温发酵或者常温发酵至2倍大（1个多小时）",
+        "烤箱180度20分钟左右"
+      ],
+      "originalTips": [],
+      "legacyPreparedWeightText": "420g",
+      "legacyServingText": "70g",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "只有发酵和烘烤两步，缺少混合、装模等说明。",
+        "需确认牛奶／配方奶所选版本、油种和酵母类型。",
+        "旧成品420g、食用量70g均保留为待核对值，不据此计算份数或营养。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R03",
+      "title": "纯酸奶吐司",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": true,
+        "platform": "xiaohongshu",
+        "externalVerificationStatus": "not_rechecked",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [
+        {
+          "itemRef": "R03-L01",
+          "original": {
+            "amountText": "500g",
+            "formText": "面粉",
+            "ingredientId": "ing_wheat"
+          },
+          "catalogName": "小麦",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R03-L02",
+          "original": {
+            "amountText": "2个",
+            "ingredientId": "ing_egg"
+          },
+          "catalogName": "鸡蛋",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        }
+      ],
+      "freeformIngredients": [
+        {
+          "itemRef": "R03-F01",
+          "original": {
+            "amountText": "360g",
+            "displayOrder": 0,
+            "rawName": "无糖厚酸奶",
+            "riskCodes": [
+              "sugar"
+            ],
+            "riskMessages": [
+              "含糖配方项只作为记录，不参与营养估算或排敏结论。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需核对产品及配料；旧“sugar／含糖”标签与名称冲突，不采纳为确认事实，也不能默认等于希腊酸奶。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R03-F02",
+          "original": {
+            "amountText": "15g",
+            "displayOrder": 1,
+            "rawName": "鲜酵母",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留鲜酵母种类和克数；不能与干酵母直接等量替换。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "将高筋面粉、鸡蛋、无糖厚酸奶、鲜酵母混合；揉成光滑面团；进行一次发酵至两倍大",
+        "发酵完成后排气；整形放入吐司盒；放入预热好的烤箱；180度烤30分钟（使用低糖节能吐司盒可缩短至20多分钟）"
+      ],
+      "originalTips": [
+        "鲜酵母可用5g干酵母替代。",
+        "吐司切下的边角可加适量糖和黄油混合，放入烤箱或空气炸锅烤至香脆，制成面包干零食。"
+      ],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "“无糖厚酸奶”的旧含糖标签与文字冲突；旧规则按糖字匹配，标签不能直接沿用。",
+        "提示中的面包干另加糖和黄油，属于附加变式；不能隐含纳入主菜谱。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R04",
+      "title": "无糖香蕉吐司（面包机版）",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": true,
+        "platform": "xiaohongshu",
+        "externalVerificationStatus": "not_rechecked",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 12,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [
+        {
+          "itemRef": "R04-L01",
+          "original": {
+            "amountText": "250g",
+            "formText": "面粉",
+            "ingredientId": "ing_wheat"
+          },
+          "catalogName": "小麦",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R04-L02",
+          "original": {
+            "amountText": "1个",
+            "ingredientId": "ing_egg"
+          },
+          "catalogName": "鸡蛋",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R04-L03",
+          "original": {
+            "amountText": "20g",
+            "ingredientId": "ing_butter"
+          },
+          "catalogName": "黄油",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R04-L04",
+          "original": {
+            "amountText": "80g",
+            "ingredientId": "ing_milk"
+          },
+          "catalogName": "牛奶",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R04-L05",
+          "original": {
+            "amountText": "1根（约100g）",
+            "ingredientId": "ing_banana"
+          },
+          "catalogName": "香蕉",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        }
+      ],
+      "freeformIngredients": [
+        {
+          "itemRef": "R04-F01",
+          "original": {
+            "amountText": "3克",
+            "displayOrder": 0,
+            "rawName": "酵母",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留原文；干／鲜或具体类型未说明时继续待核对。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "将所有食材（面粉、鸡蛋、黄油、牛奶、酵母、香蕉、盐）放入面包机",
+        "选择低糖面包键启动。",
+        "可选：在二次发酵结束后取出面团整形再放回",
+        "烘烤结束后放凉切片"
+      ],
+      "originalTips": [
+        "可以添加坚果、藜麦、红枣增加风味。",
+        "也可以将做好的吐司切成厚片，做成西多士（需另外烹饪）。",
+        "放凉后再切更易成型。"
+      ],
+      "legacyPreparedWeightText": "450g",
+      "legacyServingText": "80g",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "第一步含盐，结构化原料没有盐及其用量；需查原做法后决定补录或修正。",
+        "提示另有坚果、藜麦、红枣及西多士变式，未列入主原料；需单列选择与原料。",
+        "旧成品450g、食用量80g保留为待核对值。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R05",
+      "title": "一岁半宝宝香菇馄饨",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": false,
+        "platform": null,
+        "externalVerificationStatus": "source_not_recorded",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [],
+      "freeformIngredients": [
+        {
+          "itemRef": "R05-F01",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 0,
+            "rawName": "猪肉末",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_pork",
+            "candidateIngredientName": "猪肉(瘦)",
+            "formText": "肉末；部位与肥瘦未说明",
+            "reviewNote": "旧库名称为猪肉(瘦)，原文未说明肥瘦；仅提出猪肉基础关联，待补实际部位。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R05-F02",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 1,
+            "rawName": "干香菇",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_shiitake",
+            "candidateIngredientName": "香菇",
+            "formText": "干制",
+            "reviewNote": "保留干制形态；不换算成鲜香菇重量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R05-F03",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 2,
+            "rawName": "葱",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需明确实际葱种；不因相似名称关联为洋葱。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R05-F04",
+          "original": {
+            "amountText": "1个",
+            "displayOrder": 3,
+            "rawName": "鸡蛋",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_egg",
+            "candidateIngredientName": "鸡蛋",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R05-F05",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 4,
+            "rawName": "盐",
+            "riskCodes": [
+              "salt"
+            ],
+            "riskMessages": [
+              "含盐配方项只作为记录，请按月龄控制用量。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留盐及原量，不因无食材库关联而删除。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R05-F06",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 5,
+            "rawName": "松茸鲜",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "复合调味品，需明确产品配料；不能按名称当作松茸。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R05-F07",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 6,
+            "rawName": "酱油",
+            "riskCodes": [
+              "soy_sauce"
+            ],
+            "riskMessages": [
+              "酱油可能含盐、大豆或小麦，请按包装和宝宝情况确认。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需具体产品配料；保留复合调味品，不能只当作大豆。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R05-F08",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 7,
+            "rawName": "白胡椒粉",
+            "riskCodes": [
+              "spicy"
+            ],
+            "riskMessages": [
+              "辛辣调味项请谨慎使用，保存后不会进入排敏解锁。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留原调味项和数量，不替代为其他食材。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R05-F09",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 8,
+            "rawName": "蚝油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需具体产品配料；不能只当作牡蛎。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "用葱姜水分三次倒入猪肉末中；搅拌均匀",
+        "加入干香菇末、葱花、鸡蛋、盐、松茸鲜、酱油、白胡椒粉和蚝油；充分混合",
+        "静置15分钟让馅料入味",
+        "开始包馄饨。"
+      ],
+      "originalTips": [
+        "葱姜水做法：葱姜拍碎后加入少量温水浸泡10分钟，滤出即可。",
+        "静置15分钟可使馅料更入味。"
+      ],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "标题“一岁半”与最小月龄6个月矛盾。",
+        "没有馄饨皮条目；步骤／提示出现葱姜水，但原料表未列姜和水。",
+        "步骤止于包馄饨，缺少煮制说明；需补完整做法。",
+        "肉末肥瘦、葱种与复合调味品配料均未明确。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R06",
+      "title": "无盐无糖宝宝吐司",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": true,
+        "platform": "xiaohongshu",
+        "externalVerificationStatus": "not_rechecked",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [],
+      "freeformIngredients": [
+        {
+          "itemRef": "R06-F01",
+          "original": {
+            "amountText": "250g",
+            "displayOrder": 0,
+            "rawName": "高筋面粉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_wheat",
+            "candidateIngredientName": "小麦",
+            "formText": "高筋面粉",
+            "reviewNote": "保留面粉种类；不把面粉用量视作小麦籽粒用量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R06-F02",
+          "original": {
+            "amountText": "1个（约50g）",
+            "displayOrder": 1,
+            "rawName": "鸡蛋",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_egg",
+            "candidateIngredientName": "鸡蛋",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R06-F03",
+          "original": {
+            "amountText": "150ml",
+            "displayOrder": 2,
+            "rawName": "牛奶",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_milk",
+            "candidateIngredientName": "牛奶",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R06-F04",
+          "original": {
+            "amountText": "16g",
+            "displayOrder": 3,
+            "rawName": "黄油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_butter",
+            "candidateIngredientName": "黄油",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R06-F05",
+          "original": {
+            "amountText": "3g",
+            "displayOrder": 4,
+            "rawName": "酵母",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留原文；干／鲜或具体类型未说明时继续待核对。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "将面包粉、鸡蛋、鲜奶、黄油放入面包机桶内",
+        "将酵母放入面包机的酵母格子中",
+        "等待4个多小时",
+        "面包出炉后晾凉至温热状态；放入密封袋继续晾至常温；切片后冷冻保存"
+      ],
+      "originalTips": [
+        "晾至温热时放入密封袋，继续凉至常温，可使面包更松软。"
+      ],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "做法依赖面包机，但未给型号、程序及可核对的完成条件，只有“4个多小时”。",
+        "面包粉／高筋面粉、鲜奶／牛奶的名称关系保留，待实际原料核对。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R07",
+      "title": "南瓜牛肉焖饭",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": false,
+        "platform": null,
+        "externalVerificationStatus": "source_not_recorded",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [
+        {
+          "itemRef": "R07-L01",
+          "original": {
+            "amountText": "60克",
+            "ingredientId": "ing_beef"
+          },
+          "catalogName": "牛肉",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R07-L02",
+          "original": {
+            "amountText": "40克",
+            "ingredientId": "ing_germ_rice"
+          },
+          "catalogName": "胚芽米",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R07-L03",
+          "original": {
+            "amountText": "适量",
+            "ingredientId": "ing_pumpkin"
+          },
+          "catalogName": "南瓜",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        },
+        {
+          "itemRef": "R07-L04",
+          "original": {
+            "amountText": "适量",
+            "ingredientId": "ing_carrot"
+          },
+          "catalogName": "胡萝卜",
+          "reviewStatus": "legacy_link_pending_confirmation",
+          "amountEvidenceStatus": "missing"
+        }
+      ],
+      "freeformIngredients": [
+        {
+          "itemRef": "R07-F01",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 0,
+            "rawName": "青菜碎",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需明确蔬菜种类；切碎是形态，不是食材名称。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R07-F02",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 1,
+            "rawName": "玉米淀粉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留独立淀粉项；不能直接映射成玉米粒并共用其重量／营养。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R07-F03",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 2,
+            "rawName": "低钠酱油",
+            "riskCodes": [
+              "soy_sauce"
+            ],
+            "riskMessages": [
+              "酱油可能含盐、大豆或小麦，请按包装和宝宝情况确认。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需具体产品配料；“低钠”文字不自动转成定量结论。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R07-F04",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 3,
+            "rawName": "辅食油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需明确油种／配方；名称不足以判定具体食材。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R07-F05",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 4,
+            "rawName": "热炒油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需明确油种／配方；保留使用方式。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R07-F06",
+          "original": {
+            "amountText": "140毫升",
+            "displayOrder": 5,
+            "rawName": "清水",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "作为用水项保留原量；不混入食材营养统计。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "牛肉切碎；加入玉米淀粉、低钠酱油、辅食油搅拌均匀；腌制15分钟",
+        "锅中倒入热炒油；放入腌好的牛肉碎炒香",
+        "加入南瓜丁、胡萝卜丁炒香",
+        "加入40克洗净的胚芽米",
+        "倒入炖锅铺平整；加入140毫升清水",
+        "煮至程序结束",
+        "放入焯过水的青菜碎"
+      ],
+      "originalTips": [
+        "腌制牛肉时加入玉米淀粉可使牛肉更嫩。"
+      ],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "青菜碎、辅食油、热炒油和低钠酱油需明确品种／产品。",
+        "“煮至程序结束”未说明设备程序或具体做法。",
+        "南瓜、胡萝卜等“适量”保留，不补造克数。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R08",
+      "title": "番茄牛肉烩饭",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": false,
+        "platform": null,
+        "externalVerificationStatus": "source_not_recorded",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [],
+      "freeformIngredients": [
+        {
+          "itemRef": "R08-F01",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 0,
+            "rawName": "牛肉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_beef",
+            "candidateIngredientName": "牛肉",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F02",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 1,
+            "rawName": "宝宝酱油",
+            "riskCodes": [
+              "soy_sauce"
+            ],
+            "riskMessages": [
+              "酱油可能含盐、大豆或小麦，请按包装和宝宝情况确认。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需具体产品配料；“宝宝”名称不替代适用性核对。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F03",
+          "original": {
+            "amountText": "1勺",
+            "displayOrder": 2,
+            "rawName": "玉米淀粉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留独立淀粉项；不能直接映射成玉米粒并共用其重量／营养。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F04",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 3,
+            "rawName": "辅食油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需明确油种／配方；名称不足以判定具体食材。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F05",
+          "original": {
+            "amountText": "几片",
+            "displayOrder": 4,
+            "rawName": "姜片",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "本次旧食材目录没有对应条目；保留名称和切片形态，后续补库。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F06",
+          "original": {
+            "amountText": "1个",
+            "displayOrder": 5,
+            "rawName": "番茄",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_tomato",
+            "candidateIngredientName": "番茄",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F07",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 6,
+            "rawName": "清水",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "作为用水项保留原量；不混入食材营养统计。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F08",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 7,
+            "rawName": "脱皮玉米",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_corn",
+            "candidateIngredientName": "玉米",
+            "formText": "脱皮",
+            "reviewNote": "保留脱皮加工形态和旧用量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F09",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 8,
+            "rawName": "米饭",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_rice",
+            "candidateIngredientName": "大米",
+            "formText": "熟米饭；米种未说明",
+            "reviewNote": "大米仅为基础关联候选；不把熟饭重量当作生米重量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R08-F10",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 9,
+            "rawName": "青菜碎",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需明确蔬菜种类；切碎是形态，不是食材名称。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "牛肉加适量宝宝酱油、一勺玉米淀粉、适量辅食油和姜片；搅拌均匀；腌制15分钟",
+        "锅中倒入热炒油；下牛肉末炒散定型；盛出备用",
+        "锅里油热放去皮番茄翻炒出沙；加适量清水；水开后放入牛肉、脱皮玉米和煮熟的米饭；加适量宝宝酱油；再煮2分钟即可"
+      ],
+      "originalTips": [
+        "牛肉腌制时加姜片和酱油可去腥增香。",
+        "番茄去皮后翻炒更容易出沙，使汤汁浓郁。"
+      ],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "步骤有热炒油，结构化原料没有此项；青菜碎在原料表中但步骤未说明何时加入。",
+        "保留熟米饭和脱皮玉米形态；米饭不能按生米处理。",
+        "宝宝酱油、辅食油、姜片和青菜碎需补具体信息。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R09",
+      "title": "苹果小饼干",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": false,
+        "platform": null,
+        "externalVerificationStatus": "source_not_recorded",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [],
+      "freeformIngredients": [
+        {
+          "itemRef": "R09-F01",
+          "original": {
+            "amountText": "50g",
+            "displayOrder": 0,
+            "displayRole": "other",
+            "rawName": "苹果汁",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_apple",
+            "candidateIngredientName": "苹果",
+            "formText": "榨汁并过滤",
+            "reviewNote": "保留果汁形态；不由成品果汁重量推算苹果重量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R09-F02",
+          "original": {
+            "amountText": "10g",
+            "displayOrder": 1,
+            "displayRole": "other",
+            "rawName": "黄油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_butter",
+            "candidateIngredientName": "黄油",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R09-F03",
+          "original": {
+            "amountText": "110g",
+            "displayOrder": 2,
+            "displayRole": "other",
+            "rawName": "低筋面粉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_wheat",
+            "candidateIngredientName": "小麦",
+            "formText": "低筋面粉",
+            "reviewNote": "保留面粉种类；不把面粉用量视作小麦籽粒用量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R09-F04",
+          "original": {
+            "amountText": "1g",
+            "displayOrder": 3,
+            "displayRole": "other",
+            "rawName": "酵母",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留原文；干／鲜或具体类型未说明时继续待核对。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "苹果不加水直接搅打细腻；过滤出50g苹果汁倒入碗中",
+        "低筋面粉和酵母一起上手揉成光滑的面团",
+        "也可以直接切成小块",
+        "塑形之后摆在烤盘上送去发酵20分钟到表面微微膨胀",
+        "最后烤箱130℃提前预热后保持温度烤25分钟",
+        "焖5分钟左右放凉"
+      ],
+      "originalTips": [],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "原料有黄油10g，步骤未说明何时加入；需核对。",
+        "苹果汁50g是过滤所得液体，不能倒推鲜苹果用量。",
+        "酵母类型未说明。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R10",
+      "title": "抹茶蜜豆吐司",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": false,
+        "platform": null,
+        "externalVerificationStatus": "source_not_recorded",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [],
+      "freeformIngredients": [
+        {
+          "itemRef": "R10-F01",
+          "original": {
+            "amountText": "50g",
+            "displayOrder": 0,
+            "rawName": "淡奶油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需具体产品配料及类型；不直接换成牛奶或黄油。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F02",
+          "original": {
+            "amountText": "140g",
+            "displayOrder": 1,
+            "rawName": "牛奶",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_milk",
+            "candidateIngredientName": "牛奶",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F03",
+          "original": {
+            "amountText": "1个",
+            "displayOrder": 2,
+            "rawName": "鸡蛋",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_egg",
+            "candidateIngredientName": "鸡蛋",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F04",
+          "original": {
+            "amountText": "3g",
+            "displayOrder": 3,
+            "rawName": "盐",
+            "riskCodes": [
+              "salt"
+            ],
+            "riskMessages": [
+              "含盐配方项只作为记录，请按月龄控制用量。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留盐及原量，不因无食材库关联而删除。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F05",
+          "original": {
+            "amountText": "25g",
+            "displayOrder": 4,
+            "rawName": "白砂糖",
+            "riskCodes": [
+              "sugar"
+            ],
+            "riskMessages": [
+              "含糖配方项只作为记录，不参与营养估算或排敏结论。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留白砂糖及原量，是否采用由具体内容审核决定。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F06",
+          "original": {
+            "amountText": "20g",
+            "displayOrder": 5,
+            "rawName": "黄油",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_butter",
+            "candidateIngredientName": "黄油",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F07",
+          "original": {
+            "amountText": "240g",
+            "displayOrder": 6,
+            "rawName": "高筋面粉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_wheat",
+            "candidateIngredientName": "小麦",
+            "formText": "高筋面粉",
+            "reviewNote": "保留面粉种类；不把面粉用量视作小麦籽粒用量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F08",
+          "original": {
+            "amountText": "10g",
+            "displayOrder": 7,
+            "rawName": "抹茶粉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留独立配方项和原量；适用对象仍需审核。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F09",
+          "original": {
+            "amountText": "4g",
+            "displayOrder": 8,
+            "rawName": "酵母",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留原文；干／鲜或具体类型未说明时继续待核对。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R10-F10",
+          "original": {
+            "amountText": "适量",
+            "displayOrder": 9,
+            "rawName": "蜜红豆",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "needs_specific_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "需具体成品或做法配料；不直接换成原料红豆。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "面包机：松下sd-pm105",
+        "程序:3号键，快速面包，烤色淡。"
+      ],
+      "originalTips": [],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "两条步骤仅记面包机型号和程序，缺少投料及实际制作过程。",
+        "需明确淡奶油、蜜红豆的配料及目标食用者；旧6个月字段不能确认适用对象。"
+      ],
+      "includedInConfirmedScope": true
+    },
+    {
+      "reviewId": "R11",
+      "title": "鸡蛋蛋糕",
+      "status": "local_review_draft",
+      "householdVisibility": "selected_household_only",
+      "enabled": false,
+      "automaticallySchedulable": false,
+      "importExecuted": false,
+      "sourceReview": {
+        "linkPresent": false,
+        "platform": null,
+        "externalVerificationStatus": "source_not_recorded",
+        "sourceLocator": "private_audit_alias_map",
+        "professionalReviewStatus": "not_performed"
+      },
+      "legacyMinimumAgeMonths": 6,
+      "confirmedMinimumAgeMonths": null,
+      "linkedIngredients": [],
+      "freeformIngredients": [
+        {
+          "itemRef": "R11-F01",
+          "original": {
+            "amountText": "2个",
+            "displayOrder": 0,
+            "displayRole": "other",
+            "rawName": "鸡蛋",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_egg",
+            "candidateIngredientName": "鸡蛋",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R11-F02",
+          "original": {
+            "amountText": "30克",
+            "displayOrder": 1,
+            "displayRole": "other",
+            "rawName": "牛奶",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "name_match_candidate",
+            "candidateIngredientId": "ing_milk",
+            "candidateIngredientName": "牛奶",
+            "formText": null,
+            "reviewNote": "名称对应旧食材库；核对实际原料后确认，不据此确认适用性或用量依据。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R11-F03",
+          "original": {
+            "amountText": "35克",
+            "displayOrder": 2,
+            "displayRole": "other",
+            "rawName": "低筋面粉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_wheat",
+            "candidateIngredientName": "小麦",
+            "formText": "低筋面粉",
+            "reviewNote": "保留面粉种类；不把面粉用量视作小麦籽粒用量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R11-F04",
+          "original": {
+            "amountText": "7克",
+            "displayOrder": 3,
+            "displayRole": "other",
+            "rawName": "玉米淀粉",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留独立淀粉项；不能直接映射成玉米粒并共用其重量／营养。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R11-F05",
+          "original": {
+            "amountText": "少许",
+            "displayOrder": 4,
+            "displayRole": "other",
+            "rawName": "柠檬汁",
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "form_preserving_candidate",
+            "candidateIngredientId": "ing_lemon",
+            "candidateIngredientName": "柠檬",
+            "formText": "果汁",
+            "reviewNote": "保留果汁形态；不换算鲜果重量。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        },
+        {
+          "itemRef": "R11-F06",
+          "original": {
+            "amountText": "少许",
+            "displayOrder": 5,
+            "displayRole": "other",
+            "rawName": "糖粉",
+            "riskCodes": [
+              "sugar"
+            ],
+            "riskMessages": [
+              "含糖配方项只作为记录，不参与营养估算或排敏结论。"
+            ],
+            "role": "recipe_only"
+          },
+          "mappingReview": {
+            "category": "literal_recipe_item",
+            "candidateIngredientId": null,
+            "candidateIngredientName": null,
+            "formText": null,
+            "reviewNote": "保留为独立配方项；鸡蛋蛋糕原文为可选装饰，不能默认必加。",
+            "decisionStatus": "candidate_only"
+          },
+          "legacyRiskLabelsAcceptedAsFact": false
+        }
+      ],
+      "originalSteps": [
+        "蛋清、蛋黄分离。",
+        "蛋黄加入牛奶搅匀，再加入低筋面粉，搅成顺滑无颗粒的蛋黄糊。",
+        "蛋清加入少许柠檬汁，开始打发。",
+        "蛋白出现明显纹路后加入玉米淀粉，继续打至提起打蛋器呈小尖角状态。",
+        "取约 1/3 蛋白霜加入蛋黄糊，轻轻翻拌均匀。",
+        "将混合好的面糊倒回剩余蛋白霜中，继续翻拌均匀，避免消泡。",
+        "倒入铺有烘焙纸的烤碗。",
+        "烤箱提前预热，150℃烤约40分钟。",
+        "烤约10分钟时取出，在表面快速划十字，再放回烤箱继续烤完剩余时间。",
+        "出炉后可撒糖粉装饰；宝宝严格无糖版直接不撒即可。"
+      ],
+      "originalTips": [],
+      "legacyPreparedWeightText": "",
+      "legacyServingText": "",
+      "quantityReviewStatus": "pending_evidence",
+      "familyCurrentUseConfirmed": false,
+      "commonReviewIssues": [
+        "来源有无只反映旧字段；外部链接未重开，家庭实际做法和素材使用条件未确认。",
+        "旧月龄仅为原值；9条为6个月且旧写入程序存在缺省值，全部适用条件待核对。",
+        "原用量文字完整保留；适量、少许、一勺等不擅自换成克数，原料和成品用量依据待补。",
+        "家庭当前食物限制与近期偏好需确认；旧通过状态不等于所有组合菜谱适用。"
+      ],
+      "specificReviewIssues": [
+        "低筋面粉、玉米淀粉和柠檬汁分别保留，不能映射后丢失形态。",
+        "原文糖粉为出炉后可选装饰，需保留可选性；旧6个月字段仍待核对。"
+      ],
+      "includedInConfirmedScope": true
+    }
+  ],
+  "scopeDecision": {
+    "status": "confirmed",
+    "confirmedOn": "2026-10-30",
+    "confirmedBy": "user",
+    "confirmationText": "采用建议范围（推荐）",
+    "scopeSummary": "五一必要基本资料＋全部11条个人菜谱草稿；历史计划和流水后置",
+    "includedRecipeReviewIds": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09",
+      "R10",
+      "R11"
+    ],
+    "contentEnablementApproved": false,
+    "actualMigrationExecuted": false
+  }
+}

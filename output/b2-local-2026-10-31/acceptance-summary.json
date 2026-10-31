@@ -1,0 +1,9 @@
+{
+  "scope": 55,
+  "statuses": {
+    "not_run": 10,
+    "partial": 28,
+    "passed": 17
+  },
+  "note": "passed 为对应条目的本机已验证行为；partial 不是完整通过；完整 S1 未通过"
+}

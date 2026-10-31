@@ -1,0 +1,108 @@
+{
+  "reviewDate": "2026-10-30",
+  "selectedFamilyDescription": "五一，4位成员、全家共用的家庭",
+  "status": "scope_confirmed_preparation_complete",
+  "sourceScope": "selected_household_creator_recipe_library",
+  "actualMigrationExecuted": false,
+  "enabledRecipeCount": 0,
+  "counts": {
+    "recipes": 11,
+    "linkedIngredientOccurrences": 16,
+    "freeformIngredientOccurrences": 58,
+    "distinctFreeformNames": 38,
+    "recipesWithSourceLink": 3,
+    "recipesWithLegacyAgeSix": 9,
+    "recipesWithBothYieldFields": 2,
+    "originalStepCount": 51
+  },
+  "mappingCategories": [
+    {
+      "code": "name_match_candidate",
+      "label": "名称可对应",
+      "occurrences": 12,
+      "distinctNames": 5
+    },
+    {
+      "code": "form_preserving_candidate",
+      "label": "保留形态的关联候选",
+      "occurrences": 10,
+      "distinctNames": 8
+    },
+    {
+      "code": "literal_recipe_item",
+      "label": "独立配方项",
+      "occurrences": 18,
+      "distinctNames": 9
+    },
+    {
+      "code": "needs_specific_item",
+      "label": "待明确品种或成分",
+      "occurrences": 18,
+      "distinctNames": 16
+    }
+  ],
+  "statusReconciliation": {
+    "method": "Local evaluation of current workspace pure functions on scoped cloud snapshots; not a live API call or proof of deployed behavior.",
+    "inputCounts": {
+      "profileDocuments": 99,
+      "ingredientProfiles": 98,
+      "controlDocumentsExcluded": 1,
+      "recordDocuments": 122,
+      "uniqueRecordIngredients": 102
+    },
+    "localEffectiveCounts": {
+      "passed": 98
+    },
+    "omittedUntriedCount": 4,
+    "currentFamilyConfirmation": "pending",
+    "sourceFiles": [
+      {
+        "path": "/Users/jackx/workspace/msjh/miniprogram/cloudfunctions/allergyRecord/shared/allergy-effective-status/core.js",
+        "sha256": "1d8e40d0be2616060fa40809489bf2bc1c5de5b37fa0148599af1d934b32d574"
+      },
+      {
+        "path": "/Users/jackx/workspace/msjh/miniprogram/cloudfunctions/allergyRecord/domain/allergy-status.core.js",
+        "sha256": "2018dfd10e9d2a4f226bc239bd1a8b58349073e4c78c8bc925cdba0074fb8aa5"
+      },
+      {
+        "path": "/Users/jackx/workspace/msjh/miniprogram/cloudfunctions/allergyRecord/domain/allergy-values.core.js",
+        "sha256": "66222f6df7b4838eef318d8e6046d4774d6844a5d1d49c566acbca15d672e12c"
+      }
+    ]
+  },
+  "catalogEvidence": {
+    "path": "/Users/jackx/workspace/msjh/miniprogram/config/ingredients-main-fallback.data.ts",
+    "sha256": "a787d6ff9d97fe2e1b7a374ac27667e9381ba167547e24c133bc945cf3674c40",
+    "entries": 241
+  },
+  "scopeDecision": {
+    "status": "confirmed",
+    "confirmedOn": "2026-10-30",
+    "confirmedBy": "user",
+    "confirmationText": "采用建议范围（推荐）",
+    "scopeSummary": "五一必要基本资料＋全部11条个人菜谱草稿；历史计划和流水后置",
+    "includedRecipeReviewIds": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09",
+      "R10",
+      "R11"
+    ],
+    "contentEnablementApproved": false,
+    "actualMigrationExecuted": false
+  },
+  "confirmedScope": {
+    "necessaryChildInfo": "included",
+    "allElevenRecipeDrafts": "included_as_drafts",
+    "foodStatus": "pending_current_family_confirmation",
+    "devicePreferences": "unknown",
+    "historicalPlansAndLogs": "deferred",
+    "familyPhotos": "excluded_by_user_decision"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-31T03:21:21.533Z",
+  "pages": [
+    "README.md",
+    "docs/项目进度与执行看板.md",
+    "docs/B2本地实现说明.md",
+    "docs/接口与数据模型.md",
+    "docs/首批资料复用清单.md",
+    "specs/baby-plan/tasks.md",
+    "specs/baby-plan/test-plan.md",
+    "output/b2-local-2026-10-31/report.md"
+  ],
+  "missingLinks": [],
+  "acceptanceCount": 55,
+  "sourceFileCount": 70
+}

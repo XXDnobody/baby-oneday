@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.next-test/
+.local/
+.env*
+!.env.example
+*.tsbuildinfo
+coverage/
+.playwright-cli/
+test-results/
+playwright-report/
+blob-report/
+.DS_Store
+*.log
+!output/b2-local-2026-10-31/check.log
+output/playwright/local-*/

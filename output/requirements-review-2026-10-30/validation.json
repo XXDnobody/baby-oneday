@@ -1,0 +1,58 @@
+{
+  "checkedOn": "2026-10-30",
+  "scope": "Requirements, traceability and document consistency only; application and acceptance tests were not run.",
+  "passed": true,
+  "documentsChecked": 32,
+  "localLinksChecked": 202,
+  "markdownAnchorsChecked": 1,
+  "definitionCounts": {
+    "AC": 50,
+    "SPEC": 10,
+    "D": 11,
+    "MB": 11,
+    "Q": 8,
+    "E": 6,
+    "C": 1,
+    "REQ": 16
+  },
+  "requirementStories": 16,
+  "activeAcceptanceCounts": {
+    "S1_AC": 45,
+    "S1_SPEC": 9,
+    "S1_MB": 1,
+    "laterStageAC": 4
+  },
+  "versions": {
+    "产品需求.md": "v1.0",
+    "页面结构.md": "v0.11",
+    "开发规格.md": "v0.6",
+    "接口与数据模型.md": "v0.6",
+    "技术方案.md": "v0.11",
+    "内容来源与推荐规则.md": "v0.4",
+    "分享与家庭会员方案.md": "v0.4",
+    "需求对齐与待定事项.md": "v1.5",
+    "旧小程序资料复用核查.md": "v0.4",
+    "首批资料复用清单.md": "v0.2"
+  },
+  "updatedOrNewDocuments": [
+    "README.md",
+    "docs/产品需求.md",
+    "docs/内容来源与推荐规则.md",
+    "docs/分享与家庭会员方案.md",
+    "docs/开发规格.md",
+    "docs/技术方案.md",
+    "docs/接口与数据模型.md",
+    "docs/需求对齐与待定事项.md",
+    "docs/页面结构.md",
+    "web-ui/README.md",
+    "specs/baby-plan/requirements.md"
+  ],
+  "decisionChecks": {
+    "selfUseRetentionConfirmed": true,
+    "restoreWindowDays": 30,
+    "scopeOfElevenRecipeDraftsConfirmed": true,
+    "enabledRecipes": 0,
+    "applicationTestsRun": false
+  },
+  "errors": []
+}

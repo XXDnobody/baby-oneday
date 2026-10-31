@@ -1,0 +1,111 @@
+{
+  "day": {
+    "pages": [
+      {
+        "page": 1,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 332,
+        "textInsidePage": true
+      },
+      {
+        "page": 2,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 368,
+        "textInsidePage": true
+      }
+    ],
+    "pageCount": 2
+  },
+  "recipe": {
+    "pages": [
+      {
+        "page": 1,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 958,
+        "textInsidePage": true
+      },
+      {
+        "page": 2,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 1594,
+        "textInsidePage": true
+      },
+      {
+        "page": 3,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 1604,
+        "textInsidePage": true
+      },
+      {
+        "page": 4,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 1604,
+        "textInsidePage": true
+      },
+      {
+        "page": 5,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 1604,
+        "textInsidePage": true
+      },
+      {
+        "page": 6,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 1604,
+        "textInsidePage": true
+      },
+      {
+        "page": 7,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 1604,
+        "textInsidePage": true
+      },
+      {
+        "page": 8,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 1344,
+        "textInsidePage": true
+      },
+      {
+        "page": 9,
+        "width": 594.95996,
+        "height": 841.91998,
+        "datePresent": true,
+        "versionPresent": true,
+        "characters": 124,
+        "textInsidePage": true
+      }
+    ],
+    "pageCount": 9
+  }
+}

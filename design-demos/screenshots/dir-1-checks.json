@@ -1,0 +1,25 @@
+{
+  "direction": "A 日常工作台",
+  "html": "design-demos/dir-1.html",
+  "date": "2026-10-28",
+  "checks": [
+    "desktop exactly 1440x900, no overflow",
+    "375x812 responsive, no horizontal overflow",
+    "all default visible buttons at least 44x44",
+    "nav food/family/activity opens meaningful details",
+    "Esc closes native dialogs",
+    "indoor/outdoor switch updates only activity",
+    "feedback initially unknown and independent for each activity",
+    "dinner replacement changes only dinner and shopping needs",
+    "pantry confirmation does not consume inventory",
+    "read-only display has exit button only",
+    "print snapshot has applicable date and Asia/Shanghai update timestamp",
+    "reload preserves explicitly saved local demo changes",
+    "visible print/activity detail labels at least 12px"
+  ],
+  "desktop_geometry": {
+    "width": 1440,
+    "height": 900
+  },
+  "console_errors": []
+}

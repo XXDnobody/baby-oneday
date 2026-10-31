@@ -1,0 +1,33 @@
+{
+  "checks": [
+    "1440px: navigation, 44px targets, no overflow, modal focus + Esc passed",
+    "Dinner confirmation affects only dinner, shopping requirement and requested preference",
+    "Pantry confirmation requires selection and does not deduct stock",
+    "Activity switch updates this afternoon only; feedback optional and reset for different activity",
+    "Read-only preview cannot mutate; timestamped print snapshot correct; local persistence passed",
+    "375px: navigation, 44px targets, no overflow, modal focus + Esc passed",
+    "Specific verified UNICEF article is linked; activity source status remains pending review",
+    "Print distinguishes persisted last update from snapshot generation and explicitly uses Asia/Shanghai even under a different browser timezone",
+    "Updated long source title fits the 375px activity dialog without horizontal overflow"
+  ],
+  "errors": [],
+  "viewports": {
+    "1440": {
+      "width": 1440,
+      "scroll": 1440,
+      "buttons": [],
+      "small": []
+    },
+    "375": {
+      "width": 375,
+      "scroll": 375,
+      "buttons": [],
+      "small": []
+    }
+  },
+  "screenshots": [
+    "dir-3-display.png",
+    "dir-3-print.png"
+  ],
+  "reference": "https://www.unicef.org/parenting/child-care/21-learning-activities-babies-and-toddlers"
+}

@@ -1,0 +1,191 @@
+{
+  "version": "local-b1-2026-10-31",
+  "createdAt": "2026-10-31T01:28:08.371Z",
+  "gitCommit": null,
+  "sourceDigest": "018944cfc659434d5b9e2b10d510a912a9cb33529d4dde22f5b412d2a845c00d",
+  "files": [
+    {
+      "file": "eslint.config.mjs",
+      "sha256": "055535036db367fb8cf20b2e704d78ec4b9663f8be78979a257c68e9c1b296bc"
+    },
+    {
+      "file": "migrations/001_b1.sql",
+      "sha256": "6424202d561e9d2bff050bc61c9932afa2faa7869fb3b87e9597923df62b4f9e"
+    },
+    {
+      "file": "next.config.ts",
+      "sha256": "d6bc6b435f78fa39213c4790ab24099f5e7733ec5ca952c0c2a377230cbfeaf5"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "49f7840ce5e24539e41f02fba9204a440ca7896a46f26035ee5a16b1a61560e5"
+    },
+    {
+      "file": "package.json",
+      "sha256": "b921e2464435793fec4f016a3011f9d43c28efefc3eddfdd68235d61ef3f6613"
+    },
+    {
+      "file": "scripts/check-env.ts",
+      "sha256": "4d715f3fae14b6171d56db886dade3d87c8669886fedda165c440e8c74be19f7"
+    },
+    {
+      "file": "scripts/dev-test.ts",
+      "sha256": "8c42375286a60e759768cfa560de918fab4891e7e872434c07d4dd7dd50b5d0c"
+    },
+    {
+      "file": "scripts/load-env.ts",
+      "sha256": "0f03e1b950e12c78000d86166cd35d3e1a2f03a4dc5af2b46533b29bc44bb102"
+    },
+    {
+      "file": "scripts/local-setup.ts",
+      "sha256": "fd488422a668abc93249b8edd117cea994a8a620eec6a73724a305db69303419"
+    },
+    {
+      "file": "scripts/migrate.ts",
+      "sha256": "6b086b4ece447e2634bef8606d2e09adbe5edc9724f1eb6c7bcb878eda4634e8"
+    },
+    {
+      "file": "scripts/probe-mailpit.ts",
+      "sha256": "64f6edd642e965717b02140f092749e724488e617dbab7f38f018eb78e8bb643"
+    },
+    {
+      "file": "scripts/reset-test-database.sh",
+      "sha256": "581c20c37d38428d210c565f84688941e93fef9b5bfa78b2aac04325ffb03ffe"
+    },
+    {
+      "file": "scripts/verify-backup.ts",
+      "sha256": "26f971292f9be5fbc9dc91266a4f8b0d315841c4adbff8577ddc21fa891dee6c"
+    },
+    {
+      "file": "scripts/verify-browser.ts",
+      "sha256": "06acf287629c50b20c4384795f4b983a130cd05e41fde1f933b8102d76ba3a4a"
+    },
+    {
+      "file": "scripts/verify-dev-persistence.sh",
+      "sha256": "2020f485f4d11d030d3c055bbdacf6d55eaeda90c5a7cc4d1a1450dcc74ad5c3"
+    },
+    {
+      "file": "scripts/verify-test-isolation.sh",
+      "sha256": "ac7bd5ae96cc2c6bbb45401976adfc4feaf9b9710d68041a981e7cbbd43852ee"
+    },
+    {
+      "file": "src/app/api/v1/[...path]/route.ts",
+      "sha256": "ee8702397c1144a5c0da3711ca8cbeeb35410d147ec6313793846b8bf80e41ac"
+    },
+    {
+      "file": "src/app/globals.css",
+      "sha256": "b9a34a217b0f755e344b2740fa013f943133eeeef86d5a5b5528c2aa19af8312"
+    },
+    {
+      "file": "src/app/icon.svg",
+      "sha256": "50d3a61939e9edc818b09901c3a5f73634b3939813314c82fd2da63ac7e8d615"
+    },
+    {
+      "file": "src/app/join/page.tsx",
+      "sha256": "434200bad1786657aafcd9cbafffc97e90b7d2620afbc6bdd8592fabaf309f1f"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "sha256": "48d499c1a29b98ff3f9cbf877f91e2cc2900ce49a44b02a6de265d32c87a41ee"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "sha256": "f354ba9bf303bfd5914243dccf49c401b8b0967936ce981547ea96bae3293fd5"
+    },
+    {
+      "file": "src/app/register/page.tsx",
+      "sha256": "7f585a99f6882db3bbd9b78e6e716c2764428f3b25d6be5cdc84e90562dcc3a2"
+    },
+    {
+      "file": "src/app/reset-password/page.tsx",
+      "sha256": "338eff29f084ededbe6a88caddd646cc8746289581aceef8f2890c4c0df42962"
+    },
+    {
+      "file": "src/components/api.ts",
+      "sha256": "5755509e2985329722bedc1a5f65f5db18d69b7611719f0aff8e923575330996"
+    },
+    {
+      "file": "src/components/auth-screen.tsx",
+      "sha256": "7fccdd4a90b03e1e06363982198c770746bd992a5a19c6dd91e1ad4013455e44"
+    },
+    {
+      "file": "src/components/family.tsx",
+      "sha256": "80acf2883e61f8ee2679acd5106bf54cb1e0588d9a823097f9c4ffa5e993389e"
+    },
+    {
+      "file": "src/components/plan-editor.tsx",
+      "sha256": "046a4c9b3b2efffe6dd01982f647f1bee0d253a0cd6e38f93f8ca2a33e4e1b4a"
+    },
+    {
+      "file": "src/components/workspace.tsx",
+      "sha256": "4b8f08fd30a56f69fdf9cac31c6f56ef9bd702b7ee8beda05e4468b8b73809fa"
+    },
+    {
+      "file": "src/server/auth.ts",
+      "sha256": "247621fd37783863af06bc715798f926a29bb033a3274d12a9e6f506ea5ca963"
+    },
+    {
+      "file": "src/server/config.ts",
+      "sha256": "6890d0f5c8d4c151ddfdbd02b0c1cdcee6df7c4395dcf54f1305dd96ddf75174"
+    },
+    {
+      "file": "src/server/crypto.ts",
+      "sha256": "670b4e98adbf03ae30237bfa29d055cfa9d38ec66dc956d74e84237fa3163348"
+    },
+    {
+      "file": "src/server/db.ts",
+      "sha256": "a15dd2cf992e4e30a911fcb30da8f76fabfc02893f39a075b03aba21d555d8ce"
+    },
+    {
+      "file": "src/server/errors.ts",
+      "sha256": "62a6d0daf9ba6b3a52c4a9a414d5591491dcfe74445dc7192bc75591eface154"
+    },
+    {
+      "file": "src/server/households.ts",
+      "sha256": "c1e595784061fd4ac3bffd9f94f7fcf431ff41fef7046b9628962acf153f593c"
+    },
+    {
+      "file": "src/server/http.ts",
+      "sha256": "5458f71dffef190711c8034e0e3e99ae42fd1672422338ede8849c066bf879d8"
+    },
+    {
+      "file": "src/server/mail.ts",
+      "sha256": "1834930fc1085205932be801dfc05d8e6758e5971c9e5957ca35b186a47016a9"
+    },
+    {
+      "file": "src/shared/contracts.ts",
+      "sha256": "cfc8f20320284b411600abc06262c6983c2986995962aef6a6e6bfbe56306404"
+    },
+    {
+      "file": "tests/b1.test.ts",
+      "sha256": "8595c5a9ec239e58b673a1a1d7019d2597bc1a089048b027406e9b76541fe51e"
+    },
+    {
+      "file": "tests/setup.ts",
+      "sha256": "d561eaac742002b68ceaa88fbc03aba58ae5d45ed56e3e17653eb0887296fc7c"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "ffd8679cd5646a6a8737cba66e083f9963adb89e77d9e7adda38fdcca8c19abc"
+    },
+    {
+      "file": "vitest.config.ts",
+      "sha256": "e6039a495b257839db48a96efbaba104ea17bee6a1e959afc2be08e250ef170c"
+    }
+  ],
+  "validation": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "integrationTests": {
+      "passed": 15,
+      "failed": 0
+    },
+    "productionBuild": "passed",
+    "databaseRestoreTables": 17,
+    "acceptanceStatus": {
+      "not_run": 36,
+      "partial": 18,
+      "passed": 1
+    }
+  }
+}

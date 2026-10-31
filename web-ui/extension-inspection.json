@@ -1,0 +1,150 @@
+[
+  {
+    "page": "today",
+    "width": 1440,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "calendar",
+    "width": 1440,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "calendar-past",
+    "width": 1440,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "record-new",
+    "width": 1440,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "record-detail",
+    "width": 1440,
+    "errors": [],
+    "red": [],
+    "yellow": [
+      "相对路径图片 1 张（['assets/record-example.png']）：要双击打开的单文件交付，挪个目录就全裂，改成 base64 内嵌"
+    ],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "activities",
+    "width": 1440,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "assistant-empty",
+    "width": 1440,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "assistant-proposal",
+    "width": 1440,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "today",
+    "width": 375,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "calendar",
+    "width": 375,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "calendar-past",
+    "width": 375,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "record-new",
+    "width": 375,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "record-detail",
+    "width": 375,
+    "errors": [],
+    "red": [],
+    "yellow": [
+      "相对路径图片 1 张（['assets/record-example.png']）：要双击打开的单文件交付，挪个目录就全裂，改成 base64 内嵌"
+    ],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "activities",
+    "width": 375,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "assistant-empty",
+    "width": 375,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  },
+  {
+    "page": "assistant-proposal",
+    "width": 375,
+    "errors": [],
+    "red": [],
+    "yellow": [],
+    "overflow": false,
+    "smallControls": []
+  }
+]

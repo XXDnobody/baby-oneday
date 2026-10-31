@@ -1,0 +1,55 @@
+{
+  "name": "baby-plan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3000",
+    "dev:test": "tsx scripts/dev-test.ts",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 3000",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src scripts tests --no-error-on-unmatched-pattern",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "trash:purge": "tsx scripts/purge-trash.ts",
+    "local:setup": "tsx scripts/local-setup.ts",
+    "env:up": "docker compose --env-file .env.compose up -d --wait",
+    "env:up:test": "docker compose --env-file .env.compose --profile test up -d --wait",
+    "env:down": "docker compose --env-file .env.compose --profile test stop",
+    "env:ps": "docker compose --env-file .env.compose --profile test ps",
+    "env:check": "tsx scripts/check-env.ts",
+    "env:probe-mail": "tsx scripts/probe-mailpit.ts",
+    "env:reset-test": "sh scripts/reset-test-database.sh",
+    "env:verify-persistence": "sh scripts/verify-dev-persistence.sh",
+    "env:verify-browser": "tsx scripts/verify-browser.ts",
+    "db:verify-backup": "tsx scripts/verify-backup.ts"
+  },
+  "dependencies": {
+    "@node-rs/argon2": "2.2.2",
+    "lucide-react": "1.65.0",
+    "next": "16.4.3",
+    "nodemailer": "^10.3.1",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "^24.0.0",
+    "@types/nodemailer": "^8.0.2",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.14.0",
+    "eslint-config-next": "16.4.3",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5"
+  }
+}

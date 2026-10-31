@@ -1,0 +1,36 @@
+[
+  {
+    "direction": 1,
+    "dinnerReplaced": true,
+    "snackAndNapPreserved": true,
+    "activityDialog": true,
+    "displayReadOnly": true,
+    "printCurrentSnapshot": true,
+    "errors": []
+  },
+  {
+    "direction": 2,
+    "dinnerReplaced": true,
+    "snackAndNapPreserved": true,
+    "activityDialog": true,
+    "displayReadOnly": true,
+    "printCurrentSnapshot": true,
+    "errors": []
+  },
+  {
+    "direction": 3,
+    "dinnerReplaced": true,
+    "snackAndNapPreserved": true,
+    "activityDialog": true,
+    "displayReadOnly": true,
+    "printCurrentSnapshot": true,
+    "errors": []
+  },
+  {
+    "viewer": "index.html",
+    "switchDirections": true,
+    "mobilePreview": true,
+    "comparisonImages": true,
+    "errors": []
+  }
+]

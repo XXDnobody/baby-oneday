@@ -1,0 +1,792 @@
+[
+  {
+    "file": "dir-1",
+    "viewport": "1440x900",
+    "errors": [],
+    "horizontalOverflow": false,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "smallControls": [],
+    "brokenImages": [],
+    "buttons": [
+      {
+        "text": "今天",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "饮食",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "活动",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "家庭",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "大屏展示",
+        "id": "",
+        "action": "display"
+      },
+      {
+        "text": "我的家\n宝宝 17 个月",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "打印菜谱",
+        "id": "",
+        "action": "print"
+      },
+      {
+        "text": "大屏预览",
+        "id": "",
+        "action": "display"
+      },
+      {
+        "text": "查看准备",
+        "id": "",
+        "action": "snack"
+      },
+      {
+        "text": "户外",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "室内备选",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "查看玩法",
+        "id": "",
+        "action": "activity-detail"
+      },
+      {
+        "text": "换一种",
+        "id": "replace-dinner",
+        "action": "replace"
+      },
+      {
+        "text": "核对食材",
+        "id": "",
+        "action": "pantry"
+      },
+      {
+        "text": "城市待设置",
+        "id": "",
+        "action": "weather"
+      },
+      {
+        "text": "工作日模板",
+        "id": "",
+        "action": "schedule"
+      }
+    ],
+    "headings": [
+      "今天",
+      "午睡",
+      "下午茶",
+      "下午陪玩",
+      "找一找秋天的颜色",
+      "今晚吃什么",
+      "番茄鸡蛋面",
+      "今天的安排",
+      "早餐",
+      "楼下散步",
+      "午餐",
+      "午睡",
+      "下午茶",
+      "户外探索",
+      "晚餐",
+      "妈妈陪玩",
+      "洗澡"
+    ]
+  },
+  {
+    "file": "dir-1",
+    "viewport": "375x812",
+    "errors": [],
+    "horizontalOverflow": false,
+    "documentWidth": 375,
+    "viewportWidth": 375,
+    "smallControls": [],
+    "brokenImages": [],
+    "buttons": [
+      {
+        "text": "今天",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "饮食",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "活动",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "家庭",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "宝宝 17 个月",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "打印菜谱预览",
+        "id": "",
+        "action": "print"
+      },
+      {
+        "text": "打开只读大屏预览",
+        "id": "",
+        "action": "display"
+      },
+      {
+        "text": "查看准备",
+        "id": "",
+        "action": "snack"
+      },
+      {
+        "text": "户外",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "室内备选",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "查看玩法",
+        "id": "",
+        "action": "activity-detail"
+      },
+      {
+        "text": "换一种",
+        "id": "replace-dinner",
+        "action": "replace"
+      },
+      {
+        "text": "核对食材",
+        "id": "",
+        "action": "pantry"
+      },
+      {
+        "text": "城市待设置",
+        "id": "",
+        "action": "weather"
+      },
+      {
+        "text": "工作日模板",
+        "id": "",
+        "action": "schedule"
+      }
+    ],
+    "headings": [
+      "今天",
+      "午睡",
+      "下午茶",
+      "下午陪玩",
+      "找一找秋天的颜色",
+      "今晚吃什么",
+      "番茄鸡蛋面",
+      "今天的安排",
+      "早餐",
+      "楼下散步",
+      "午餐",
+      "午睡",
+      "下午茶",
+      "户外探索",
+      "晚餐",
+      "妈妈陪玩",
+      "洗澡"
+    ]
+  },
+  {
+    "file": "dir-2",
+    "viewport": "1440x900",
+    "errors": [],
+    "horizontalOverflow": false,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "smallControls": [],
+    "brokenImages": [],
+    "buttons": [
+      {
+        "text": "今天",
+        "id": "nav-today",
+        "action": null
+      },
+      {
+        "text": "饮食",
+        "id": "nav-food",
+        "action": null
+      },
+      {
+        "text": "活动",
+        "id": "nav-activities",
+        "action": null
+      },
+      {
+        "text": "家庭",
+        "id": "nav-family",
+        "action": null
+      },
+      {
+        "text": "我的家\n宝宝 17 个月",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "大屏预览",
+        "id": "big-preview",
+        "action": "display"
+      },
+      {
+        "text": "全天安排",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "08:00\n早餐\n奶奶",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "09:30\n楼下散步\n爸爸",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "11:30\n午餐\n奶奶",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "12:30–15:00\n午睡\n爸爸\n当前",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "15:00\n下午茶\n奶奶\n下一项",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "15:30\n户外探索\n奶奶",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "17:00\n晚餐\n待分工",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "18:00\n妈妈陪玩\n妈妈",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "19:00\n洗澡\n待分工",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "换到室内",
+        "id": "activity-switch",
+        "action": "switch-activity"
+      },
+      {
+        "text": "查看完整指引",
+        "id": "",
+        "action": "activity-detail"
+      },
+      {
+        "text": "改为这个活动",
+        "id": "",
+        "action": "use-indoor"
+      },
+      {
+        "text": "喜欢",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "没兴趣",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "太难",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "换晚餐",
+        "id": "dinner-replace",
+        "action": "dinner"
+      },
+      {
+        "text": "核对食材",
+        "id": "pantry-open",
+        "action": "pantry"
+      },
+      {
+        "text": "菜谱打印",
+        "id": "print-preview",
+        "action": "print"
+      },
+      {
+        "text": "城市待设置",
+        "id": "",
+        "action": "weather"
+      },
+      {
+        "text": "看看家庭约定",
+        "id": "",
+        "action": null
+      }
+    ],
+    "headings": [
+      "今天",
+      "今天的节奏",
+      "接下来，陪宝宝玩一会儿",
+      "找一找秋天的颜色",
+      "把积木送回家",
+      "下一餐",
+      "蒸南瓜 + 原味酸奶"
+    ]
+  },
+  {
+    "file": "dir-2",
+    "viewport": "375x812",
+    "errors": [],
+    "horizontalOverflow": false,
+    "documentWidth": 375,
+    "viewportWidth": 375,
+    "smallControls": [],
+    "brokenImages": [],
+    "buttons": [
+      {
+        "text": "今天",
+        "id": "nav-today",
+        "action": null
+      },
+      {
+        "text": "饮食",
+        "id": "nav-food",
+        "action": null
+      },
+      {
+        "text": "活动",
+        "id": "nav-activities",
+        "action": null
+      },
+      {
+        "text": "家庭",
+        "id": "nav-family",
+        "action": null
+      },
+      {
+        "text": "大屏预览",
+        "id": "big-preview",
+        "action": "display"
+      },
+      {
+        "text": "全天安排",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "08:00\n早餐\n奶奶",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "09:30\n楼下散步\n爸爸",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "11:30\n午餐\n奶奶",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "12:30–15:00\n午睡\n爸爸\n当前",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "15:00\n下午茶\n奶奶\n下一项",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "15:30\n户外探索\n奶奶",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "17:00\n晚餐\n待分工",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "18:00\n妈妈陪玩\n妈妈",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "19:00\n洗澡\n待分工",
+        "id": "",
+        "action": "schedule"
+      },
+      {
+        "text": "换到室内",
+        "id": "activity-switch",
+        "action": "switch-activity"
+      },
+      {
+        "text": "查看完整指引",
+        "id": "",
+        "action": "activity-detail"
+      },
+      {
+        "text": "改为这个活动",
+        "id": "",
+        "action": "use-indoor"
+      },
+      {
+        "text": "喜欢",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "没兴趣",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "太难",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "换晚餐",
+        "id": "dinner-replace",
+        "action": "dinner"
+      },
+      {
+        "text": "核对食材",
+        "id": "pantry-open",
+        "action": "pantry"
+      },
+      {
+        "text": "菜谱打印",
+        "id": "print-preview",
+        "action": "print"
+      },
+      {
+        "text": "城市待设置",
+        "id": "",
+        "action": "weather"
+      },
+      {
+        "text": "看看家庭约定",
+        "id": "",
+        "action": null
+      }
+    ],
+    "headings": [
+      "今天",
+      "今天的节奏",
+      "接下来，陪宝宝玩一会儿",
+      "找一找秋天的颜色",
+      "把积木送回家",
+      "下一餐",
+      "蒸南瓜 + 原味酸奶"
+    ]
+  },
+  {
+    "file": "dir-3",
+    "viewport": "1440x900",
+    "errors": [],
+    "horizontalOverflow": false,
+    "documentWidth": 1440,
+    "viewportWidth": 1440,
+    "smallControls": [],
+    "brokenImages": [],
+    "buttons": [
+      {
+        "text": "今日安排",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "吃什么",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "玩什么",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "食材",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "我的家",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "大屏预览",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "菜谱打印预览",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "看餐食",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "餐食安排",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "查看玩法",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "出门检查",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "看约定",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "完整日程",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "08:00\n早餐\n奶奶",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "09:30\n楼下散步\n爸爸",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "11:30\n午餐\n奶奶",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "12:30\n午睡\n爸爸照护",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "15:00\n下午茶\n奶奶",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "15:30\n户外探索\n奶奶 / 爸爸接替",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "17:00\n晚餐\n查看餐食",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "18:00\n妈妈陪玩\n妈妈",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "19:00\n洗澡\n照护人待确认",
+        "id": "",
+        "action": null
+      }
+    ],
+    "headings": [
+      "今天",
+      "午睡",
+      "下午茶",
+      "接下来，准备这些",
+      "蒸南瓜 + 原味酸奶",
+      "找一找秋天的颜色",
+      "长袖上衣，舒适长裤",
+      "先等一等，让宝宝试一试",
+      "今天的节奏"
+    ]
+  },
+  {
+    "file": "dir-3",
+    "viewport": "375x812",
+    "errors": [],
+    "horizontalOverflow": false,
+    "documentWidth": 375,
+    "viewportWidth": 375,
+    "smallControls": [],
+    "brokenImages": [],
+    "buttons": [
+      {
+        "text": "今日安排",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "吃什么",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "玩什么",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "食材",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "我的家",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "只读大屏预览",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "菜谱打印预览",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "看餐食",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "餐食安排",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "查看玩法",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "出门检查",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "看约定",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "完整日程",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "08:00\n早餐\n奶奶",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "09:30\n楼下散步\n爸爸",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "11:30\n午餐\n奶奶",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "12:30\n午睡\n爸爸照护",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "15:00\n下午茶\n奶奶",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "15:30\n户外探索\n奶奶 / 爸爸接替",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "17:00\n晚餐\n查看餐食",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "18:00\n妈妈陪玩\n妈妈",
+        "id": "",
+        "action": null
+      },
+      {
+        "text": "19:00\n洗澡\n照护人待确认",
+        "id": "",
+        "action": null
+      }
+    ],
+    "headings": [
+      "今天",
+      "午睡",
+      "下午茶",
+      "接下来，准备这些",
+      "蒸南瓜 + 原味酸奶",
+      "找一找秋天的颜色",
+      "长袖上衣，舒适长裤",
+      "先等一等，让宝宝试一试",
+      "今天的节奏"
+    ]
+  }
+]

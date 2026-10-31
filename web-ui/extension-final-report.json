@@ -1,0 +1,7 @@
+{
+  "discussion_scope_invalidation": true,
+  "core_routes_desktop_and_mobile": true,
+  "five_item_navigation": true,
+  "review_host": true,
+  "overview_assets": true
+}

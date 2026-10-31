@@ -1,0 +1,282 @@
+[
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "large": false,
+    "view": "today",
+    "scrollWidth": 390,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "large": false,
+    "view": "content",
+    "scrollWidth": 390,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "large": false,
+    "view": "pantry",
+    "scrollWidth": 390,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "large": false,
+    "view": "calendar",
+    "scrollWidth": 390,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "large": false,
+    "view": "records",
+    "scrollWidth": 390,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "large": false,
+    "view": "family",
+    "scrollWidth": 390,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "mobile",
+    "width": 390,
+    "height": 844,
+    "large": false,
+    "view": "trash",
+    "scrollWidth": 390,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-portrait",
+    "width": 820,
+    "height": 1180,
+    "large": true,
+    "view": "today",
+    "scrollWidth": 820,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-portrait",
+    "width": 820,
+    "height": 1180,
+    "large": true,
+    "view": "content",
+    "scrollWidth": 820,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-portrait",
+    "width": 820,
+    "height": 1180,
+    "large": true,
+    "view": "pantry",
+    "scrollWidth": 820,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-portrait",
+    "width": 820,
+    "height": 1180,
+    "large": true,
+    "view": "calendar",
+    "scrollWidth": 820,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-portrait",
+    "width": 820,
+    "height": 1180,
+    "large": true,
+    "view": "records",
+    "scrollWidth": 820,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-portrait",
+    "width": 820,
+    "height": 1180,
+    "large": true,
+    "view": "family",
+    "scrollWidth": 820,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-portrait",
+    "width": 820,
+    "height": 1180,
+    "large": true,
+    "view": "trash",
+    "scrollWidth": 820,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-landscape",
+    "width": 1180,
+    "height": 820,
+    "large": true,
+    "view": "today",
+    "scrollWidth": 1180,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-landscape",
+    "width": 1180,
+    "height": 820,
+    "large": true,
+    "view": "content",
+    "scrollWidth": 1180,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-landscape",
+    "width": 1180,
+    "height": 820,
+    "large": true,
+    "view": "pantry",
+    "scrollWidth": 1180,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-landscape",
+    "width": 1180,
+    "height": 820,
+    "large": true,
+    "view": "calendar",
+    "scrollWidth": 1180,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-landscape",
+    "width": 1180,
+    "height": 820,
+    "large": true,
+    "view": "records",
+    "scrollWidth": 1180,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-landscape",
+    "width": 1180,
+    "height": 820,
+    "large": true,
+    "view": "family",
+    "scrollWidth": 1180,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "tablet-landscape",
+    "width": 1180,
+    "height": 820,
+    "large": true,
+    "view": "trash",
+    "scrollWidth": 1180,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "large": false,
+    "view": "today",
+    "scrollWidth": 1440,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "large": false,
+    "view": "content",
+    "scrollWidth": 1440,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "large": false,
+    "view": "pantry",
+    "scrollWidth": 1440,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "large": false,
+    "view": "calendar",
+    "scrollWidth": 1440,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "large": false,
+    "view": "records",
+    "scrollWidth": 1440,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "large": false,
+    "view": "family",
+    "scrollWidth": 1440,
+    "dialogs": 0,
+    "passed": true
+  },
+  {
+    "device": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "large": false,
+    "view": "trash",
+    "scrollWidth": 1440,
+    "dialogs": 0,
+    "passed": true
+  }
+]

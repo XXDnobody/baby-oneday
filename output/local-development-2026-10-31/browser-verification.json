@@ -1,0 +1,55 @@
+{
+  "verifiedAt": "2026-10-31T01:27:38.704Z",
+  "environment": "Chromium on local test app; synthetic data; not physical devices",
+  "familyLayout": [
+    {
+      "width": 1440,
+      "contentWidth": 1425,
+      "columns": "568.5px 568.5px"
+    },
+    {
+      "width": 1024,
+      "contentWidth": 1009,
+      "columns": "383.5px 383.5px"
+    },
+    {
+      "width": 820,
+      "contentWidth": 805,
+      "columns": "581px"
+    },
+    {
+      "width": 375,
+      "contentWidth": 360,
+      "columns": "324px"
+    }
+  ],
+  "flowResults": {
+    "invitedRegistration": true,
+    "normalLoginAfterRegistration": true,
+    "memberCriticalControlsRestricted": true,
+    "sharedPlanAcrossIdentities": true,
+    "conflictPreservesInput": true,
+    "explicitConflictReview": true,
+    "offlineRetry": true,
+    "lostSuccessResponseDoesNotDuplicate": true,
+    "persistsAfterReload": true,
+    "memberRevocationClearsDisplay": true,
+    "emailPasswordReset": true,
+    "noAutoLoginAfterReset": true,
+    "newPasswordLogin": true,
+    "newFamilyFromUI": true,
+    "resumeSetupAfterReload": true,
+    "futureBirthdayRejected": true,
+    "inputPreserved": true,
+    "monthAgeWithoutFabricatedBirthday": true,
+    "unknownFoodRestrictions": true
+  },
+  "physicalDeviceAcceptance": "not_run",
+  "runtimeExceptionsObserved": 0,
+  "expectedNetworkErrors": [
+    "unauthenticated 401",
+    "revision conflict 409",
+    "future birthday 400",
+    "injected offline / aborted response"
+  ]
+}

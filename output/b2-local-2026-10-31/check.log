@@ -1,0 +1,59 @@
+
+> baby-plan@0.1.0 check
+> npm run typecheck && npm run lint && npm test && npm run build
+
+
+> baby-plan@0.1.0 typecheck
+> tsc --noEmit
+
+
+> baby-plan@0.1.0 lint
+> eslint src scripts tests --no-error-on-unmatched-pattern
+
+
+> baby-plan@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /Users/jackx/Documents/ChatGPT/宝宝计划
+
+
+ Test Files  2 passed (2)
+      Tests  44 passed (44)
+   Start at  11:19:35
+   Duration  3.33s (tests 94%, import 4%, setup 1%, transform 1%)
+
+
+> baby-plan@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.4.3 (webpack)
+- Environments: .env.local
+✓ Running next.config.ts took 14ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1128ms
+  Running TypeScript ...
+  Finished TypeScript in 1046ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/8) ...
+  Generating static pages using 9 workers (2/8)
+  Generating static pages using 9 workers (4/8)
+  Generating static pages using 9 workers (6/8)
+✓ Generating static pages using 9 workers (8/8) in 181ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/v1/[...path]
+├ ○ /icon.svg
+├ ƒ /join
+├ ƒ /print
+├ ƒ /register
+└ ƒ /reset-password
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand

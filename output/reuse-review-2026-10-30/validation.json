@@ -1,0 +1,47 @@
+{
+  "checkedOn": "2026-10-30",
+  "scope": "Document and review-artifact consistency; no application or migration tests.",
+  "passed": true,
+  "documentsChecked": 31,
+  "localLinksChecked": 191,
+  "markdownAnchorsChecked": 1,
+  "identifierDefinitionCounts": {
+    "AC": 31,
+    "SPEC": 10,
+    "D": 10,
+    "MB": 11,
+    "Q": 8,
+    "E": 6,
+    "C": 1
+  },
+  "updatedOrNewDocuments": [
+    "README.md",
+    "docs/产品需求.md",
+    "docs/内容来源与推荐规则.md",
+    "docs/开发规格.md",
+    "docs/技术方案.md",
+    "docs/旧小程序资料复用核查.md",
+    "docs/需求对齐与待定事项.md",
+    "docs/首批资料复用清单.md"
+  ],
+  "contentChecks": {
+    "recipes": 11,
+    "originalIngredientOccurrences": 74,
+    "originalSteps": 51,
+    "allOriginalTextsEqualToSnapshot": true,
+    "enabledRecipes": 0,
+    "mappingOccurrences": {
+      "literal_recipe_item": 18,
+      "needs_specific_item": 18,
+      "form_preserving_candidate": 10,
+      "name_match_candidate": 12
+    }
+  },
+  "scopeConfirmationChecks": {
+    "status": "confirmed",
+    "includedRecipeCount": 11,
+    "historyDeferred": true,
+    "actualMigrationExecuted": false
+  },
+  "errors": []
+}

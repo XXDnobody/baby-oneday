@@ -1,0 +1,17 @@
+{
+  "verifiedAt": "2026-10-31T03:19:39.175Z",
+  "environment": "isolated PostgreSQL 5433 / HTTP contract",
+  "migration": "002_b2.sql",
+  "sourceDrafts": 11,
+  "ingredients": 74,
+  "steps": 51,
+  "fixtures": "synthetic only",
+  "expiry": "before / at / after; rows retained; ordinary read, history and restore guarded",
+  "restore": "current role, original author, expected plan revision and colliding slot verified",
+  "remaining": [
+    "real family content confirmation",
+    "physical devices",
+    "paper printer",
+    "B3"
+  ]
+}

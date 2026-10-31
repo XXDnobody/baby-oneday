@@ -1,0 +1,48 @@
+{
+  "checkedOn": "2026-10-30",
+  "scope": "Planning documents, local links, baseline snapshot, acceptance coverage and calendar arithmetic only; no application tests run.",
+  "passed": true,
+  "markdownDocumentsChecked": 18,
+  "localLinksChecked": 189,
+  "frozenFiles": 7,
+  "s1Stories": 14,
+  "acceptanceItems": 55,
+  "testGroups": 12,
+  "allAcceptanceItemsNotRun": true,
+  "engineeringWeekdays": 30,
+  "householdTrialCalendarDays": 7,
+  "schedule": [
+    {
+      "from": "2026-11-02",
+      "through": "2026-11-04",
+      "engineeringWeekdays": 3
+    },
+    {
+      "from": "2026-11-05",
+      "through": "2026-11-13",
+      "engineeringWeekdays": 7
+    },
+    {
+      "from": "2026-11-16",
+      "through": "2026-11-25",
+      "engineeringWeekdays": 8
+    },
+    {
+      "from": "2026-11-26",
+      "through": "2026-12-04",
+      "engineeringWeekdays": 7
+    },
+    {
+      "from": "2026-12-07",
+      "through": "2026-12-09",
+      "engineeringWeekdays": 3
+    },
+    {
+      "from": "2026-12-17",
+      "through": "2026-12-18",
+      "engineeringWeekdays": 2
+    }
+  ],
+  "targetDate": "2026-12-18",
+  "errors": []
+}
