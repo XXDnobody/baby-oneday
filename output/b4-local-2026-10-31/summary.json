@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-10-31T07:31:54.540Z",
+  "version": "local-b4-2026-10-31",
+  "buildId": "uBbHIFiCKpKFyZ_M8PeP8",
+  "fullCheckPassed": true,
+  "testGroups": 140,
+  "browserChecks": 104,
+  "browserPassed": true,
+  "recoveryTables": 40,
+  "recoveryFaultChecks": 11,
+  "reviewedAcceptanceItems": 55,
+  "localAcceptanceSubscopesPassed": 54,
+  "localPartial": [
+    "AC-42"
+  ],
+  "realServicePasses": 0,
+  "physicalDevicesVerified": false,
+  "paperPrinterVerified": false,
+  "productionDeployed": false,
+  "productionRecoveryVerified": false,
+  "sevenDayTrialDays": 0,
+  "formalB4AdmissionPassed": false,
+  "S1Complete": false,
+  "developmentDataPreserved": true,
+  "allOriginalRowsIdentical": false,
+  "originalMigrationsUnchanged": true,
+  "developmentRuntime": "local standalone build, 127.0.0.1:3000, development database 5432",
+  "testApplicationStopped": true,
+  "developmentWorkerRunning": true
+}

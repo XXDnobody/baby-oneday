@@ -1,0 +1,5 @@
+
+> baby-plan@0.1.0 db:verify-backup
+> tsx scripts/verify-backup.ts --output=output/wardrobe-2026-10-31/backup-verification.json
+
+独立恢复演练通过：41 张表的行数和逐行内容摘要一致。恢复副本已关闭并移除，备份保留于忽略的 .local/backups。

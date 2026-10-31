@@ -1,0 +1,716 @@
+[
+  {
+    "case": "read-only-boundaries",
+    "jobId": "d1103355-fe8b-455c-9ac6-2fade59564d9",
+    "job": {
+      "state": "succeeded",
+      "errorCode": null,
+      "errorMessage": null,
+      "durationMs": 2673
+    },
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 2748,
+      "completion_tokens": 266,
+      "total_tokens": 3014,
+      "prompt_tokens_details": {
+        "cached_tokens": 2432
+      },
+      "prompt_cache_hit_tokens": 2432,
+      "prompt_cache_miss_tokens": 316
+    },
+    "operations": []
+  },
+  {
+    "case": "pending-proposal",
+    "jobId": "17b69dd1-fb05-4ead-b737-e72a830e2232",
+    "job": {
+      "state": "succeeded",
+      "errorCode": null,
+      "errorMessage": null,
+      "durationMs": 2615
+    },
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 3083,
+      "completion_tokens": 321,
+      "total_tokens": 3404,
+      "prompt_tokens_details": {
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 395
+    },
+    "operations": [
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "活动待安排",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "饮食待安排",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "menu-outdoors-week",
+    "jobId": "81c0d84d-c3ed-4f96-8545-51c8ce844f4d",
+    "job": {
+      "state": "failed",
+      "errorCode": "SERVICE_INVALID_RESPONSE",
+      "errorMessage": "服务返回格式不符合约定，未保存正式改动。",
+      "durationMs": 14460
+    },
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 4160,
+      "completion_tokens": 2434,
+      "total_tokens": 6594,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 4160
+    }
+  },
+  {
+    "case": "menu-outdoors-week-fixed",
+    "jobId": "81c0d84d-c3ed-4f96-8545-51c8ce844f4d",
+    "job": {
+      "state": "succeeded",
+      "errorCode": null,
+      "errorMessage": null,
+      "durationMs": 14243
+    },
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 4160,
+      "completion_tokens": 2642,
+      "total_tokens": 6802,
+      "prompt_tokens_details": {
+        "cached_tokens": 3968
+      },
+      "prompt_cache_hit_tokens": 3968,
+      "prompt_cache_miss_tokens": 192
+    },
+    "operations": [
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：蒸蛋＋小馒头",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：南瓜小米粥＋软豆腐碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软米饭＋番茄牛肉末＋西兰花碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软面条＋鸡肉末＋胡萝卜碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "下午加餐：原味酸奶＋香蕉/梨/蓝莓",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：软饭＋鱼泥＋青菜末",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：豆腐鸡蛋羹＋软饭",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：小区公园平地走＋追泡泡",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：短途散步＋推小车",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "menu-outdoors-week-complete",
+    "jobId": "182b3332-e7f1-4806-bc35-7ea64fa019fa",
+    "job": {
+      "state": "failed",
+      "errorCode": "MODEL_OUTPUT_REJECTED",
+      "errorMessage": "模型返回了不支持的操作或字段，未保存正式改动。",
+      "durationMs": 34650
+    },
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 4762,
+      "completion_tokens": 8537,
+      "total_tokens": 13299,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096
+      },
+      "prompt_cache_hit_tokens": 4096,
+      "prompt_cache_miss_tokens": 666
+    },
+    "operations": [
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：蒸蛋＋小馒头",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：平地走＋追泡泡",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软米饭＋番茄炖牛肉末＋西兰花碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "加餐：原味酸奶＋香蕉/梨压碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：短途散步＋推小车",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：鱼泥＋青菜末＋软米饭",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：南瓜小米粥＋软豆腐碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：平地走＋看树叶",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软面条＋鸡肉末＋胡萝卜碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "加餐：原味酸奶＋蓝莓压碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：追泡泡＋推车散步",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：豆腐鸡蛋羹＋软米饭",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：蒸蛋＋小馒头",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：平地走＋指认花草",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软米饭＋鸡肉末＋胡萝卜碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "加餐：原味酸奶＋梨泥",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：散步＋捡落叶观察",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：鱼泥＋青菜末＋软米饭",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：南瓜小米粥＋软豆腐碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：追泡泡＋平地走",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软面条＋牛肉末＋西兰花碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "加餐：原味酸奶＋香蕉泥",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：推车散步＋看花草",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：豆腐鸡蛋羹＋软米饭",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：蒸蛋＋小馒头",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：平地走＋追泡泡",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软米饭＋番茄炖牛肉末＋西兰花碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "加餐：原味酸奶＋蓝莓压碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：短途散步＋推小车",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：鱼泥＋青菜末＋软面条",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：南瓜小米粥＋软豆腐碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：推车散步＋看树叶",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软面条＋鸡肉末＋胡萝卜碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "加餐：原味酸奶＋梨泥",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：追泡泡＋平地走",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：豆腐鸡蛋羹＋软米饭",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：蒸蛋＋小馒头",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：追泡泡＋看花草",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软米饭＋鸡肉末＋胡萝卜碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "加餐：原味酸奶＋香蕉泥",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：推小车散步＋捡落叶观察",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：鱼泥＋青菜末＋软米饭",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "menu-outdoors-week-final",
+    "jobId": "182b3332-e7f1-4806-bc35-7ea64fa019fa",
+    "job": {
+      "state": "failed",
+      "errorCode": "MODEL_OUTPUT_REJECTED",
+      "errorMessage": "同一方案不能重复修改同一目标，请合并后重新讨论。",
+      "durationMs": 12333
+    },
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 4762,
+      "completion_tokens": 2572,
+      "total_tokens": 7334,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 3994
+    },
+    "operations": [
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：蒸蛋＋小馒头",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "早餐：南瓜小米粥＋软豆腐碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软面条＋鸡肉末＋胡萝卜碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "午餐：软米饭＋番茄炖牛肉末＋西兰花碎",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "下午加餐：原味酸奶＋压碎水果",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：软饭＋鱼泥（去刺）＋青菜末",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "meal",
+          "title": "晚餐：豆腐鸡蛋羹＋软饭",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "上午户外：小区/公园平地走走、追泡泡",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      },
+      {
+        "type": "plan.add",
+        "item": {
+          "kind": "activity",
+          "title": "下午户外：短途散步、推小车",
+          "hasContent": false,
+          "contentVersion": null
+        }
+      }
+    ]
+  },
+  {
+    "case": "calendar-recipe-details",
+    "jobId": "7caf86f2-a296-4041-a775-82e069e20bfc",
+    "job": {
+      "state": "succeeded",
+      "errorCode": null,
+      "errorMessage": null,
+      "durationMs": 28151
+    },
+    "model": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 4228,
+      "completion_tokens": 6779,
+      "total_tokens": 11007,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 4228
+    }
+  }
+]

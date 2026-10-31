@@ -68,7 +68,7 @@ export async function contentVersion(db: PoolClient, householdId: string, conten
   ensure(found.rowCount, "NOT_FOUND", "内容或版本不存在。", 404);
   const { snapshot, ...meta } = found.rows[0]; return { ...snapshot, ...meta, enabled: !!meta.enabled };
 }
-export async function eligibility(db: PoolClient, householdId: string, v: c.ContentVersion, date: string, scene = "either"): Promise<c.Candidate> {
+export async function eligibility(db: PoolClient, householdId: string, v: c.ContentVersion, date: string, scene = "either", preferenceOverride?: c.Preference[]): Promise<c.Candidate> {
   const reasons = reviewProblems(v);
   if (!v.enabled) reasons.push("此版本未启用");
   const child = await readChild(db, householdId);
@@ -83,12 +83,12 @@ export async function eligibility(db: PoolClient, householdId: string, v: c.Cont
   if (age === null || v.minAgeMonths === null || age < v.minAgeMonths || (v.maxAgeMonths !== null && age > v.maxAgeMonths)) reasons.push("当前月龄与适用范围不匹配或仍未知");
   if (scene !== "either" && v.scene !== "either" && v.scene !== scene) reasons.push("活动场景不匹配");
   if (v.kind === "recipe") {
-    if (!child || child.foodStatus === "unknown") reasons.push("当前食物限制未知，请管理员核对；暂不推荐餐食");
-    else if (v.foodProfileRevision !== child.revision) reasons.push("尚未针对当前食物限制版本核对");
+    if (!child || child.foodStatus === "unknown") reasons.push("当前食物过敏与忌口未知，请管理员核对；暂不推荐餐食");
+    else if (v.foodProfileRevision !== child.revision) reasons.push("尚未针对当前食物过敏与忌口版本核对");
   }
   let score = 0;
   const pantry = await readPantry(db, householdId);
-  const preferences = (await readPreferences(db, householdId, date)).filter((p) => p.active && (p.scope === "all" || p.scope === (v.kind === "recipe" ? "meal" : "activity")));
+  const preferences = (preferenceOverride ?? await readPreferences(db, householdId, date)).filter((p) => p.active && (p.scope === "all" || p.scope === (v.kind === "recipe" ? "meal" : "activity")));
   const text = [v.title, v.summary, ...v.ingredients.map((i) => i.name), v.materials].join(" ").toLowerCase();
   for (const p of preferences) {
     if (!text.includes(p.text.toLowerCase())) continue;
@@ -101,14 +101,14 @@ export async function eligibility(db: PoolClient, householdId: string, v: c.Cont
   }
   return { ...v, eligible: reasons.length === 0, reasons, score };
 }
-export async function selection(db: PoolClient, householdId: string, contentId: string | null, version: number | null, kind: string, date: string, scene: string) {
+export async function selection(db: PoolClient, householdId: string, contentId: string | null, version: number | null, kind: string, date: string, scene: string, preferenceOverride?: c.Preference[]) {
   ensure((contentId === null) === (version === null), "INVALID_INPUT", "内容标识和版本需同时填写。");
   if (!contentId || !version) return null;
   const v = await contentVersion(db, householdId, contentId, version);
   ensure((kind === "meal" && v.kind === "recipe") || (kind === "activity" && v.kind === "activity"), "CONTENT_NOT_ELIGIBLE", "安排类型与内容不一致。", 422);
-  const candidate = await eligibility(db, householdId, v, date, scene);
+  const candidate = await eligibility(db, householdId, v, date, scene, preferenceOverride);
   ensure(candidate.eligible, "CONTENT_NOT_ELIGIBLE", candidate.reasons.join("；"), 422);
-  return { ...v, selectionEvidence: { date, pantry: await readPantry(db, householdId), preferences: (await readPreferences(db, householdId, date)).filter((p) => p.active), basis: "仅按已核对月龄、食物限制版本、场景与近期偏好筛选；库存用于排序，不自动扣减，也不代表新鲜度。" } };
+  return { ...v, selectionEvidence: { date, pantry: await readPantry(db, householdId), preferences: (await readPreferences(db, householdId, date)).filter((p) => p.active), basis: "仅按已核对月龄、食物过敏与忌口版本、场景与近期偏好筛选；库存用于排序，不自动扣减，也不代表新鲜度。" } };
 }
 export async function listContent(raw: string | undefined, householdId: string, date: string, kind?: string, cursor?: string, scene = "either"): Promise<c.ContentLibrary> {
   return withHousehold(raw, householdId, async (db) => {

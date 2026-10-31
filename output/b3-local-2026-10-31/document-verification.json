@@ -1,0 +1,615 @@
+{
+  "verifiedAt": "2026-10-31T04:36:10.881Z",
+  "documents": 10,
+  "localLinks": 121,
+  "allLinksExist": true,
+  "acceptanceItems": 55,
+  "oldMigrationsUnchanged": true,
+  "links": [
+    {
+      "file": "README.md",
+      "target": "docs/产品需求.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "specs/baby-plan/baseline.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "specs/baby-plan/requirements.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/开发规格.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/接口与数据模型.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/B3服务接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/需求对齐与待定事项.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "specs/baby-plan/tasks.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "output/b3-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/B1本地实现说明.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "output/local-development-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/首批资料复用清单.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/本地开发与测试方案.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/B3本地实现说明.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/B3本地实现说明.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/B3服务接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/B2本地实现说明.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/项目进度与执行看板.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/本地开发与测试方案.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "specs/baby-plan/baseline.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "specs/baby-plan/tasks.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "specs/baby-plan/test-plan.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/需求对齐与待定事项.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/产品需求.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "specs/baby-plan/requirements.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/旧小程序资料复用核查.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/首批资料复用清单.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/分享与家庭会员方案.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/内容来源与推荐规则.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/页面结构.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/技术方案.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/开发规格.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/微信登录接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/接口与数据模型.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "design-demos/index.html",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "design-demos/README.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "web-ui/extension-overview.html",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "web-ui/overview.html",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "web-ui/review.html",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "web-ui/index.html",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "web-ui/design-spec.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/B2本地实现说明.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "output/b2-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "../specs/baby-plan/baseline.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "../output/b2-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "../output/b3-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "产品需求.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "../specs/baby-plan/requirements.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "接口与数据模型.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "首批资料复用清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "../output/local-development-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "../output/requirements-review-2026-10-30/validation.json",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "B3服务接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "产品需求.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "需求对齐与待定事项.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "../specs/baby-plan/requirements.md",
+      "exists": true
+    },
+    {
+      "file": "docs/项目进度与执行看板.md",
+      "target": "../specs/baby-plan/tasks.md",
+      "exists": true
+    },
+    {
+      "file": "docs/B3本地实现说明.md",
+      "target": "B3服务接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "docs/B3本地实现说明.md",
+      "target": "../output/b3-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/接口与数据模型.md",
+      "target": "B3本地实现说明.md",
+      "exists": true
+    },
+    {
+      "file": "docs/接口与数据模型.md",
+      "target": "B3服务接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "docs/接口与数据模型.md",
+      "target": "../output/b3-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/接口与数据模型.md",
+      "target": "开发规格.md",
+      "exists": true
+    },
+    {
+      "file": "docs/接口与数据模型.md",
+      "target": "分享与家庭会员方案.md",
+      "exists": true
+    },
+    {
+      "file": "docs/接口与数据模型.md",
+      "target": "需求对齐与待定事项.md",
+      "exists": true
+    },
+    {
+      "file": "docs/本地开发与测试方案.md",
+      "target": "../output/local-development-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/本地开发与测试方案.md",
+      "target": "../specs/baby-plan/test-plan.md",
+      "exists": true
+    },
+    {
+      "file": "docs/本地开发与测试方案.md",
+      "target": "B3服务接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "docs/本地开发与测试方案.md",
+      "target": "../output/b3-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../specs/baby-plan/baseline.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "产品需求.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../specs/baby-plan/requirements.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../specs/baby-plan/baseline.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../specs/baby-plan/tasks.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../specs/baby-plan/test-plan.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "页面结构.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "内容来源与推荐规则.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "分享与家庭会员方案.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "开发规格.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "技术方案.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "接口与数据模型.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "旧小程序资料复用核查.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "首批资料复用清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../web-ui/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "微信登录接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../design-demos/README.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "首批资料复用清单.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../specs/baby-plan/requirements.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../specs/baby-plan/test-plan.md",
+      "exists": true
+    },
+    {
+      "file": "docs/需求对齐与待定事项.md",
+      "target": "../output/b3-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/tasks.md",
+      "target": "baseline.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/tasks.md",
+      "target": "../../output/local-development-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/tasks.md",
+      "target": "../../docs/项目进度与执行看板.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/tasks.md",
+      "target": "../../output/b2-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/tasks.md",
+      "target": "../../output/b3-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/tasks.md",
+      "target": "test-plan.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/tasks.md",
+      "target": "../../output/planning-2026-10-30/schedule-v1.0.snapshot.json",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/test-plan.md",
+      "target": "baseline.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/test-plan.md",
+      "target": "tasks.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/test-plan.md",
+      "target": "../../output/local-development-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/test-plan.md",
+      "target": "../../output/b2-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/test-plan.md",
+      "target": "../../output/b3-local-2026-10-31/report.md",
+      "exists": true
+    },
+    {
+      "file": "specs/baby-plan/test-plan.md",
+      "target": "test-cases.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "check.log",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "integration-evidence.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "../../tests/b3.test.ts",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "../../tests/b3.test.ts",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "../../tests/job-process.ts",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "browser-verification.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "../../scripts/verify-b3-browser.ts",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "weather-attribution-verification.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "../../scripts/verify-weather-attribution-browser.ts",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "development-data-preservation.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "runtime-verification.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "backup-verification.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "runtime-verification.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "environment-check.txt",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "final-build.log",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "source-manifest.json",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "../../docs/B3服务接入核查.md",
+      "exists": true
+    },
+    {
+      "file": "output/b3-local-2026-10-31/report.md",
+      "target": "../../.env.example",
+      "exists": true
+    }
+  ]
+}

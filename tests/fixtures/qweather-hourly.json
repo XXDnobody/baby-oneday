@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "attributions": [
+      "https://developer.qweather.com/attribution.html"
+    ]
+  },
+  "hours": [
+    {
+      "forecastTime": "2026-10-31T10:00Z",
+      "condition": {
+        "text": "阴"
+      },
+      "temperature": {
+        "value": 10.87,
+        "unit": "°C"
+      },
+      "feelsLike": {
+        "value": 9.12,
+        "unit": "°C"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.31,
+          "unit": "m/s"
+        }
+      },
+      "precipitation": {
+        "amount": {
+          "value": 0,
+          "unit": "mm"
+        },
+        "probability": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "verifiedAt": "2026-10-31T07:28:07.397Z",
+  "browser": "156.0.8078.79",
+  "environment": "built standalone / 3001 / 5433 / viewport emulation, not hardware",
+  "physicalDevices": false,
+  "paperPrinter": false,
+  "checks": [
+    {
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "manualSave": true,
+      "record": true,
+      "modalScrollActionsReachable": true,
+      "deletedPlanKeepsRecordSnapshot": true,
+      "restorePreservesId": true,
+      "printSnapshot": true,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "name": "tablet-portrait",
+        "width": 834,
+        "height": 1194
+      },
+      "manualSave": true,
+      "record": true,
+      "modalScrollActionsReachable": true,
+      "deletedPlanKeepsRecordSnapshot": true,
+      "restorePreservesId": true,
+      "printSnapshot": true,
+      "passed": true
+    },
+    {
+      "viewport": {
+        "name": "tablet-landscape",
+        "width": 1194,
+        "height": 834
+      },
+      "manualSave": true,
+      "record": true,
+      "modalScrollActionsReachable": true,
+      "deletedPlanKeepsRecordSnapshot": true,
+      "restorePreservesId": true,
+      "printSnapshot": true,
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "passed": true
+}

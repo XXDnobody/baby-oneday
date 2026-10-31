@@ -1,0 +1,252 @@
+{
+  "checkedAt": "2026-10-31T13:29:51.092Z",
+  "model": "deepseek-flash",
+  "policyVersion": "2026-10-31-generated-suggestions-v1",
+  "formalStateUnchanged": true,
+  "contentLibraryUnchanged": true,
+  "confirmedExecutions": 0,
+  "proposal": {
+    "state": "pending",
+    "turn": 5,
+    "changes": 42
+  },
+  "completeWeeklyCoverage": true,
+  "coverage": {
+    "2026-10-31": [
+      {
+        "time": "07:30",
+        "kind": "meal"
+      },
+      {
+        "time": "09:00",
+        "kind": "activity"
+      },
+      {
+        "time": "11:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:30",
+        "kind": "activity"
+      },
+      {
+        "time": "17:15",
+        "kind": "meal"
+      }
+    ],
+    "2026-11-01": [
+      {
+        "time": "07:30",
+        "kind": "meal"
+      },
+      {
+        "time": "09:00",
+        "kind": "activity"
+      },
+      {
+        "time": "11:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:30",
+        "kind": "activity"
+      },
+      {
+        "time": "17:15",
+        "kind": "meal"
+      }
+    ],
+    "2026-11-02": [
+      {
+        "time": "07:30",
+        "kind": "meal"
+      },
+      {
+        "time": "09:00",
+        "kind": "activity"
+      },
+      {
+        "time": "11:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:30",
+        "kind": "activity"
+      },
+      {
+        "time": "17:15",
+        "kind": "meal"
+      }
+    ],
+    "2026-11-03": [
+      {
+        "time": "07:30",
+        "kind": "meal"
+      },
+      {
+        "time": "09:00",
+        "kind": "activity"
+      },
+      {
+        "time": "11:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:30",
+        "kind": "activity"
+      },
+      {
+        "time": "17:15",
+        "kind": "meal"
+      }
+    ],
+    "2026-11-04": [
+      {
+        "time": "07:30",
+        "kind": "meal"
+      },
+      {
+        "time": "09:00",
+        "kind": "activity"
+      },
+      {
+        "time": "11:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:30",
+        "kind": "activity"
+      },
+      {
+        "time": "17:15",
+        "kind": "meal"
+      }
+    ],
+    "2026-11-05": [
+      {
+        "time": "07:30",
+        "kind": "meal"
+      },
+      {
+        "time": "09:00",
+        "kind": "activity"
+      },
+      {
+        "time": "11:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:30",
+        "kind": "activity"
+      },
+      {
+        "time": "17:15",
+        "kind": "meal"
+      }
+    ],
+    "2026-11-06": [
+      {
+        "time": "07:30",
+        "kind": "meal"
+      },
+      {
+        "time": "09:00",
+        "kind": "activity"
+      },
+      {
+        "time": "11:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:00",
+        "kind": "meal"
+      },
+      {
+        "time": "15:30",
+        "kind": "activity"
+      },
+      {
+        "time": "17:15",
+        "kind": "meal"
+      }
+    ]
+  },
+  "menuItems": 28,
+  "activityItems": 14,
+  "allGeneratedSuggestionsLabeled": true,
+  "calls": [
+    {
+      "model": "deepseek-flash",
+      "testService": false,
+      "state": "failed",
+      "errorCode": "SERVICE_INVALID_RESPONSE",
+      "inputTokens": 4160,
+      "outputTokens": 2434,
+      "totalTokens": 6594,
+      "durationMs": 14420
+    },
+    {
+      "model": "deepseek-flash",
+      "testService": false,
+      "state": "succeeded",
+      "errorCode": null,
+      "inputTokens": 4160,
+      "outputTokens": 2642,
+      "totalTokens": 6802,
+      "durationMs": 14158
+    },
+    {
+      "model": "deepseek-flash",
+      "testService": false,
+      "state": "failed",
+      "errorCode": "MODEL_OUTPUT_REJECTED",
+      "inputTokens": 4762,
+      "outputTokens": 8537,
+      "totalTokens": 13299,
+      "durationMs": 34610
+    },
+    {
+      "model": "deepseek-flash",
+      "testService": false,
+      "state": "succeeded",
+      "errorCode": null,
+      "inputTokens": 4762,
+      "outputTokens": 2572,
+      "totalTokens": 7334,
+      "durationMs": 12236
+    }
+  ],
+  "totalCalls": 4,
+  "totalTokens": 34029,
+  "recovery": "Revalidated the already-returned 42-item response from the same turn locally; no additional API request or cost. Captured call history is preserved.",
+  "checks": {
+    "tests": 174,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed"
+  }
+}

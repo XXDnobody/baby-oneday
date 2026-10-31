@@ -1,0 +1,53 @@
+{
+  "skill": "solo-dev-workflow",
+  "version": "1.0",
+  "checked_at": "2026-10-31",
+  "structure": {
+    "canonicalValidator": "passed",
+    "localReferences": 3,
+    "implicitSelection": "enabled by default",
+    "files": [
+      {
+        "path": "references/extended-changes.md",
+        "bytes": 3142,
+        "sha256": "243b5eec166114d5da60b080b33a32ad48700913bda187aa8be03e77a0e3df32"
+      },
+      {
+        "path": "references/baby-plan.md",
+        "bytes": 2107,
+        "sha256": "9f92a75aab40309069ed8f950bca53cd39dcd38bd35255b5ae5a65a7b6c0ea2d"
+      },
+      {
+        "path": "agents/openai.yaml",
+        "bytes": 335,
+        "sha256": "06dfef427b949d96342660da081867136f21ba5260694e86c2a53c3b40418def"
+      },
+      {
+        "path": "SKILL.md",
+        "bytes": 6500,
+        "sha256": "6af07cc5c48a7b929a64c34f0c09d6b3af471be0b24b9f717588d8f2d974df52"
+      },
+      {
+        "path": "assets/feature.md",
+        "bytes": 2128,
+        "sha256": "e140c0c818271ba63a6d589dcb8f3ec3028c94f99957fb5a9447caaa0b8f25af"
+      }
+    ]
+  },
+  "behavior": {
+    "isolatedWorkspace": "/private/tmp/solo-dev-workflow-forward-p0UVD9",
+    "caseA": "requested title changed; no extra per-case documents",
+    "caseB": "implemented optional discount; original validations retained; 10 tests passed; parent independently reran tests",
+    "caseC": "plan document only; all four original files unchanged"
+  },
+  "archive": {
+    "path": "/Users/jackx/Documents/ChatGPT/宝宝计划/output/solo-dev-workflow-v1.0.zip",
+    "files": 5,
+    "integrity": "passed"
+  },
+  "installation": {
+    "path": "/Users/jackx/.codex/skills/solo-dev-workflow",
+    "files": 5,
+    "contentVerification": "all hashes match validated source"
+  }
+}

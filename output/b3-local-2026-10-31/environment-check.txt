@@ -1,0 +1,7 @@
+
+> baby-plan@0.1.0 env:check
+> tsx scripts/check-env.ts
+
+开发数据库已连接：127.0.0.1:5432/baby_plan_dev，当前库 baby_plan_dev
+Mailpit 已就绪：SMTP 127.0.0.1:1025，网页 http://127.0.0.1:8025，版本 v1.32.0
+测试数据库已连接：127.0.0.1:5433/baby_plan_test，当前库 baby_plan_test

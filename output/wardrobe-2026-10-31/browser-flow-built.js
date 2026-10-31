@@ -1,0 +1,104 @@
+async page => {
+  const checks = [], errors = [];
+  const assert = (condition, text) => { if (!condition) throw new Error(text); };
+  page.on('pageerror', e => errors.push(e.message));
+  const nav = () => page.getByRole('navigation', {name:'主导航'}).getByRole('button', {name:'衣物搭配',exact:true}).click();
+  const library = () => page.getByRole('button', {name:/^衣服库\s/}).click();
+  const outfits = () => page.getByRole('button', {name:'搭配建议',exact:true}).click();
+  const layout = async (name) => {
+    const metrics = await page.evaluate(() => ({width:innerWidth,scroll:document.documentElement.scrollWidth,smallButtons:[...document.querySelectorAll('button')].filter(b=>{const r=b.getBoundingClientRect();return r.width>0&&r.height>0&&r.height<43;}).map(b=>b.textContent)}));
+    assert(metrics.scroll<=metrics.width+1,name+' horizontal overflow '+JSON.stringify(metrics));
+    assert(metrics.smallButtons.length===0,name+' small buttons '+JSON.stringify(metrics));
+    checks.push({name,...metrics,passed:true});
+  };
+  const api = async (path, method='GET', data) => page.evaluate(async ({path,method,data}) => {
+    const headers={};
+    if(method!=='GET') {const csrf=await(await fetch('/api/v1/auth/csrf')).json();headers['X-CSRF-Token']=csrf.data.csrfToken;headers['Content-Type']='application/json';headers['Idempotency-Key']=crypto.randomUUID();}
+    const r=await fetch('/api/v1/'+path,{method,headers,body:data===undefined?undefined:JSON.stringify(data),cache:'no-store'});
+    return {status:r.status,body:await r.json()};
+  },{path,method,data});
+  await nav(); await outfits();
+await page.getByRole('button',{name:'穿搭日期',exact:true}).click();
+const calendar=page.getByRole('dialog',{name:'选择穿搭日期',exact:true});
+for(const [field,value] of [['选择年份','2026'],['选择月份','11月']]){await calendar.getByRole('combobox',{name:field,exact:true}).fill(value);await calendar.getByRole('combobox',{name:field,exact:true}).press('Enter');}
+await calendar.getByRole('button',{name:'选择 2026年11月1日',exact:true}).click();
+await page.getByRole('heading',{name:'从我们已有的衣物里选',exact:true}).waitFor();
+await library();
+  await page.getByRole('heading',{name:'我们的衣服库',exact:true}).waitFor();
+  const identity=await api('me'), householdId=identity.body.data.households[0].id, root='households/'+householdId+'/wardrobe';
+  assert((await api(root)).body.data.items.length>=7,'fixture clothes missing');
+  await page.getByLabel('搜索衣物',{exact:true}).fill('待洗');
+  assert(await page.locator('article').count()===1,'search did not isolate laundry item');
+  await page.getByRole('combobox',{name:'筛选衣物状态',exact:true}).selectOption('ready');
+  assert(await page.locator('article').count()===0,'ready filter retained laundry item');
+  await page.getByLabel('搜索衣物',{exact:true}).fill(''); await page.getByRole('combobox',{name:'筛选衣物状态',exact:true}).selectOption('visible');
+  checks.push({name:'search and status filter',passed:true});
+  const name='小熊卫衣（测试'+String(Date.now()).slice(-4)+'）';
+  await page.getByRole('button',{name:'添加衣物',exact:true}).click();
+  const dialog=page.getByRole('dialog',{name:'添一件衣物',exact:true});
+  assert(await dialog.locator('input[capture="environment"]').count()===1,'mobile camera capture missing');
+  await dialog.getByLabel('选择衣物照片',{exact:true}).setInputFiles('.local/wardrobe-upload.png');
+  await dialog.getByAltText('待保存的衣物照片',{exact:true}).waitFor();
+  await dialog.getByLabel('衣物名称',{exact:true}).fill(name);
+  await dialog.getByLabel('颜色（选填）',{exact:true}).fill('米色');
+  await dialog.getByLabel('跑跳玩耍',{exact:true}).check();
+  await page.context().setOffline(true);
+  await dialog.getByRole('button',{name:'放进衣服库',exact:true}).click();
+  await dialog.getByRole('alert').filter({hasText:'暂时无法连接'}).waitFor();
+  assert(await dialog.getByLabel('衣物名称',{exact:true}).inputValue()===name,'offline name lost');
+  assert(await dialog.getByAltText('待保存的衣物照片',{exact:true}).count()===1,'offline photo lost');
+  await page.screenshot({path:'output/playwright/wardrobe-offline-preserved-upload.png',fullPage:true});
+  await page.context().setOffline(false);
+  let lost=false;
+  await page.route('**/wardrobe',async route=>{if(route.request().method()==='POST'&&!lost){lost=true;await route.fetch();await route.abort('failed');}else await route.continue();});
+  await dialog.getByRole('button',{name:'放进衣服库',exact:true}).click();
+  await dialog.getByRole('alert').filter({hasText:'暂时无法连接'}).waitFor();
+  await dialog.getByRole('button',{name:'放进衣服库',exact:true}).click(); await dialog.waitFor({state:'hidden'});
+  await page.unroute('**/wardrobe');
+  const created=(await api(root)).body.data.items.filter(i=>i.name===name); assert(created.length===1,'duplicate upload after response loss');
+  const itemId=created[0].id;
+  checks.push({name:'album upload, camera input, offline photo preservation, committed-response-loss retry exactly once',passed:true});
+  await page.getByLabel('搜索衣物',{exact:true}).fill(name);
+  const card=page.locator('article').filter({has:page.getByRole('heading',{name,exact:true})});
+  await card.getByRole('button',{name:'标记待洗',exact:true}).click();
+  await card.getByText('待洗',{exact:true}).waitFor();
+  await card.getByRole('button',{name:'恢复可穿',exact:true}).click(); await card.getByText('可穿',{exact:true}).waitFor();
+  await card.getByRole('button',{name:'收起 '+name,exact:true}).click(); await card.waitFor({state:'hidden'});
+  await page.getByRole('combobox',{name:'筛选衣物状态',exact:true}).selectOption('archived'); await card.waitFor();
+  await card.getByRole('button',{name:'恢复可穿',exact:true}).click(); await card.waitFor({state:'hidden'});
+  await page.getByRole('combobox',{name:'筛选衣物状态',exact:true}).selectOption('visible'); await card.waitFor();
+  checks.push({name:'laundry, ready, archive and restore are reversible',passed:true});
+  await card.getByRole('button',{name:'编辑 '+name,exact:true}).click();
+  const edit=page.getByRole('dialog',{name:'编辑这件衣物',exact:true});
+  const current=(await api(root+'/'+itemId)).body.data;
+  const {id,revision,photoVersion,photoUrl,updatedAt,updatedBy,...fields}=current;
+  const concurrent=await api(root+'/'+itemId,'PATCH',{...fields,name:'家人已更新的衣物',expectedRevision:revision}); assert(concurrent.status===200,'concurrent edit failed');
+  await edit.getByLabel('衣物名称',{exact:true}).fill(name+' 已核对');
+  await edit.getByRole('button',{name:'保存衣物',exact:true}).click();
+  await edit.getByText('家人刚刚更新了这件衣物',{exact:true}).waitFor();
+  assert(await edit.getByLabel('衣物名称',{exact:true}).inputValue()===name+' 已核对','conflict draft lost');
+  await page.screenshot({path:'output/playwright/wardrobe-conflict-review.png',fullPage:true});
+  await edit.getByRole('button',{name:'已核对，保留我的输入继续',exact:true}).click();
+  await edit.getByRole('button',{name:'保存衣物',exact:true}).click(); await edit.waitFor({state:'hidden'});
+  assert((await api(root+'/'+itemId)).body.data.name===name+' 已核对','reviewed edit missing');
+  checks.push({name:'concurrent edit retains photo and fields until explicit review',passed:true});
+  await page.getByLabel('搜索衣物',{exact:true}).fill('');
+  for(const viewport of [{name:'desktop',width:1440,height:1000},{name:'mobile',width:390,height:844},{name:'small-mobile',width:320,height:740},{name:'tablet-portrait',width:834,height:1194},{name:'tablet-landscape',width:1194,height:834}]) {
+    await page.setViewportSize(viewport);
+    if(viewport.name.startsWith('tablet')&&await page.getByRole('button',{name:'平板大字',exact:true}).count()) await page.getByRole('button',{name:'平板大字',exact:true}).click();
+    if(!viewport.name.startsWith('tablet')&&await page.getByRole('button',{name:'标准模式',exact:true}).count()) await page.getByRole('button',{name:'标准模式',exact:true}).click();
+    await library(); await page.locator('article').first().waitFor();
+    await layout(viewport.name+'/library');
+    for(const image of await page.locator('article img').all()) {await image.scrollIntoViewIfNeeded(); await image.evaluate(i=>i.decode());}
+    await page.evaluate(()=>scrollTo(0,0)); await page.screenshot({path:'output/playwright/wardrobe-'+viewport.name+'-library.png',fullPage:true});
+    await page.getByRole('button',{name:'添加衣物',exact:true}).click();
+    await page.getByRole('dialog',{name:'添一件衣物',exact:true}).waitFor();
+    await layout(viewport.name+'/editor'); await page.screenshot({path:'output/playwright/wardrobe-'+viewport.name+'-editor.png',fullPage:true});
+    await page.getByRole('button',{name:'关闭衣物编辑',exact:true}).click();
+    await outfits(); await page.getByRole('heading',{name:'出门前，搭一套',exact:true}).waitFor();
+    await layout(viewport.name+'/outfits'); await page.screenshot({path:'output/playwright/wardrobe-'+viewport.name+'-outfits.png',fullPage:true});
+  }
+  assert(errors.length===0,'browser errors '+JSON.stringify(errors));
+  await page.evaluate(result=>{window.__wardrobeEvidence=result;},{checks,errors,syntheticFixtures:true,built:true});
+  return {checks,errors,syntheticFixtures:true,built:true};
+}

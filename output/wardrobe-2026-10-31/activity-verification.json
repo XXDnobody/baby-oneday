@@ -1,0 +1,23 @@
+{
+  "verifiedAt": "2026-10-31T14:15:04.642Z",
+  "checks": [
+    {
+      "name": "planned activity time/scene and stroller/active/indoor behavior",
+      "passed": true
+    },
+    {
+      "name": "invalid interval, weather worker refresh and unchanged formal plan",
+      "passed": true
+    },
+    {
+      "name": "daily weather card opens wardrobe",
+      "passed": true
+    },
+    {
+      "name": "photo and metadata persist after page reload",
+      "passed": true
+    }
+  ],
+  "built": true,
+  "syntheticFixtures": true
+}

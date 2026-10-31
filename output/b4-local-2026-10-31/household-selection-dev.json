@@ -1,0 +1,58 @@
+{
+  "origin": "http://127.0.0.1:3001",
+  "passed": false,
+  "trace": [
+    {
+      "event": "navigation",
+      "path": "/",
+      "at": 1793430719764
+    },
+    {
+      "event": "navigation",
+      "path": "/",
+      "at": 1793430720270
+    },
+    {
+      "event": "console",
+      "text": "[Fast Refresh] rebuilding",
+      "at": 1793430720780
+    },
+    {
+      "event": "console",
+      "text": "[Fast Refresh] done in 264ms",
+      "at": 1793430721044
+    },
+    {
+      "event": "selected",
+      "selected": "6bbfa07f-b3a2-41b3-ba30-4122428726f9",
+      "target": "6bbfa07f-b3a2-41b3-ba30-4122428726f9",
+      "at": 1793430721679
+    },
+    {
+      "event": "console",
+      "text": "[Fast Refresh] rebuilding",
+      "at": 1793430721875
+    },
+    {
+      "event": "console",
+      "text": "[Fast Refresh] done in 317ms",
+      "at": 1793430722191
+    },
+    {
+      "event": "navigation",
+      "path": "/",
+      "at": 1793430722573
+    },
+    {
+      "event": "navigation",
+      "path": "/",
+      "at": 1793430723317
+    },
+    {
+      "event": "reverted",
+      "selected": "22882b7a-09fa-4d9c-858c-dac888616397",
+      "target": "6bbfa07f-b3a2-41b3-ba30-4122428726f9",
+      "at": 1793430723379
+    }
+  ]
+}

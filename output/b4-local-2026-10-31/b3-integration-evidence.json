@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-31T07:19:50.949Z",
+  "database": "isolated PostgreSQL 5433",
+  "weather": "deterministic loopback HTTP fixture; not real QWeather",
+  "ai": "deterministic loopback HTTP fixture; not a real model",
+  "originalDraftsEnabled": 0,
+  "restart": "worker killed during HTTP request; lease expired under controlled test time; second OS process recovered",
+  "fixtureCalls": {
+    "weather": 34,
+    "model": 51
+  },
+  "realServicesVerified": false,
+  "browserFixturesPrepared": 3
+}

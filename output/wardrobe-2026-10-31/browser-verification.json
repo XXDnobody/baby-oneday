@@ -1,0 +1,129 @@
+{
+  "verifiedAt": "2026-10-31T14:15:04.640Z",
+  "checks": [
+    {
+      "name": "search and status filter",
+      "passed": true
+    },
+    {
+      "name": "album upload, camera input, offline photo preservation, committed-response-loss retry exactly once",
+      "passed": true
+    },
+    {
+      "name": "laundry, ready, archive and restore are reversible",
+      "passed": true
+    },
+    {
+      "name": "concurrent edit retains photo and fields until explicit review",
+      "passed": true
+    },
+    {
+      "name": "desktop/library",
+      "width": 1440,
+      "scroll": 1440,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/editor",
+      "width": 1440,
+      "scroll": 1440,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/outfits",
+      "width": 1440,
+      "scroll": 1440,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/library",
+      "width": 390,
+      "scroll": 390,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/editor",
+      "width": 390,
+      "scroll": 390,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/outfits",
+      "width": 390,
+      "scroll": 390,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "small-mobile/library",
+      "width": 320,
+      "scroll": 320,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "small-mobile/editor",
+      "width": 320,
+      "scroll": 320,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "small-mobile/outfits",
+      "width": 320,
+      "scroll": 320,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/library",
+      "width": 834,
+      "scroll": 834,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/editor",
+      "width": 834,
+      "scroll": 834,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/outfits",
+      "width": 834,
+      "scroll": 834,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/library",
+      "width": 1194,
+      "scroll": 1194,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/editor",
+      "width": 1194,
+      "scroll": 1194,
+      "smallButtons": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/outfits",
+      "width": 1194,
+      "scroll": 1194,
+      "smallButtons": [],
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "syntheticFixtures": true,
+  "built": true
+}

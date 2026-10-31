@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-31T09:58:59.585Z",
+  "provider": "qweather",
+  "authentication": "Ed25519 JWT",
+  "weatherConfigured": true,
+  "dailyRequestLimit": 100,
+  "liveProbe": [
+    {
+      "product": "current",
+      "httpStatus": 200,
+      "points": 1
+    },
+    {
+      "product": "hourly",
+      "httpStatus": 200,
+      "points": 72
+    }
+  ],
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "testsPassed": 75
+  },
+  "location": {
+    "deviceLocationImplemented": true,
+    "liveDevicePermissionTested": false,
+    "cityReferencePoints": 322,
+    "citySearchUiVerified": true,
+    "automaticCityCoordinatesUiVerified": true,
+    "manualCoordinatesCollapsed": true,
+    "familyLocationPendingUserSave": false,
+    "userSavedLocationObserved": true,
+    "familyWeatherVerification": "passed"
+  },
+  "screenshot": "output/weather-connected.jpg",
+  "hourlyParser": {
+    "rootCause": "Provider minute-precision timestamp was rejected by second-precision ISO datetime validation",
+    "fixed": true,
+    "fullPublic72HourReplayPassed": true,
+    "validAndInvalidTimestampRegressionPassed": true
+  },
+  "familyWeather": {
+    "products": [
+      {
+        "product": "current",
+        "state": "available",
+        "provider": "qweather",
+        "testService": false,
+        "points": 1,
+        "fetchedAt": "2026-10-31 09:56:55.819+00"
+      },
+      {
+        "product": "hourly",
+        "state": "available",
+        "provider": "qweather",
+        "testService": false,
+        "points": 72,
+        "fetchedAt": "2026-10-31 09:56:55.897+00"
+      }
+    ],
+    "authorizedRefreshRequests": 2,
+    "selectedDate": "2026-11-01",
+    "startTime": "09:00",
+    "endTime": "10:00",
+    "currentTemperature": 20,
+    "forecastTemperature": 19.3,
+    "outfitVisible": true,
+    "jobState": "succeeded",
+    "persistedDataReloadVerified": true
+  },
+  "realWeatherVerified": true
+}

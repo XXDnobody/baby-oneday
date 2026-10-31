@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-31T14:06:16.586Z",
+  "discussion": {
+    "id": "cc60bb04-37ae-4096-a0bc-334ec27a765c",
+    "householdId": "6859e862-74ad-4fb9-9e32-2aca959048b0",
+    "revision": 5
+  },
+  "sourceProposal": {
+    "id": "b4cf3267-023a-4826-8ed6-580cbc60fba4",
+    "turn": 5,
+    "state": "pending",
+    "changes": 42,
+    "uniqueRecipes": 20
+  },
+  "formal": {
+    "daily_plans": {
+      "count": 1,
+      "digest": "30779ceb67d224cbca8c8fb2cc4035f7fb96f3aeada77a42323d6db22249afda"
+    },
+    "plan_items": {
+      "count": 0,
+      "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "plan_item_versions": {
+      "count": 0,
+      "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "household_events": {
+      "count": 17,
+      "digest": "1a480a54f294efe1bb3923e0756c39aa7e02a8ea061ff1726fab23c8d1f55399"
+    },
+    "content_items": {
+      "count": 11,
+      "digest": "32ffeeaf8c81bd9b250ae80f0596a1d0d4bc0fddad4b8c37601aa309e1d88ec0"
+    },
+    "content_versions": {
+      "count": 11,
+      "digest": "36c698c4ad787b7fb7ee7308ef78caaf29efa74197bfc2cf34185e67631ed456"
+    }
+  },
+  "usage": {
+    "calls": 10,
+    "tokens": 53836
+  }
+}

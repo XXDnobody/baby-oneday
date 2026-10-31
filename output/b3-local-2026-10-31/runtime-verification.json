@@ -1,0 +1,46 @@
+{
+  "verifiedAt": "2026-10-31T04:26:13.698Z",
+  "app": "http://127.0.0.1:3000",
+  "homeStatus": 200,
+  "unauthenticatedMeStatus": 401,
+  "environment": "local development PostgreSQL 5432",
+  "drafts": {
+    "imported": 0,
+    "enabled": 0
+  },
+  "migration": {
+    "name": "005_b3.sql",
+    "checksumMatches": true
+  },
+  "services": {
+    "weather": {
+      "ready": false,
+      "missing": [
+        "QWEATHER_API_HOST",
+        "QWEATHER_KEY_ID",
+        "QWEATHER_DEVELOPER_ID",
+        "QWEATHER_PROJECT_ID",
+        "QWEATHER_PRIVATE_KEY",
+        "WEATHER_DAILY_REQUEST_LIMIT"
+      ],
+      "testService": false
+    },
+    "ai": {
+      "ready": false,
+      "missing": [
+        "AI_PROVIDER",
+        "AI_BASE_URL",
+        "AI_API_KEY",
+        "AI_MODEL",
+        "AI_REGION",
+        "AI_DAILY_REQUEST_LIMIT",
+        "AI_DAILY_TOKEN_LIMIT"
+      ],
+      "testService": false,
+      "provider": null,
+      "model": null,
+      "region": null
+    }
+  },
+  "realServicesVerified": false
+}

@@ -1,0 +1,145 @@
+{
+  "checked_at": "2026-10-31",
+  "rechecked_at": "2026-10-31",
+  "template_pack_version": "1.1",
+  "scope": "GitHub public primary sources; file commits are last changes, not repository activity; timestamps are UTC",
+  "sources": [
+    {
+      "id": "github-spec-kit",
+      "repo": "github/spec-kit",
+      "path": "templates/spec-template.md",
+      "branch": "main",
+      "commit": "756d63212987152564ed0a52ddfd7f8e9b504e09",
+      "changed": "2026-05-12T12:07:41Z",
+      "url": "https://github.com/github/spec-kit/blob/756d63212987152564ed0a52ddfd7f8e9b504e09/templates/spec-template.md",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "jam01-srs",
+      "repo": "jam01/SRS-Template",
+      "path": "srs-template.md",
+      "branch": "master",
+      "commit": "3965e951fa5ea1c1dd1bbc7a66b7f35f7e85c006",
+      "changed": "2025-11-03T05:36:58Z",
+      "url": "https://github.com/jam01/SRS-Template/blob/3965e951fa5ea1c1dd1bbc7a66b7f35f7e85c006/srs-template.md",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "arc42",
+      "repo": "arc42/arc42-template",
+      "path": "EN/arc42-template.adoc",
+      "branch": "main",
+      "commit": "f507ad6114a6921a87f460b2ded9ad831bd4f1f8",
+      "changed": "2025-11-17T18:55:48Z",
+      "url": "https://github.com/arc42/arc42-template/blob/f507ad6114a6921a87f460b2ded9ad831bd4f1f8/EN/arc42-template.adoc",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "madr",
+      "repo": "adr/madr",
+      "path": "template/adr-template.md",
+      "branch": "develop",
+      "commit": "8135ed2e01503be852769402ec3eeb585bfe75a2",
+      "changed": "2026-04-17T07:00:55Z",
+      "url": "https://github.com/adr/madr/blob/8135ed2e01503be852769402ec3eeb585bfe75a2/template/adr-template.md",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "microsoft-promptkit",
+      "repo": "microsoft/PromptKit",
+      "path": "templates/author-validation-plan.md",
+      "branch": "main",
+      "commit": "ca0a078b125e98386727b6433edbc0fa3dcd2c97",
+      "changed": "2026-08-04T15:34:02Z",
+      "url": "https://github.com/microsoft/PromptKit/blob/ca0a078b125e98386727b6433edbc0fa3dcd2c97/templates/author-validation-plan.md",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "google-eng",
+      "repo": "google/eng-practices",
+      "path": "review/reviewer/looking-for.md",
+      "branch": "master",
+      "commit": "3e6ba5cfc8c096528173f8f31b2caf15bb78340c",
+      "changed": "2022-03-31T16:22:27Z",
+      "url": "https://github.com/google/eng-practices/blob/3e6ba5cfc8c096528173f8f31b2caf15bb78340c/review/reviewer/looking-for.md",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "openapi",
+      "repo": "OAI/OpenAPI-Specification",
+      "path": "versions/3.1.1.md",
+      "branch": "main",
+      "commit": "36dd159c230f9066fba4b6c98cfed0218f44d382",
+      "changed": "2024-10-24T16:22:27Z",
+      "url": "https://github.com/OAI/OpenAPI-Specification/blob/36dd159c230f9066fba4b6c98cfed0218f44d382/versions/3.1.1.md",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "sonic-testplan",
+      "repo": "sonic-net/sonic-mgmt",
+      "path": "docs/testplan/ACL-test-plan.md",
+      "branch": "master",
+      "commit": "8f01c7bbc2ea651e6cdabaf93659e62538f8fe98",
+      "changed": "2022-10-31T08:18:41Z",
+      "url": "https://github.com/sonic-net/sonic-mgmt/blob/8f01c7bbc2ea651e6cdabaf93659e62538f8fe98/docs/testplan/ACL-test-plan.md",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "agents-md",
+      "repo": "agentsmd/agents.md",
+      "path": "README.md",
+      "branch": "main",
+      "commit": "557da8b39c6f5b4dee2239df09a6ab97a82ff4df",
+      "changed": "2025-12-10T18:14:23Z",
+      "url": "https://github.com/agentsmd/agents.md/blob/557da8b39c6f5b4dee2239df09a6ab97a82ff4df/README.md",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "taogen-dev-spec",
+      "repo": "taogen-docs/dev-spec",
+      "path": "document-templates/TEMPLATE-D1-SRS-software-requirements-specification-STD-CN.md",
+      "branch": "master",
+      "commit": "fbfe4df1c319596dc3cdfd1d744f1e11ed139d6d",
+      "changed": "2020-12-01T02:02:17Z",
+      "url": "https://github.com/taogen-docs/dev-spec/blob/fbfe4df1c319596dc3cdfd1d744f1e11ed139d6d/document-templates/TEMPLATE-D1-SRS-software-requirements-specification-STD-CN.md",
+      "checked": "2026-10-31"
+    }
+  ],
+  "supplemental_sources": [
+    {
+      "id": "arc42-version",
+      "repo": "arc42/arc42-template",
+      "path": "EN/version.properties",
+      "branch": "main",
+      "commit": "3e0d4861ff3f55d3bdd7bb590ad9259b1758a303",
+      "changed": "2026-10-19T09:45:15Z",
+      "url": "https://github.com/arc42/arc42-template/blob/3e0d4861ff3f55d3bdd7bb590ad9259b1758a303/EN/version.properties",
+      "declared_version": "9.1-EN",
+      "declared_month": "2026-10",
+      "checked": "2026-10-31"
+    },
+    {
+      "id": "openapi-current",
+      "repo": "OAI/OpenAPI-Specification",
+      "path": "versions/3.2.1.md",
+      "branch": "main",
+      "commit": "9f6c3fa4fdd8064e47d215a97308e7b56e55679d",
+      "changed": "2026-09-10T16:49:00Z",
+      "url": "https://github.com/OAI/OpenAPI-Specification/blob/9f6c3fa4fdd8064e47d215a97308e7b56e55679d/versions/3.2.1.md",
+      "checked": "2026-10-31",
+      "latest_release": {
+        "version": "3.2.1",
+        "published_at": "2026-09-10T17:18:00Z",
+        "url": "https://github.com/OAI/OpenAPI-Specification/releases/tag/3.2.1"
+      }
+    }
+  ],
+  "solo_architecture_reference": {
+    "title": "Monolith First",
+    "author": "Martin Fowler",
+    "published": "2015-06-03",
+    "url": "https://martinfowler.com/bliki/MonolithFirst.html",
+    "checked": "2026-10-31",
+    "use": "Context for a project-specific maintenance-cost judgment, not a universal architecture rule"
+  }
+}

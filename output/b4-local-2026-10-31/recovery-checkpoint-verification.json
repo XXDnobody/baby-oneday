@@ -1,0 +1,10 @@
+{
+  "verifiedAt": "2026-10-31T07:30:27.533Z",
+  "signatureVerified": true,
+  "strictSchemaVerified": true,
+  "numericHighWatermarkVerified": true,
+  "highWatermark": "73",
+  "controlEvents": 73,
+  "bodyFree": true,
+  "testOnly": true
+}

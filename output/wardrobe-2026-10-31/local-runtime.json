@@ -1,0 +1,9 @@
+{
+  "verifiedAt": "2026-10-31T14:15:06.986Z",
+  "origin": "http://127.0.0.1:3000",
+  "home": 200,
+  "wardrobeUnauthorized": 401,
+  "photoUnauthorized": 401,
+  "wardrobeInServedClient": true,
+  "buildId": "iCeQACrBR-toa6sjFMb8B"
+}

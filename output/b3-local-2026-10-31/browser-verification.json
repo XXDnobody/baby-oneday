@@ -1,0 +1,433 @@
+{
+  "verifiedAt": "2026-10-31T04:23:11.513Z",
+  "browser": "156.0.8078.79",
+  "environment": "3001 / isolated PostgreSQL 5433 / explicit loopback fixture services",
+  "realDevices": false,
+  "realServices": false,
+  "passed": true,
+  "checks": [
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "weather",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "ai-preview",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "flow",
+      "name": "successful-response-lost-then-retried",
+      "viewport": "desktop",
+      "passed": true
+    },
+    {
+      "kind": "flow",
+      "name": "multi-day-preview-confirm-and-replay",
+      "viewport": "desktop",
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "每日安排",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "菜谱活动",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "食材偏好",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "统一日历",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "文字记录",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "我的家庭",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "回收站",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "AI 助手",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "flow",
+      "name": "template-kind-scene-controls-save",
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "desktop",
+      "screen": "family-loaded-template-controls",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "weather",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "ai-preview",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "flow",
+      "name": "multi-day-preview-confirm-and-replay",
+      "viewport": "mobile",
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "每日安排",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "菜谱活动",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "食材偏好",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "统一日历",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "文字记录",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "我的家庭",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "回收站",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "AI 助手",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "mobile",
+      "screen": "family-loaded-template-controls",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "weather",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "ai-preview",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "flow",
+      "name": "multi-day-preview-confirm-and-replay",
+      "viewport": "tablet-portrait",
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "每日安排",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "菜谱活动",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "食材偏好",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "统一日历",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "文字记录",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "我的家庭",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "回收站",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "AI 助手",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-portrait",
+      "screen": "family-loaded-template-controls",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "每日安排",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "AI 助手",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "我的家庭",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "菜谱活动",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "食材偏好",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "统一日历",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "文字记录",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "回收站",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "layout",
+      "viewport": "tablet-landscape",
+      "screen": "family-loaded-template-controls",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": 0,
+      "passed": true
+    },
+    {
+      "kind": "flow",
+      "name": "continue-supersedes-old-preview-and-admin-cannot-read-member",
+      "passed": true
+    },
+    {
+      "kind": "flow",
+      "name": "admin-settings-location-and-next-day-task",
+      "passed": true
+    },
+    {
+      "kind": "flow",
+      "name": "same-browser-identity-switch-private-cache-and-field-permissions",
+      "passed": true
+    }
+  ],
+  "pageErrors": []
+}

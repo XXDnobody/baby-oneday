@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-10-31T07:30:03.197Z",
+  "originalTables": 39,
+  "comparedTables": 38,
+  "expectedSchemaMigrationAppend": [
+    "007_recovery_controls.sql"
+  ],
+  "changedTables": [
+    "sessions"
+  ],
+  "businessChanges": [],
+  "operationalSessionChange": {
+    "beforeRows": 1,
+    "afterRows": 1,
+    "currentActive": 1,
+    "currentRevoked": 0,
+    "note": "会话逐行摘要变化，已有 Web 页面请求会更新最后活跃时间。本轮没有登录、重置或撤销开发账号；初始仅保存摘要，不能据此证明只有活跃时间变化。"
+  },
+  "originalMigrationChanges": [],
+  "businessDataUnchanged": true,
+  "allOriginalRowsUnchanged": false,
+  "originalMigrationsUnchanged": true,
+  "contents": []
+}

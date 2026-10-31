@@ -1,0 +1,570 @@
+{
+  "checkedAt": "2026-10-31T14:14:58.795Z",
+  "proposalId": "8f85eee7-58ba-47d1-9603-1ec8ef0454ef",
+  "turn": 6,
+  "state": "pending",
+  "changes": 42,
+  "meals": 28,
+  "activities": 14,
+  "datesTimeTitlesUnchanged": true,
+  "activitiesUnchanged": true,
+  "allMealsMeasured": true,
+  "formalDataUnchanged": true,
+  "formalPlansSaved": false,
+  "externalCalls": 1,
+  "tokens": 11007,
+  "days": [
+    {
+      "date": "2026-10-31",
+      "meals": 4,
+      "ingredients": [
+        {
+          "name": "番茄",
+          "amount": "40 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡蛋",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "牛肉末",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "青菜",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "软米饭",
+          "amount": "120 g",
+          "basis": "cooked",
+          "mealCount": 2
+        },
+        {
+          "name": "水",
+          "amount": "60 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "温水",
+          "amount": "75 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "西兰花",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "香蕉或梨",
+          "amount": "40 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "小馒头",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "鱼肉",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "原味酸奶",
+          "amount": "80 g",
+          "basis": "as_purchased",
+          "mealCount": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "meals": 4,
+      "ingredients": [
+        {
+          "name": "胡萝卜",
+          "amount": "30 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡蛋",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡肉末",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "蓝莓",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "南瓜",
+          "amount": "30 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "嫩豆腐",
+          "amount": "100 g",
+          "basis": "raw",
+          "mealCount": 2
+        },
+        {
+          "name": "青菜末",
+          "amount": "10 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "软米饭",
+          "amount": "60 g",
+          "basis": "cooked",
+          "mealCount": 1
+        },
+        {
+          "name": "软面条",
+          "amount": "60 g",
+          "basis": "cooked",
+          "mealCount": 1
+        },
+        {
+          "name": "水",
+          "amount": "400 ml",
+          "basis": "as_purchased",
+          "mealCount": 2
+        },
+        {
+          "name": "温水",
+          "amount": "75 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "小米",
+          "amount": "15 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "原味酸奶",
+          "amount": "80 g",
+          "basis": "as_purchased",
+          "mealCount": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "meals": 4,
+      "ingredients": [
+        {
+          "name": "胡萝卜",
+          "amount": "30 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡蛋",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡肉末",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "梨",
+          "amount": "40 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "青菜",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "软米饭",
+          "amount": "120 g",
+          "basis": "cooked",
+          "mealCount": 2
+        },
+        {
+          "name": "水",
+          "amount": "100 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "温水",
+          "amount": "75 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "小馒头",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "鱼肉",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "原味酸奶",
+          "amount": "80 g",
+          "basis": "as_purchased",
+          "mealCount": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "meals": 4,
+      "ingredients": [
+        {
+          "name": "鸡蛋",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "南瓜",
+          "amount": "30 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "嫩豆腐",
+          "amount": "100 g",
+          "basis": "raw",
+          "mealCount": 2
+        },
+        {
+          "name": "牛肉末",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "软米饭",
+          "amount": "60 g",
+          "basis": "cooked",
+          "mealCount": 1
+        },
+        {
+          "name": "软面条",
+          "amount": "60 g",
+          "basis": "cooked",
+          "mealCount": 1
+        },
+        {
+          "name": "水",
+          "amount": "350 ml",
+          "basis": "as_purchased",
+          "mealCount": 2
+        },
+        {
+          "name": "温水",
+          "amount": "75 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "西兰花",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "香蕉",
+          "amount": "40 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "小米",
+          "amount": "15 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "原味酸奶",
+          "amount": "80 g",
+          "basis": "as_purchased",
+          "mealCount": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "meals": 4,
+      "ingredients": [
+        {
+          "name": "番茄",
+          "amount": "40 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡蛋",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "蓝莓",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "牛肉末",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "青菜",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "软米饭",
+          "amount": "60 g",
+          "basis": "cooked",
+          "mealCount": 1
+        },
+        {
+          "name": "软面条",
+          "amount": "60 g",
+          "basis": "cooked",
+          "mealCount": 1
+        },
+        {
+          "name": "水",
+          "amount": "60 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "温水",
+          "amount": "75 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "西兰花",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "小馒头",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "鱼肉",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "原味酸奶",
+          "amount": "80 g",
+          "basis": "as_purchased",
+          "mealCount": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "meals": 4,
+      "ingredients": [
+        {
+          "name": "胡萝卜",
+          "amount": "30 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡蛋",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡肉末",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "梨",
+          "amount": "40 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "南瓜",
+          "amount": "30 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "嫩豆腐",
+          "amount": "100 g",
+          "basis": "raw",
+          "mealCount": 2
+        },
+        {
+          "name": "青菜末",
+          "amount": "10 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "软米饭",
+          "amount": "60 g",
+          "basis": "cooked",
+          "mealCount": 1
+        },
+        {
+          "name": "软面条",
+          "amount": "60 g",
+          "basis": "cooked",
+          "mealCount": 1
+        },
+        {
+          "name": "水",
+          "amount": "400 ml",
+          "basis": "as_purchased",
+          "mealCount": 2
+        },
+        {
+          "name": "温水",
+          "amount": "75 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "小米",
+          "amount": "15 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "原味酸奶",
+          "amount": "80 g",
+          "basis": "as_purchased",
+          "mealCount": 1
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "meals": 4,
+      "ingredients": [
+        {
+          "name": "胡萝卜",
+          "amount": "30 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡蛋",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "鸡肉末",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "青菜",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "软米饭",
+          "amount": "120 g",
+          "basis": "cooked",
+          "mealCount": 2
+        },
+        {
+          "name": "水",
+          "amount": "100 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "温水",
+          "amount": "75 ml",
+          "basis": "as_purchased",
+          "mealCount": 1
+        },
+        {
+          "name": "香蕉",
+          "amount": "40 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "小馒头",
+          "amount": "1 个",
+          "basis": "count",
+          "mealCount": 1
+        },
+        {
+          "name": "鱼肉",
+          "amount": "20 g",
+          "basis": "raw",
+          "mealCount": 1
+        },
+        {
+          "name": "原味酸奶",
+          "amount": "80 g",
+          "basis": "as_purchased",
+          "mealCount": 1
+        }
+      ]
+    }
+  ]
+}

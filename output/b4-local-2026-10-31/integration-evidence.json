@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-10-31T14:07:14.371Z",
+  "environment": "5433 / actual PostgreSQL + explicitly labelled loopback HTTP services",
+  "realServices": false,
+  "realFamilyData": false,
+  "cases": [
+    "password change and concurrent devices",
+    "content stop/version/food-profile/preference across plan-record-calendar-print-AI",
+    "preference expiry and protected automatic gaps",
+    "weather expiry",
+    "membership revoked during model request",
+    "same-client identity and household switching",
+    "delete/restore with AI protection and original author"
+  ]
+}

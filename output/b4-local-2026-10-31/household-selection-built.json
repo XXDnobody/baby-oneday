@@ -1,0 +1,22 @@
+{
+  "origin": "http://127.0.0.1:3001",
+  "passed": true,
+  "trace": [
+    {
+      "event": "navigation",
+      "path": "/",
+      "at": 1793431272749
+    },
+    {
+      "event": "navigation",
+      "path": "/",
+      "at": 1793431272816
+    },
+    {
+      "event": "selected",
+      "selected": "3190cdae-f223-49a1-ac67-794d28491c5c",
+      "target": "3190cdae-f223-49a1-ac67-794d28491c5c",
+      "at": 1793431272896
+    }
+  ]
+}

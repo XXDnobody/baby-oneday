@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-31T13:09:05.364Z",
+  "aiPolicyVersion": "2026-10-31-generated-suggestions-v1",
+  "discussion": {
+    "id": "cc60bb04-37ae-4096-a0bc-334ec27a765c",
+    "householdId": "6859e862-74ad-4fb9-9e32-2aca959048b0",
+    "from": "2026-10-31",
+    "to": "2026-11-06",
+    "revision": 3
+  },
+  "formalDigest": "40bad15302f7a3f4878491d859be5fcc"
+}

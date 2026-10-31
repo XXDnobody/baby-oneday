@@ -13,4 +13,6 @@ blob-report/
 .DS_Store
 *.log
 !output/b2-local-2026-10-31/check.log
+!output/b3-local-2026-10-31/check.log
+!output/b4-local-2026-10-31/check.log
 output/playwright/local-*/

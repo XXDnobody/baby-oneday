@@ -9,6 +9,8 @@ import { query } from "./db";
 import { ensure } from "./errors";
 import { contentVersion, eligibility, readPantry, selection } from "./content";
 import { shoppingNeeds } from "../shared/shopping";
+import { formatFoodRestrictions } from "../shared/food-restrictions";
+import { enqueueJob } from "./job-store";
 
 export interface Access { id: string; role: Role; revision: number; setupComplete: boolean; timezone: string }
 export function localDate(timezone = "Asia/Shanghai") {
@@ -26,7 +28,7 @@ export async function withHousehold<T>(raw: string | undefined, householdId: str
 }
 export function admin(access: Access) { ensure(access.role === "admin", "FORBIDDEN", "这项设置需要家庭管理员修改。", 403); }
 export function expected(actual: number, wanted: number) { ensure(actual === wanted, "REVISION_CONFLICT", "家人已更新此内容。你的输入仍保留，请核对最新版本后再保存。", 409); }
-function canonical(value: unknown): string {
+export function canonical(value: unknown): string {
   if (Array.isArray(value)) return "[" + value.map(canonical).join(",") + "]";
   if (value !== null && typeof value === "object") return "{" + Object.entries(value).sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => JSON.stringify(k) + ":" + canonical(v)).join(",") + "}";
   return JSON.stringify(value) ?? "null";
@@ -71,7 +73,11 @@ async function readMembers(db: PoolClient, householdId: string) {
   return (await db.query<Member>('SELECT m.id,m.user_id AS "userId",u.display_name AS "displayName",m.role,m.revision FROM memberships m JOIN users u ON u.id=m.user_id WHERE m.household_id=$1 AND m.revoked_at IS NULL ORDER BY m.created_at,m.id', [householdId])).rows;
 }
 export async function readChild(db: PoolClient, householdId: string) {
-  return (await db.query<Child>('SELECT id,name,birth_date::text AS "birthDate",age_months AS "ageMonths",age_as_of::text AS "ageAsOf",food_status AS "foodStatus",food_restrictions AS "foodRestrictions",revision FROM children WHERE household_id=$1', [householdId])).rows[0] ?? null;
+  const child = (await db.query<Child>('SELECT id,name,birth_date::text AS "birthDate",age_months AS "ageMonths",age_as_of::text AS "ageAsOf",food_status AS "foodStatus",food_restrictions AS "foodRestrictions",food_restriction_items AS "foodRestrictionItems",revision FROM children WHERE household_id=$1', [householdId])).rows[0] ?? null;
+  if (child?.foodStatus === "restricted" && !child.foodRestrictionItems.length && child.foodRestrictions) {
+    child.foodRestrictionItems = [{ kind: "unspecified", food: child.foodRestrictions, note: "" }];
+  }
+  return child;
 }
 export async function getHousehold(raw: string | undefined, householdId: string): Promise<Household> {
   return withHousehold(raw, householdId, async (db, _actor, access) => {
@@ -82,7 +88,7 @@ export async function getHousehold(raw: string | undefined, householdId: string)
 function validateChild(input: z.infer<typeof setupInput>["child"], timezone: string) {
   ensure(input.birthDate || input.ageMonths !== null, "INVALID_INPUT", "请填写宝宝生日或当前月龄。");
   ensure(!input.birthDate || input.birthDate <= localDate(timezone), "INVALID_INPUT", "宝宝生日不能晚于今天。");
-  ensure(input.foodStatus !== "restricted" || input.foodRestrictions.length > 0, "INVALID_INPUT", "请填写已确认的食物限制。");
+  ensure(input.foodStatus !== "restricted" || (input.foodRestrictionItems === undefined ? input.foodRestrictions.length > 0 : input.foodRestrictionItems.length > 0), "INVALID_INPUT", "请至少添加一项食物过敏或忌口。", 422);
 }
 export async function saveSetup(raw: string | undefined, householdId: string, input: z.infer<typeof setupInput>, editing = false) {
   return withHousehold(raw, householdId, async (db, _actor, access) => {
@@ -91,10 +97,13 @@ export async function saveSetup(raw: string | undefined, householdId: string, in
     ensure(editing || !access.setupComplete, "SETUP_COMPLETE", "初始化已完成，请从宝宝资料修改。", 409);
     validateChild(input.child, access.timezone);
     const c = input.child;
-    await db.query("INSERT INTO children(household_id,name,birth_date,age_months,age_as_of,food_status,food_restrictions) VALUES ($1,$2,$3,$4,$5,$6,$7) ON CONFLICT(household_id) DO UPDATE SET name=excluded.name,birth_date=excluded.birth_date,age_months=excluded.age_months,age_as_of=excluded.age_as_of,food_status=excluded.food_status,food_restrictions=excluded.food_restrictions,revision=children.revision+1",
-      [householdId, c.name, c.birthDate, c.birthDate ? null : c.ageMonths, localDate(access.timezone), c.foodStatus, c.foodStatus === "restricted" ? c.foodRestrictions : ""]);
+    const items = c.foodStatus === "restricted" ? c.foodRestrictionItems ?? [] : [];
+    const restrictions = c.foodStatus !== "restricted" ? "" : c.foodRestrictionItems === undefined ? c.foodRestrictions : formatFoodRestrictions(items);
+    await db.query("INSERT INTO children(household_id,name,birth_date,age_months,age_as_of,food_status,food_restrictions,food_restriction_items) VALUES ($1,$2,$3,$4,$5,$6,$7,$8) ON CONFLICT(household_id) DO UPDATE SET name=excluded.name,birth_date=excluded.birth_date,age_months=excluded.age_months,age_as_of=excluded.age_as_of,food_status=excluded.food_status,food_restrictions=excluded.food_restrictions,food_restriction_items=excluded.food_restriction_items,revision=children.revision+1",
+      [householdId, c.name, c.birthDate, c.birthDate ? null : c.ageMonths, localDate(access.timezone), c.foodStatus, restrictions, JSON.stringify(items)]);
     await db.query("UPDATE households SET setup_complete=true WHERE id=$1", [householdId]);
     await bumpHousehold(db, householdId);
+    if (!editing) await enqueueJob(db, householdId, "automatic", householdId + ":automatic:" + localDate(access.timezone), { date: localDate(access.timezone), reason: "initial" });
     return { saved: true, revision: access.revision + 1 };
   }, true);
 }
@@ -180,7 +189,7 @@ export async function changeMember(raw: string | undefined, householdId: string,
   }, true);
 }
 
-export const itemSelect = 'SELECT i.id,i.kind,i.title,i.time,i.notes,i.scene,i.status,i.content_id AS "contentId",i.content_version AS "contentVersion",i.content_snapshot AS "contentSnapshot",i.caregiver_id AS "caregiverId",i.caregiver_name AS "caregiverName",i.revision,u.display_name AS "updatedBy",i.updated_at::text AS "updatedAt" FROM plan_items i JOIN users u ON u.id=i.updated_by ';
+export const itemSelect = 'SELECT i.id,i.source,i.protected,i.kind,i.title,i.time,i.notes,i.scene,i.status,i.content_id AS "contentId",i.content_version AS "contentVersion",i.content_snapshot AS "contentSnapshot",i.ai_suggestion AS "aiSuggestion",i.caregiver_id AS "caregiverId",i.caregiver_name AS "caregiverName",i.revision,u.display_name AS "updatedBy",i.updated_at::text AS "updatedAt" FROM plan_items i JOIN users u ON u.id=i.updated_by ';
 export async function getDay(raw: string | undefined, householdId: string, date: string): Promise<Day> {
   return withHousehold(raw, householdId, async (db, _actor, access) => {
     const rows = await db.query<{ id: string; date: string; revision: number }>('SELECT id,plan_date::text AS date,revision FROM daily_plans WHERE household_id=$1 AND plan_date=$2 FOR SHARE', [householdId, date]);
@@ -203,7 +212,7 @@ export async function createPlan(raw: string | undefined, householdId: string, d
     return result.rows[0];
   }));
 }
-async function caregiver(db: PoolClient, householdId: string, id: string | null) {
+export async function caregiver(db: PoolClient, householdId: string, id: string | null) {
   if (!id) return null;
   const found = await db.query<{ name: string }>("SELECT u.display_name AS name FROM memberships m JOIN users u ON u.id=m.user_id WHERE m.id=$1 AND m.household_id=$2 AND m.revoked_at IS NULL", [id, householdId]);
   ensure(found.rowCount, "INVALID_INPUT", "照护者必须是当前家庭成员。");
@@ -236,7 +245,7 @@ export async function editItem(raw: string | undefined, householdId: string, ite
     expected(found.rows[0].revision, input.expectedRevision);
     const caregiverName = await caregiver(db, householdId, input.caregiverId);
     const content = await selection(db, householdId, input.contentId, input.contentVersion, input.kind, candidate.rows[0].date, input.scene);
-    await db.query("UPDATE plan_items SET kind=$2,title=$3,time=$4,notes=$5,caregiver_id=$6,caregiver_name=$7,revision=revision+1,updated_by=$8,updated_at=now(),content_id=$9,content_version=$10,content_snapshot=$11,scene=$12 WHERE id=$1", [itemId, input.kind, input.title, input.time, input.notes, input.caregiverId, caregiverName, actor.id, input.contentId, input.contentVersion, content ? JSON.stringify(content) : null, input.scene]);
+    await db.query("UPDATE plan_items SET ai_suggestion=CASE WHEN kind=$2 AND title=$3 AND content_id IS NOT DISTINCT FROM $9::uuid AND content_version IS NOT DISTINCT FROM $10::integer THEN ai_suggestion ELSE NULL END,kind=$2,title=$3,time=$4,notes=$5,caregiver_id=$6,caregiver_name=$7,revision=revision+1,updated_by=$8,updated_at=now(),content_id=$9,content_version=$10,content_snapshot=$11,scene=$12,source='manual',protected=true WHERE id=$1", [itemId, input.kind, input.title, input.time, input.notes, input.caregiverId, caregiverName, actor.id, input.contentId, input.contentVersion, content ? JSON.stringify(content) : null, input.scene]);
     await db.query("UPDATE daily_plans SET revision=revision+1,updated_at=now() WHERE id=$1", [candidate.rows[0].plan_id]);
     return version(db, householdId, itemId, actor.id);
   }, async () => { await activeItem(db, householdId, itemId); }));

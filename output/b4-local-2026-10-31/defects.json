@@ -1,0 +1,71 @@
+{
+  "verifiedAt": "2026-10-31T07:31:54.539Z",
+  "resolved": [
+    {
+      "id": "B4-D01",
+      "problem": "当前密码修改只有设计接口",
+      "change": "本人表单、当前密码验证、限频、凭证版本锁及全部会话／重置票据撤销",
+      "status": "fixed_verified",
+      "evidence": [
+        "tests/b4.test.ts",
+        "browser-verification.json"
+      ]
+    },
+    {
+      "id": "B4-D02",
+      "problem": "离线提示缺少最后成功同步时间",
+      "change": "按用户／家庭／日期绑定同步时间，离线立即显示，重连复查权限与版本并保留输入",
+      "status": "fixed_verified",
+      "evidence": [
+        "browser-verification.json"
+      ]
+    },
+    {
+      "id": "B4-D03",
+      "problem": "平板横屏家庭作息面板固定五列导致 3px 溢出",
+      "change": "按面板可用宽度换行；1194px 下内容宽度由1197变1194",
+      "status": "fixed_verified",
+      "evidence": [
+        "family-layout-before-fix.json",
+        "family-layout-verification.json"
+      ]
+    },
+    {
+      "id": "B4-D04",
+      "problem": "开发模式首次编译邀请路由触发热更新／整页导航并重建家庭选择",
+      "change": "固定复现并以同数据已构建模式对照；本机试用及最终浏览器使用按当前 Next 文档启动的 standalone 构建",
+      "status": "resolved_for_trial_runtime",
+      "evidence": [
+        "household-selection-dev.json",
+        "household-selection-built.json"
+      ]
+    },
+    {
+      "id": "B4-D05",
+      "problem": "原恢复核对没有执行备份点后删除／恢复／撤销控制",
+      "change": "无正文同事务流水、签名完整控制检查点、来源／迁移校验及隔离副本核对，缺失版本继续隔离",
+      "status": "local_fixed_verified_production_pending",
+      "evidence": [
+        "recovery-drill.json",
+        "recovery-checkpoint-verification.json"
+      ]
+    },
+    {
+      "id": "B4-D06",
+      "problem": "流水编号转文本后 ORDER BY 别名导致高水位 9 而非 10",
+      "change": "按数据库数值列排序，回归断言覆盖超过9，最终导出验证数值最大值",
+      "status": "fixed_verified",
+      "evidence": [
+        "tests/recovery.test.ts",
+        "recovery-checkpoint-verification.json"
+      ]
+    }
+  ],
+  "open": [
+    {
+      "id": "AC-42",
+      "status": "blocking_formal_acceptance",
+      "remaining": "容量告警状态、阈值和处理入口尚未实现／验证；真实容量和运维指标待落实"
+    }
+  ]
+}

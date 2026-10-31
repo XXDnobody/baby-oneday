@@ -8,6 +8,9 @@ import { readConfig } from "./config";
 import { equals, protectedDigest, token } from "./crypto";
 import { AppError, ensure } from "./errors";
 import { b2Route } from "./b2-http";
+import { b3Route } from "./b3-http";
+import * as wardrobe from "./wardrobe";
+import { garmentCreate, garmentEdit, outfitInput, wardrobeLimits } from "../shared/wardrobe";
 
 export const privateHeaders = { "Cache-Control": "private, no-store", Vary: "Cookie" };
 const sessionCookie = () => readConfig().APP_ENV === "production" ? "__Host-bp-session" : "bp_session";
@@ -21,7 +24,7 @@ function csrf(req: NextRequest) {
   const [value, signature] = header.split(".");
   ensure(value && signature && equals(header, stored) && equals(signature, protectedDigest(readConfig().AUTH_SECRET, value)), "CSRF_INVALID", "页面验证已失效，请刷新后重试。", 403);
 }
-async function body(req: NextRequest) {
+async function body(req: NextRequest, limit = 131072) {
   ensure(req.headers.get("content-type")?.split(";")[0] === "application/json", "INVALID_INPUT", "请使用 JSON 提交。", 415);
   const reader = req.body?.getReader();
   ensure(reader, "INVALID_INPUT", "缺少请求内容。");
@@ -31,7 +34,7 @@ async function body(req: NextRequest) {
     const part = await reader.read();
     if (part.done) break;
     size += part.value.length;
-    if (size > 131072) { await reader.cancel(); throw new AppError("INVALID_INPUT", "提交内容过长。", 413); }
+    if (size > limit) { await reader.cancel(); throw new AppError("INVALID_INPUT", "提交内容过长。", 413); }
     chunks.push(part.value);
   }
   try { return JSON.parse(Buffer.concat(chunks).toString("utf8")) as unknown; }
@@ -77,6 +80,11 @@ export async function handle(req: NextRequest, path: string[]) {
     }
     if (url === "auth/recovery/request" && method === "POST") return respond(await auth.requestRecovery(z.object({ email: c.email }).strict().parse(await body(req)).email));
     if (url === "auth/recovery/reset" && method === "POST") return respond(await auth.resetPassword(c.resetInput.parse(await body(req))));
+    if (url === "auth/password" && method === "PUT") {
+      const response = respond(await auth.changePassword(raw, c.changePasswordInput.parse(await body(req))));
+      response.cookies.set(sessionCookie(), "", { ...cookieOptions(), maxAge: 0 });
+      return response;
+    }
     if (url === "me" && method === "GET") return respond(await auth.me(raw));
     if (url === "auth/sessions" && method === "GET") return respond(await auth.withUser(raw, async (db, actor) => (await db.query(
       'SELECT id,device,(id=$2) AS current,last_seen_at::text AS "lastSeenAt",LEAST(expires_at,absolute_expires_at)::text AS "expiresAt",remembered FROM sessions WHERE user_id=$1 AND revoked_at IS NULL AND expires_at>now() AND absolute_expires_at>now() ORDER BY last_seen_at DESC LIMIT 50', [actor.id, actor.sessionId],
@@ -95,6 +103,19 @@ export async function handle(req: NextRequest, path: string[]) {
     if (path[0] === "households" && path[1]) {
       const householdId = c.id.parse(path[1]);
       const resource = path[2];
+      if (resource === "wardrobe") {
+        if (path.length === 3 && method === "GET") return respond(await wardrobe.wardrobe(raw, householdId));
+        if (path.length === 3 && method === "POST") return respond(await wardrobe.saveGarment(raw, householdId, garmentCreate.parse(await body(req, wardrobeLimits.bodyBytes)), key), 201);
+        if (path.length === 4 && path[3] === "outfits" && method === "GET") return respond(await wardrobe.outfits(raw, householdId, outfitInput.parse(Object.fromEntries(req.nextUrl.searchParams))));
+        if (path.length === 4 && method === "GET") return respond(await wardrobe.getGarment(raw, householdId, c.id.parse(path[3])));
+        if (path.length === 4 && method === "PATCH") return respond(await wardrobe.saveGarment(raw, householdId, garmentEdit.parse(await body(req, wardrobeLimits.bodyBytes)), key, c.id.parse(path[3])));
+        if (path.length === 5 && path[4] === "photo" && method === "GET") {
+          const photo = await wardrobe.garmentPhoto(raw, householdId, c.id.parse(path[3]));
+          return new NextResponse(new Uint8Array(photo), { headers: { ...privateHeaders, "Content-Type": "image/jpeg", "Content-Length": String(photo.length), "Content-Disposition": 'inline; filename="garment.jpg"', "X-Content-Type-Options": "nosniff", "Content-Security-Policy": "default-src 'none'; sandbox" } });
+        }
+      }
+      const b3 = await b3Route(req, raw, householdId, path.slice(2), key, () => body(req));
+      if (b3) return respond(b3.data, b3.status ?? 200);
       const b2 = await b2Route(req, raw, householdId, path.slice(2), key, () => body(req));
       if (b2) return respond(b2.data, b2.status ?? 200);
       if (path.length === 2 && method === "GET") return respond(await h.getHousehold(raw, householdId));

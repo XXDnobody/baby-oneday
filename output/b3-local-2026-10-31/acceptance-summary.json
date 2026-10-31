@@ -1,0 +1,150 @@
+{
+  "verifiedAt": "2026-10-31T04:36:10.885Z",
+  "scope": "S1 frozen 55 requirements; B3 local engineering subset",
+  "tests": {
+    "original": 44,
+    "b3": 54,
+    "total": 98,
+    "passed": true
+  },
+  "browser": {
+    "mainChecks": 50,
+    "layout": 42,
+    "flows": 8,
+    "passed": true,
+    "extraAttributionViewports": 2
+  },
+  "restore": {
+    "tables": 38,
+    "matched": true
+  },
+  "services": {
+    "realWeather": "not_configured",
+    "realModel": "not_configured",
+    "fixtureServices": "test-only loopback"
+  },
+  "content": {
+    "recipesAwaitingReview": 11,
+    "activityDraftsAwaitingReview": 2,
+    "autoEnabled": false
+  },
+  "pending": [
+    "real providers and quotas/cost constraints",
+    "family content verification",
+    "physical phone/tablet",
+    "paper printing",
+    "production email/deployment/backup policy",
+    "full S1 acceptance",
+    "seven-day family trial"
+  ],
+  "items": [
+    {
+      "id": "AC-01",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "首次初始化持久化准备今天，夜间按家庭时区与工作日／周末模板准备次日，重启补偿今天；本地逻辑通过，真实家庭模板及连续使用待验。"
+    },
+    {
+      "id": "AC-02",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "自动计划按实际库存优先项和有效偏好排序；沿用已启用且适用的内容，采购需求仍由正式计划派生；真实家庭食材和内容核对待办。"
+    },
+    {
+      "id": "AC-10",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "显式 HTTP 测试服务覆盖天气缺失／过时／超时／限频和模型失败，既有计划仍可读；真实服务可用性尚未验证。"
+    },
+    {
+      "id": "AC-15",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "日期范围明确且最多 31 天；仅本人讨论、只读查询、多日真实前后值预览和继续讨论均通过；真实模型输出质量待验。"
+    },
+    {
+      "id": "AC-16",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "仅最终轮可确认；整组业务写入、历史、审计、事件及执行事实同一事务；手机／平板／桌面浏览器读取正式结果；真实模型服务仍待接入。"
+    },
+    {
+      "id": "AC-17",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "库存、模板、内容、宝宝资料、成员或天气依赖改变均拒绝旧方案，要求重新讨论；天气刷新后的新预览使用最新依据，不静默覆盖。"
+    },
+    {
+      "id": "AC-24",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "跨家庭及本人隔离通过：同家庭管理员、其他成员均不能读取他人会话、消息、草稿、任务结果或确认方案；B1/B2 既有资源回归继续通过。"
+    },
+    {
+      "id": "AC-26",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "按管理员确认的地点及所选活动时段取当前／小时两类天气；新地点拒绝旧结果，缺完整预报覆盖或过时均降级；真实地点与和风账号待配置。"
+    },
+    {
+      "id": "AC-35",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "自动与 AI 选择继续使用具体启用版本、适用性与当前食物资料修订；13 张未核对草稿不启用，人工编辑及历史版本仍保护。"
+    },
+    {
+      "id": "AC-36",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "家庭＋日期永久业务去重，持久化保护标记覆盖人工、留空、取消、删除、AI 已确认及原时段；并发人工保存后任务重读保护，重试不增加副本。"
+    },
+    {
+      "id": "AC-37",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "新任务按目标日期的模板及偏好计算；已有计划不因模板、偏好或天气更新重写；AI 批量调整须新预览，最終偏好与内容组合校验通过。"
+    },
+    {
+      "id": "AC-38",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "未启用／不适用、食物限制未知或户外天气缺失／有风雨时明确待安排和原因；不编造核对事实。真实内容覆盖一周仍待家庭核对。"
+    },
+    {
+      "id": "AC-40",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "B1/B2 幂等回归、任务业务去重及 AI 执行事实唯一通过；真实浏览器在服务器提交后丢弃响应再重试，换键确认也只有一份正式结果。"
+    },
+    {
+      "id": "AC-43",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "B2 删除／取消／恢复回归通过；新的 AI 上下文不含删除计划／记录正文、到期偏好及失效内容，不混入他人的私有文本。"
+    },
+    {
+      "id": "AC-50",
+      "status": "partial",
+      "localLogicStatus": "passed",
+      "actualResult": "B3 独立恢复 38 表，原数据逐行摘要一致且临时恢复库已移除；包含 AI 私有数据及任务。生产备份指标、恢复点后删除与撤销流水及完整 B4 演练仍待验。"
+    },
+    {
+      "id": "SPEC-02",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "管理员不能读取或确认其他成员私有内容；只发布正式资源事件，AI 消息和草稿不进入家庭 SSE；同浏览器不刷新页面切换身份验证通过。"
+    },
+    {
+      "id": "SPEC-03",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "租约、SKIP LOCKED、旧 worker 栅栏、业务去重和重启恢复通过；真实 OS worker 在模型调用中被 SIGKILL，新进程恢复；自动任务并发人工保存及失败回滚通过。"
+    },
+    {
+      "id": "SPEC-07",
+      "status": "passed",
+      "localLogicStatus": "passed",
+      "actualResult": "成员可维护食材、期限偏好和模板；关键资料、禁忌、内容启用与自动设置受管理员权限保护；模型越权字段／SQL／成员／账号／付费／记录删除输出全部拒绝。"
+    }
+  ]
+}

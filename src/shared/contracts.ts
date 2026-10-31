@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { foodRestrictionItems, type FoodRestrictionItem } from "./food-restrictions";
 
 export const id = z.uuid();
 export const revision = z.number().int().positive();
@@ -16,16 +17,18 @@ export const verifyInput = z.object({ challengeId: id, code: z.string().regex(/^
 export const registerInput = z.object({ emailVerificationTicket: z.string().min(30).max(200), displayName: name, password, registrationToken: z.string().min(30).max(200) }).strict();
 export const loginInput = z.object({ email, password: z.string().min(1).max(128), remember: z.boolean().default(false) }).strict();
 export const resetInput = z.object({ token: z.string().min(30).max(200), password }).strict();
+export const changePasswordInput = z.object({ currentPassword: z.string().min(1).max(128), password }).strict();
 export const householdInput = z.object({ name, city: z.string().trim().min(1).max(80), timezone: z.literal("Asia/Shanghai").default("Asia/Shanghai") }).strict();
 export const childFields = z.object({
   name, birthDate: date.nullable(), ageMonths: z.number().int().min(0).max(216).nullable(),
   foodStatus: z.enum(["unknown", "none", "restricted"]),
   foodRestrictions: z.string().trim().max(1000).default(""),
+  foodRestrictionItems: foodRestrictionItems.optional(),
 }).strict();
 export const setupInput = z.object({ child: childFields, expectedRevision: revision }).strict();
 export const templateInput = z.object({
   expectedRevision: revision,
-  slots: z.array(z.object({ label: name, time }).strict()).max(30),
+  slots: z.array(z.object({ label: name, time, kind: z.enum(["meal", "activity", "routine"]).optional(), scene: z.enum(["indoor", "outdoor", "either"]).optional() }).strict()).max(30).refine((slots) => new Set(slots.map((s) => s.time)).size === slots.length, "作息时段不能重复"),
 }).strict();
 export const itemFields = z.object({
   kind: z.enum(["meal", "activity", "routine"]),
@@ -44,6 +47,7 @@ export interface Me { user: Person; households: HouseholdSummary[] }
 export interface Child {
   id: string; name: string; birthDate: string | null; ageMonths: number | null;
   ageAsOf: string; foodStatus: "unknown" | "none" | "restricted"; foodRestrictions: string; revision: number;
+  foodRestrictionItems: FoodRestrictionItem[];
 }
 export interface Member { id: string; userId: string; displayName: string; role: Role; revision: number }
 export interface Household {
@@ -53,6 +57,8 @@ export interface Household {
 export interface PlanItem extends ItemFields {
   id: string; revision: number; caregiverName: string | null; updatedBy: string; updatedAt: string;
   status: "active" | "cancelled"; contentSnapshot: import("./b2").ContentVersion | null; needsReview?: boolean;
+  source?: "manual" | "automatic" | "ai"; protected?: boolean;
+  aiSuggestion?: import("./b3").AiSuggestion | null;
 }
 export interface DayPlan { id: string; date: string; revision: number; items: PlanItem[] }
 export interface Day { date: string; plan: DayPlan | null; householdRevision: number; shopping?: import("./b2").ShoppingNeed[] }

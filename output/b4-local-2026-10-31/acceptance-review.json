@@ -1,0 +1,902 @@
+{
+  "baseline": "S1-2026-10-30",
+  "reviewedAt": "2026-10-31T07:22:31.969Z",
+  "version": "local-b4-2026-10-31",
+  "reviewedRequirements": 55,
+  "localLogicPassed": 54,
+  "localLogicPartial": [
+    "AC-42"
+  ],
+  "fullCheckTests": 140,
+  "browserChecks": 104,
+  "realServicesPassed": 0,
+  "physicalDeviceAcceptance": false,
+  "paperPrinterAcceptance": false,
+  "productionRecoveryAcceptance": false,
+  "sevenDayTrialDays": 0,
+  "S1Complete": false,
+  "formalB4AdmissionPassed": false,
+  "trialAdmissionPassed": false,
+  "evidenceDirectory": "output/b4-local-2026-10-31",
+  "globalOutstanding": [
+    "真实天气／模型与费用条件",
+    "真实家庭资料与首批内容",
+    "外部邮件与受控真机访问",
+    "手机／平板与纸质打印",
+    "容量告警、生产外置备份和恢复指标",
+    "生产部署／回退及服务有效期",
+    "连续七天真实家庭使用"
+  ],
+  "items": [
+    {
+      "id": "AC-01",
+      "scenario": "普通工作日打开系统",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "真实家庭作息、工作日／周末和连续使用确认"
+      ]
+    },
+    {
+      "id": "AC-02",
+      "scenario": "冰箱仍有蔬菜",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "家庭实际库存、菜谱用料及采购需求核对"
+      ]
+    },
+    {
+      "id": "AC-03",
+      "scenario": "晚饭从面换成饭",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-04",
+      "scenario": "当天改为室内活动",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "实际手机／平板的一致操作及适用活动核对"
+      ]
+    },
+    {
+      "id": "AC-05",
+      "scenario": "想了解早教活动",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "实际活动内容、配图、出处与家庭认可"
+      ]
+    },
+    {
+      "id": "AC-06",
+      "scenario": "没有记录活动反馈",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-07",
+      "scenario": "奶奶在平板查看和做饭",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": [
+        "奶奶实际平板操作、可用菜谱及纸质打印"
+      ]
+    },
+    {
+      "id": "AC-08",
+      "scenario": "家庭共同提醒",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "真实家庭共同提醒及具体依据确认"
+      ]
+    },
+    {
+      "id": "AC-09",
+      "scenario": "父母同时修改同一餐",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-10",
+      "scenario": "AI 或天气暂时不可用",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "output/b4-local-2026-10-31/b3-browser-verification.json",
+        "output/b4-local-2026-10-31/service-readiness.json"
+      ],
+      "remaining": [
+        "真实天气／模型故障和实际时间状态验证"
+      ]
+    },
+    {
+      "id": "AC-11",
+      "scenario": "平板短时断网",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "真实平板断网重连与现场同步耗时"
+      ]
+    },
+    {
+      "id": "AC-12",
+      "scenario": "使用另一个家庭账号",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "实际设备及受控站点的家庭隔离"
+      ]
+    },
+    {
+      "id": "AC-13",
+      "scenario": "在平板登录与操作",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": [
+        "实际手机／平板登录、会话失效与操作"
+      ]
+    },
+    {
+      "id": "AC-14",
+      "scenario": "修改后重新打印",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "实际打印新旧纸张、日期／版本核对"
+      ]
+    },
+    {
+      "id": "AC-15",
+      "scenario": "与 AI 讨论本周菜单和活动",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "output/b4-local-2026-10-31/b3-browser-verification.json",
+        "output/b4-local-2026-10-31/service-readiness.json"
+      ],
+      "remaining": [
+        "真实模型、日期范围与输出质量验证"
+      ]
+    },
+    {
+      "id": "AC-16",
+      "scenario": "确认 AI 最终方案",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "output/b4-local-2026-10-31/b3-browser-verification.json",
+        "output/b4-local-2026-10-31/service-readiness.json"
+      ],
+      "remaining": [
+        "真实模型与家人多设备的正式结果验收"
+      ]
+    },
+    {
+      "id": "AC-17",
+      "scenario": "确认前家人修改相关安排",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "output/b4-local-2026-10-31/b3-browser-verification.json",
+        "output/b4-local-2026-10-31/service-readiness.json"
+      ],
+      "remaining": [
+        "真实服务下相关依赖变化后的重新讨论"
+      ]
+    },
+    {
+      "id": "AC-18",
+      "scenario": "从日历选择未来、今天或过去",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-19",
+      "scenario": "活动结束随手记录",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-20",
+      "scenario": "补记临时外出，同一活动多次开展",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-21",
+      "scenario": "后续更换活动或取消安排",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-22",
+      "scenario": "当天没记录，或仅写感想",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-24",
+      "scenario": "其他家庭访问记录或 AI 方案",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-25",
+      "scenario": "查看一条餐食或活动推荐的依据",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b3.test.ts",
+        "output/b4-local-2026-10-31/b3-browser-verification.json",
+        "output/b4-local-2026-10-31/service-readiness.json"
+      ],
+      "remaining": [
+        "真实出处、原文定位、家庭／天气推荐依据"
+      ]
+    },
+    {
+      "id": "AC-26",
+      "scenario": "更换天气城市、外出时间或活动方式",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "output/b4-local-2026-10-31/b3-browser-verification.json",
+        "output/b4-local-2026-10-31/service-readiness.json"
+      ],
+      "remaining": [
+        "真实天气账号、家庭地点与实际活动时段"
+      ]
+    },
+    {
+      "id": "AC-27",
+      "scenario": "内容仅经过家庭认可或出处核对",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-32",
+      "scenario": "初始化中断后继续或重复提交",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "真实家庭已有资料及初始化体验确认"
+      ]
+    },
+    {
+      "id": "AC-33",
+      "scenario": "邀请过期、撤销、已加入或并发接受",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "外部邮箱及实际邀请流程验证"
+      ]
+    },
+    {
+      "id": "AC-34",
+      "scenario": "旧食物状态或限制尚未确认",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-35",
+      "scenario": "草稿、停用内容或新版本进入选择",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-36",
+      "scenario": "夜间任务重试及主动留空",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "实际运行环境夜间任务与连续使用确认"
+      ]
+    },
+    {
+      "id": "AC-37",
+      "scenario": "修改模板或短期偏好到期",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "真实家庭模板与期限偏好确认"
+      ]
+    },
+    {
+      "id": "AC-38",
+      "scenario": "所有候选都不满足条件",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "output/b4-local-2026-10-31/b3-browser-verification.json",
+        "output/b4-local-2026-10-31/service-readiness.json"
+      ],
+      "remaining": [
+        "家庭实际内容充分性；真实服务无候选降级"
+      ]
+    },
+    {
+      "id": "AC-39",
+      "scenario": "断网期间编辑后重连",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "真实设备网络切换、未提交输入与同步耗时"
+      ]
+    },
+    {
+      "id": "AC-40",
+      "scenario": "写入成功但响应丢失",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-41",
+      "scenario": "移除成员或改变当前身份",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b2-local-2026-10-31/identity-switch-verification.json",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "真实共享设备及会话／成员撤销体验"
+      ]
+    },
+    {
+      "id": "AC-42",
+      "scenario": "自家记录达到较长保存时间或容量紧张",
+      "localLogicStatus": "partial",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "容量阈值、告警状态及处理入口尚未实现／验证；实际容量条件待落实"
+      ]
+    },
+    {
+      "id": "AC-43",
+      "scenario": "删除与取消安排、回收站可见性",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-44",
+      "scenario": "30 天内恢复计划或记录",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-45",
+      "scenario": "恢复期限已过或重复删除",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "AC-46",
+      "scenario": "未来实际记录、错误月龄依据或空记录",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "真实设备输入及家庭月龄依据确认"
+      ]
+    },
+    {
+      "id": "AC-47",
+      "scenario": "首批 11 条草稿重复导入或部分失败",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "家庭逐条核对首批草稿；开发库尚未导入，不自动启用"
+      ]
+    },
+    {
+      "id": "AC-48",
+      "scenario": "共享平板或打印多页菜谱",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": [
+        "真实平板横竖屏与 A4 黑白多页纸张"
+      ]
+    },
+    {
+      "id": "AC-49",
+      "scenario": "移除或降级最后一位管理员",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "真实家庭成员管理体验确认"
+      ]
+    },
+    {
+      "id": "AC-50",
+      "scenario": "从数据库备份恢复",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/local-development-2026-10-31/backup-verification.json",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/recovery.test.ts",
+        "output/b4-local-2026-10-31/recovery-drill.json"
+      ],
+      "remaining": [
+        "生产外置流水、容量／周期／RPO／RTO及隔离开放流程；丢失写入不可据本轮补造"
+      ]
+    },
+    {
+      "id": "SPEC-01",
+      "scenario": "奶奶可以换餐和调整活动；直接调用他人记录的修改/删除接口被拒绝。",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "scripts/verify-b4-device-flows.ts",
+        "output/b4-local-2026-10-31/device-flows.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "SPEC-02",
+      "scenario": "爸爸作为家庭管理员也无法读取妈妈的 AI 聊天、草稿或未确认方案；正式计划可读，通知不泄露草稿。",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "SPEC-03",
+      "scenario": "夜间任务重复执行、重启恢复或人工与任务同时提交，不重复创建次日计划，不覆盖人工选择。",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "实际任务运行环境及工程指标"
+      ]
+    },
+    {
+      "id": "SPEC-05",
+      "scenario": "更正保留原记录人和更正者；原记录在修改日程、更新内容版本后仍可关联当时内容。",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "SPEC-06",
+      "scenario": "保持登录、主动退出、修改密码、恢复账号和撤销成员关系分别验证；私有响应不进入跨用户共享缓存。",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json",
+        "tests/recovery.test.ts",
+        "output/b4-local-2026-10-31/recovery-drill.json"
+      ],
+      "remaining": [
+        "真实设备、外部邮箱、生产会话及账号恢复"
+      ]
+    },
+    {
+      "id": "SPEC-07",
+      "scenario": "妈妈、奶奶可改食材、偏好和模板；直接调用宝宝关键资料、禁忌、内容启用范围、自动生成设置写接口被拒绝；AI 也不能绕过此限制。",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "tests/b2.test.ts",
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": []
+    },
+    {
+      "id": "SPEC-08",
+      "scenario": "当邮箱尚未验证时，系统不创建可访问家庭的成员身份；验证码错误、过期、重放或邀请已撤销时，注册不授予家庭访问权；已有邮箱不得因邀请流程被重设密码。",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": [
+        "外部邮箱验证与实际邀请准入"
+      ]
+    },
+    {
+      "id": "SPEC-09",
+      "scenario": "当用户申请密码重置时，系统对未知邮箱与已注册邮箱采用统一回应；只有有效凭证才能修改密码，过期、已使用和并发重复提交均不能再次生效；成功后旧密码、旧会话和旧重置凭证失效。",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "外部重置邮件与真实设备会话失效"
+      ]
+    },
+    {
+      "id": "SPEC-10",
+      "scenario": "当邮件发送失败或未收到时，系统保留可重试流程并执行发送频率限制；邮箱验证码与重置凭证不能互换用途，邮件链接预览或安全扫描不得直接修改账号。",
+      "localLogicStatus": "passed",
+      "existingStatus": "partial",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log"
+      ],
+      "remaining": [
+        "外部投递、退信及未收到邮件的处理"
+      ]
+    },
+    {
+      "id": "MB-08",
+      "scenario": "家庭邀请撤销或链接过期",
+      "localLogicStatus": "passed",
+      "existingStatus": "passed",
+      "evidence": [
+        "tests/b1.test.ts",
+        "output/local-development-2026-10-31/report.md",
+        "output/b4-local-2026-10-31/check.log",
+        "tests/b4.test.ts",
+        "output/b4-local-2026-10-31/browser-verification.json"
+      ],
+      "remaining": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-31T08:12:11.046Z",
+  "probeLocation": "QWeather official public example coordinates",
+  "familyLocationChanged": false,
+  "requests": 2,
+  "products": [
+    {
+      "product": "current",
+      "httpStatus": 200,
+      "points": 1,
+      "hasAttribution": true
+    },
+    {
+      "product": "hourly",
+      "httpStatus": 200,
+      "points": 72,
+      "hasAttribution": true
+    }
+  ]
+}

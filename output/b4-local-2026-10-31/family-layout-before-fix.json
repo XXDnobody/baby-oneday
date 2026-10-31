@@ -1,0 +1,16 @@
+{
+  "width": 1194,
+  "content": 1197,
+  "overflowing": [
+    {
+      "tag": "BUTTON",
+      "class": "text-button",
+      "right": 1197,
+      "width": 22,
+      "minWidth": "auto",
+      "grid": "none",
+      "text": "移除"
+    }
+  ],
+  "passed": false
+}

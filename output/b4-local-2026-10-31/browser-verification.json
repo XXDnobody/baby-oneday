@@ -1,0 +1,695 @@
+{
+  "verifiedAt": "2026-10-31T07:21:11.091Z",
+  "browser": "156.0.8078.79",
+  "environment": "3001 / 5433 / real browser / explicit loopback fixture services",
+  "realServices": false,
+  "physicalDevices": false,
+  "paperPrinter": false,
+  "checks": [
+    {
+      "name": "UI email verification, self-set password, login and household",
+      "passed": true
+    },
+    {
+      "name": "UI verified invite revoked before registration",
+      "passed": true
+    },
+    {
+      "name": "offline draft, re-authentication, concurrent update, explicit conflict review and retry",
+      "passed": true
+    },
+    {
+      "name": "record response lost after commit and retried once; original author retained",
+      "passed": true
+    },
+    {
+      "name": "future, today and actual record remain distinct",
+      "passed": true
+    },
+    {
+      "name": "calendar, record snapshot, delete, restore preview and original item recovery",
+      "passed": true
+    },
+    {
+      "name": "browser print media, date and version; physical paper remains unverified",
+      "passed": true
+    },
+    {
+      "name": "mobile/today",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/calendar",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/records",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/pantry",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/content",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/trash",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/family",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/ai",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "mobile/editor",
+      "width": 390,
+      "content": 390,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/today",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/calendar",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/records",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/pantry",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/content",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/trash",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/family",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/ai",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-portrait/editor",
+      "width": 834,
+      "content": 834,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/today",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/calendar",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/records",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/pantry",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/content",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/trash",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/family",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/ai",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "tablet-landscape/editor",
+      "width": 1194,
+      "content": 1194,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/today",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/calendar",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/records",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/pantry",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/content",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/trash",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/family",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/ai",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "desktop/editor",
+      "width": 1440,
+      "content": 1440,
+      "buttonsTooSmall": [],
+      "passed": true
+    },
+    {
+      "name": "same browser cookie identity switch removes unsaved input, private AI and administrator controls",
+      "passed": true
+    },
+    {
+      "name": "membership revoked while connected; SSE, household cache and print body stop access",
+      "passed": true
+    },
+    {
+      "name": "current session revoked: private workspace clears and requires login",
+      "passed": true
+    },
+    {
+      "name": "self-service password UI requires old password and logs out all devices",
+      "passed": true
+    }
+  ],
+  "identityTrace": [
+    {
+      "event": "navigation",
+      "path": "/",
+      "at": 1793431261413
+    },
+    {
+      "event": "navigation",
+      "path": "/",
+      "at": 1793431261478
+    },
+    {
+      "event": "identity",
+      "at": 1793431261483
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431261604
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431261611
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431261653
+    },
+    {
+      "event": "selected",
+      "household": "95a928cf-d366-40de-98f1-979e6edcf9ea",
+      "expected": "95a928cf-d366-40de-98f1-979e6edcf9ea",
+      "at": 1793431261678
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431261759
+    },
+    {
+      "event": "after-signup",
+      "revoked": false,
+      "household": "95a928cf-d366-40de-98f1-979e6edcf9ea",
+      "expected": "95a928cf-d366-40de-98f1-979e6edcf9ea",
+      "at": 1793431262883
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431263229
+    },
+    {
+      "event": "after-signup",
+      "revoked": true,
+      "household": "95a928cf-d366-40de-98f1-979e6edcf9ea",
+      "expected": "95a928cf-d366-40de-98f1-979e6edcf9ea",
+      "at": 1793431263551
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431263779
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431263979
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431264165
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431264541
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431264605
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431264693
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431264764
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431264864
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431265065
+    },
+    {
+      "event": "identity",
+      "userId": "db75d39c-61ed-472b-abda-681437cd87f4",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "257c2263-b2ce-4047-898b-389924e0cd13",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431266328
+    },
+    {
+      "event": "identity",
+      "userId": "956bab2a-8496-4f39-a06f-3edec79b9ddf",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431270294
+    },
+    {
+      "event": "identity",
+      "userId": "956bab2a-8496-4f39-a06f-3edec79b9ddf",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431270300
+    },
+    {
+      "event": "identity",
+      "userId": "956bab2a-8496-4f39-a06f-3edec79b9ddf",
+      "households": [
+        "f2a9806e-c99d-4223-b77c-81885cc91547",
+        "d600e56f-e5e0-4678-8ad2-cbd809cc8042",
+        "ee8b8a17-cde6-463d-8eab-8ea548d517fb",
+        "21f08881-6343-4a80-8f5b-14913c6cb13e",
+        "82d39bc4-263f-40c2-8e03-4b769415bd75",
+        "3c02e9fa-34c4-42d1-843f-2a33f10689d1",
+        "9f59ee9c-f647-4c76-9efc-79bd65c12b41",
+        "84cc5e58-e068-476f-b50c-0db52644d362",
+        "b5f336d1-550b-42e3-b205-0a180292e6a2",
+        "95a928cf-d366-40de-98f1-979e6edcf9ea",
+        "bc5749f6-e685-4dac-944b-de0e55777940"
+      ],
+      "at": 1793431270371
+    },
+    {
+      "event": "identity",
+      "at": 1793431270728
+    },
+    {
+      "event": "identity",
+      "at": 1793431270729
+    },
+    {
+      "event": "identity",
+      "at": 1793431270750
+    }
+  ],
+  "pageErrors": [],
+  "passed": true
+}

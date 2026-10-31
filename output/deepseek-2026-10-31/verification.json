@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-10-31T11:01:00.233Z",
+  "model": "deepseek-flash",
+  "providerVersion": "DeepSeek-V4.1-Flash-1017 (official docs, 2026-10-31)",
+  "mode": "non-thinking JSON",
+  "dailyLimits": {
+    "requests": 20,
+    "tokens": 100000,
+    "dayBoundary": "UTC"
+  },
+  "codeChecks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "fullRegression": {
+      "files": 8,
+      "tests": 163,
+      "result": "passed, isolated PostgreSQL 5433 and loopback fixtures only"
+    }
+  },
+  "browser": {
+    "dailyDate": "2026-11-01",
+    "discussionRange": [
+      "2026-11-01",
+      "2026-11-01"
+    ],
+    "promptPrepared": true,
+    "promptSent": true,
+    "formalPlansChanged": false,
+    "screenshots": [
+      "daily-ai-entry.png",
+      "ai-date-ready.png",
+      "key-created.png",
+      "live-insufficient.png",
+      "live-read-only.png",
+      "live-proposal.png"
+    ],
+    "pendingProposalChanges": 2
+  },
+  "runtime": {
+    "web": "restarted on 127.0.0.1:3000",
+    "worker": "restarted",
+    "keyMissing": false
+  },
+  "keyCreation": "confirmed by user; created 宝宝计划-local; saved only to ignored .env.local with mode 600",
+  "realModelVerified": true,
+  "completedAt": "2026-10-31T12:30:45.362Z",
+  "liveEvidence": "live-verification.json",
+  "clientSecretScan": {
+    "files": 29,
+    "exposures": 0
+  }
+}

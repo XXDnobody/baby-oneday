@@ -2,7 +2,7 @@
   "baseline": "S1-2026-10-30",
   "createdOn": "2026-10-30",
   "timezone": "Asia/Shanghai",
-  "scope": "S1 acceptance inventory. B1 local PostgreSQL/Mailpit/API/browser/restore evidence recorded; partial means only the documented local subset is verified. Full S1, external email and physical-device acceptance remain pending.",
+  "scope": "S1 55 项保持冻结定义。B4 已逐项核对本地证据与缺口；54 项本地工程子范围通过，AC-42 容量告警／处理入口部分待办。真实服务、设备、纸张、生产与七天家庭使用没有被本地检查替代。",
   "excludedCancelled": [
     "AC-23",
     "SPEC-04"
@@ -202,13 +202,35 @@
         "TG-02",
         "TG-10"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "partial",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "首次初始化持久化准备今天，夜间按家庭时区与工作日／周末模板准备次日，重启补偿今天；本地逻辑通过，真实家庭模板及连续使用待验。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "真实家庭作息、工作日／周末和连续使用确认"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-02",
@@ -220,15 +242,53 @@
         "TG-10"
       ],
       "status": "partial",
-      "executionVersion": "local-b2-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
-      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
-      "actualResult": "手动内容选择按已确认库存和优先项排序；当天采购核对区分缺货、未知和粗略余量，保留原用量；自动排餐属 B3，真实食材待确认。",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "自动计划按实际库存优先项和有效偏好排序；沿用已启用且适用的内容，采购需求仍由正式计划派生；真实家庭食材和内容核对待办。",
       "evidence": [
         "tests/b2.test.ts",
-        "output/b2-local-2026-10-31/report.md"
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b2-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
+          "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
+          "actualResult": "手动内容选择按已确认库存和优先项排序；当天采购核对区分缺货、未知和粗略余量，保留原用量；自动排餐属 B3，真实食材待确认。",
+          "evidence": [
+            "tests/b2.test.ts",
+            "output/b2-local-2026-10-31/report.md"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "家庭实际库存、菜谱用料及采购需求核对"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-03",
@@ -248,7 +308,24 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-04",
@@ -268,7 +345,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "实际手机／平板的一致操作及适用活动核对"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-05",
@@ -287,7 +379,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "实际活动内容、配图、出处与家庭认可"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-06",
@@ -306,7 +413,20 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-07",
@@ -325,7 +445,24 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [
+          "奶奶实际平板操作、可用菜谱及纸质打印"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-08",
@@ -345,7 +482,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "真实家庭共同提醒及具体依据确认"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-09",
@@ -364,7 +516,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-10",
@@ -375,13 +542,39 @@
         "TG-09",
         "TG-11"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "partial",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "显式 HTTP 测试服务覆盖天气缺失／过时／超时／限频和模型失败，既有计划仍可读；真实服务可用性尚未验证。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_configured",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_configured_not_verified",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "output/b4-local-2026-10-31/b3-browser-verification.json",
+          "output/b4-local-2026-10-31/service-readiness.json"
+        ],
+        "remaining": [
+          "真实天气／模型故障和实际时间状态验证"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-11",
@@ -391,13 +584,29 @@
       "testGroupIds": [
         "TG-03"
       ],
-      "status": "not_run",
+      "status": "partial",
       "executionVersion": null,
       "environment": null,
       "steps": null,
-      "actualResult": null,
+      "actualResult": "B4 真实 Chrome 在隔离测试库验证离线及最后同步时间、保留输入、重连重新鉴权与并发冲突核对；真实平板及现场指标待验。",
       "evidence": [],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "真实平板断网重连与现场同步耗时"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      },
+      "previousStatus": "not_run"
     },
     {
       "id": "AC-12",
@@ -417,7 +626,24 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "实际设备及受控站点的家庭隔离"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-13",
@@ -437,7 +663,26 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [
+          "实际手机／平板登录、会话失效与操作"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-14",
@@ -456,7 +701,24 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "实际打印新旧纸张、日期／版本核对"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-15",
@@ -466,13 +728,37 @@
       "testGroupIds": [
         "TG-11"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "partial",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "日期范围明确且最多 31 天；仅本人讨论、只读查询、多日真实前后值预览和继续讨论均通过；真实模型输出质量待验。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_configured",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_configured_not_verified",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "output/b4-local-2026-10-31/b3-browser-verification.json",
+          "output/b4-local-2026-10-31/service-readiness.json"
+        ],
+        "remaining": [
+          "真实模型、日期范围与输出质量验证"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-16",
@@ -482,13 +768,39 @@
       "testGroupIds": [
         "TG-11"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "partial",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "仅最终轮可确认；整组业务写入、历史、审计、事件及执行事实同一事务；手机／平板／桌面浏览器读取正式结果；真实模型服务仍待接入。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_configured",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_configured_not_verified",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "output/b4-local-2026-10-31/b3-browser-verification.json",
+          "output/b4-local-2026-10-31/service-readiness.json"
+        ],
+        "remaining": [
+          "真实模型与家人多设备的正式结果验收"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-17",
@@ -498,13 +810,39 @@
       "testGroupIds": [
         "TG-11"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "partial",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "库存、模板、内容、宝宝资料、成员或天气依赖改变均拒绝旧方案，要求重新讨论；天气刷新后的新预览使用最新依据，不静默覆盖。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_configured",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_configured_not_verified",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "output/b4-local-2026-10-31/b3-browser-verification.json",
+          "output/b4-local-2026-10-31/service-readiness.json"
+        ],
+        "remaining": [
+          "真实服务下相关依赖变化后的重新讨论"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-18",
@@ -523,7 +861,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-19",
@@ -542,7 +895,24 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-20",
@@ -561,7 +931,20 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-21",
@@ -581,7 +964,24 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-22",
@@ -600,7 +1000,20 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-24",
@@ -612,16 +1025,52 @@
         "TG-07",
         "TG-11"
       ],
-      "status": "partial",
-      "executionVersion": "local-b2-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
-      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
-      "actualResult": "B2 的记录、版本、回收站、打印及跨家庭关联均拒绝越权，当前成员和作者权限重新校验；AI 私有方案待 B3。",
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "跨家庭及本人隔离通过：同家庭管理员、其他成员均不能读取他人会话、消息、草稿、任务结果或确认方案；B1/B2 既有资源回归继续通过。",
       "evidence": [
         "tests/b2.test.ts",
-        "output/b2-local-2026-10-31/report.md"
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b2-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
+          "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
+          "actualResult": "B2 的记录、版本、回收站、打印及跨家庭关联均拒绝越权，当前成员和作者权限重新校验；AI 私有方案待 B3。",
+          "evidence": [
+            "tests/b2.test.ts",
+            "output/b2-local-2026-10-31/report.md"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-25",
@@ -640,7 +1089,25 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_configured_not_verified",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b3.test.ts",
+          "output/b4-local-2026-10-31/b3-browser-verification.json",
+          "output/b4-local-2026-10-31/service-readiness.json"
+        ],
+        "remaining": [
+          "真实出处、原文定位、家庭／天气推荐依据"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-26",
@@ -650,13 +1117,39 @@
       "testGroupIds": [
         "TG-09"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "partial",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "按管理员确认的地点及所选活动时段取当前／小时两类天气；新地点拒绝旧结果，缺完整预报覆盖或过时均降级；真实地点与和风账号待配置。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_configured",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_configured_not_verified",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "output/b4-local-2026-10-31/b3-browser-verification.json",
+          "output/b4-local-2026-10-31/service-readiness.json"
+        ],
+        "remaining": [
+          "真实天气账号、家庭地点与实际活动时段"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-27",
@@ -675,7 +1168,20 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-32",
@@ -694,7 +1200,22 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "真实家庭已有资料及初始化体验确认"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-33",
@@ -713,7 +1234,24 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "外部邮箱及实际邀请流程验证"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-34",
@@ -735,7 +1273,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-35",
@@ -746,16 +1299,52 @@
         "TG-04",
         "TG-05"
       ],
-      "status": "partial",
-      "executionVersion": "local-b2-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
-      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
-      "actualResult": "手动引用须当前版本已启用且适用；新版本取消启用，编辑器重新核对，历史版本和快照不覆盖；自动采用待 B3。",
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "自动与 AI 选择继续使用具体启用版本、适用性与当前食物资料修订；13 张未核对草稿不启用，人工编辑及历史版本仍保护。",
       "evidence": [
         "tests/b2.test.ts",
-        "output/b2-local-2026-10-31/report.md"
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b2-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
+          "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
+          "actualResult": "手动引用须当前版本已启用且适用；新版本取消启用，编辑器重新核对，历史版本和快照不覆盖；自动采用待 B3。",
+          "evidence": [
+            "tests/b2.test.ts",
+            "output/b2-local-2026-10-31/report.md"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-36",
@@ -765,13 +1354,37 @@
       "testGroupIds": [
         "TG-10"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "家庭＋日期永久业务去重，持久化保护标记覆盖人工、留空、取消、删除、AI 已确认及原时段；并发人工保存后任务重读保护，重试不增加副本。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "实际运行环境夜间任务与连续使用确认"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-37",
@@ -782,16 +1395,54 @@
         "TG-04",
         "TG-10"
       ],
-      "status": "partial",
-      "executionVersion": "local-b2-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
-      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
-      "actualResult": "期限偏好按目标日期到期，既有计划不变；沿用 B1 模板修订；自动生成和批量方案属 B3。",
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "新任务按目标日期的模板及偏好计算；已有计划不因模板、偏好或天气更新重写；AI 批量调整须新预览，最終偏好与内容组合校验通过。",
       "evidence": [
         "tests/b2.test.ts",
-        "output/b2-local-2026-10-31/report.md"
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b2-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
+          "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
+          "actualResult": "期限偏好按目标日期到期，既有计划不变；沿用 B1 模板修订；自动生成和批量方案属 B3。",
+          "evidence": [
+            "tests/b2.test.ts",
+            "output/b2-local-2026-10-31/report.md"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "真实家庭模板与期限偏好确认"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-38",
@@ -804,15 +1455,53 @@
         "TG-10"
       ],
       "status": "partial",
-      "executionVersion": "local-b2-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
-      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
-      "actualResult": "手动选择无合适候选时显示待安排，可明确保留待安排条目；不启用未经核对草稿；天气和自动生成场景待 B3。",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "未启用／不适用、食物限制未知或户外天气缺失／有风雨时明确待安排和原因；不编造核对事实。真实内容覆盖一周仍待家庭核对。",
       "evidence": [
         "tests/b2.test.ts",
-        "output/b2-local-2026-10-31/report.md"
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b2-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
+          "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
+          "actualResult": "手动选择无合适候选时显示待安排，可明确保留待安排条目；不启用未经核对草稿；天气和自动生成场景待 B3。",
+          "evidence": [
+            "tests/b2.test.ts",
+            "output/b2-local-2026-10-31/report.md"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_configured_not_verified",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "output/b4-local-2026-10-31/b3-browser-verification.json",
+          "output/b4-local-2026-10-31/service-readiness.json"
+        ],
+        "remaining": [
+          "家庭实际内容充分性；真实服务无候选降级"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-39",
@@ -831,7 +1520,24 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "真实设备网络切换、未提交输入与同步耗时"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-40",
@@ -843,16 +1549,52 @@
         "TG-10",
         "TG-11"
       ],
-      "status": "partial",
-      "executionVersion": "local-b1-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chromium 模拟视口，非生产／真机",
-      "steps": "tests/b1.test.ts 对应用例；浏览器步骤见 output/local-development-2026-10-31/report.md",
-      "actualResult": "计划新增成功响应丢失后重试仅保留一项，更新幂等通过；记录、任务、AI 待实现。",
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "B1/B2 幂等回归、任务业务去重及 AI 执行事实唯一通过；真实浏览器在服务器提交后丢弃响应再重试，换键确认也只有一份正式结果。",
       "evidence": [
         "tests/b1.test.ts",
-        "output/local-development-2026-10-31/report.md"
+        "output/local-development-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b1-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chromium 模拟视口，非生产／真机",
+          "steps": "tests/b1.test.ts 对应用例；浏览器步骤见 output/local-development-2026-10-31/report.md",
+          "actualResult": "计划新增成功响应丢失后重试仅保留一项，更新幂等通过；记录、任务、AI 待实现。",
+          "evidence": [
+            "tests/b1.test.ts",
+            "output/local-development-2026-10-31/report.md"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-41",
@@ -874,7 +1616,26 @@
         "output/b2-local-2026-10-31/identity-switch-verification.json",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b2-local-2026-10-31/identity-switch-verification.json",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "真实共享设备及会话／成员撤销体验"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-42",
@@ -893,7 +1654,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "partial",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "容量阈值、告警状态及处理入口尚未实现／验证；实际容量条件待落实"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-43",
@@ -903,16 +1679,54 @@
       "testGroupIds": [
         "TG-07"
       ],
-      "status": "partial",
-      "executionVersion": "local-b2-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
-      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
-      "actualResult": "取消仍可回看；删除从普通正文／历史和旧打印中隐藏，回收站按当前恢复权限过滤，不级联删除记录；AI 检索待 B3。",
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "B2 删除／取消／恢复回归通过；新的 AI 上下文不含删除计划／记录正文、到期偏好及失效内容，不混入他人的私有文本。",
       "evidence": [
         "tests/b2.test.ts",
-        "output/b2-local-2026-10-31/report.md"
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b2-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
+          "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
+          "actualResult": "取消仍可回看；删除从普通正文／历史和旧打印中隐藏，回收站按当前恢复权限过滤，不级联删除记录；AI 检索待 B3。",
+          "evidence": [
+            "tests/b2.test.ts",
+            "output/b2-local-2026-10-31/report.md"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-44",
@@ -931,7 +1745,24 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-45",
@@ -950,7 +1781,20 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-46",
@@ -972,7 +1816,24 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "真实设备输入及家庭月龄依据确认"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-47",
@@ -991,7 +1852,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "家庭逐条核对首批草稿；开发库尚未导入，不自动启用"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-48",
@@ -1012,7 +1888,26 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [
+          "真实平板横竖屏与 A4 黑白多页纸张"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-49",
@@ -1031,7 +1926,22 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "真实家庭成员管理体验确认"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "AC-50",
@@ -1042,16 +1952,56 @@
         "TG-12"
       ],
       "status": "partial",
-      "executionVersion": "local-b1-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chromium 模拟视口，非生产／真机",
-      "steps": "tests/b1.test.ts 对应用例；浏览器步骤见 output/local-development-2026-10-31/report.md",
-      "actualResult": "测试库按同一快照备份并恢复至独立临时库，17 表核对一致；记录／AI／删除期限及恢复点后流水待验。",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "B3 独立恢复 38 表，原数据逐行摘要一致且临时恢复库已移除；包含 AI 私有数据及任务。生产备份指标、恢复点后删除与撤销流水及完整 B4 演练仍待验。",
       "evidence": [
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md",
-        "output/local-development-2026-10-31/backup-verification.json"
+        "output/local-development-2026-10-31/backup-verification.json",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b1-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chromium 模拟视口，非生产／真机",
+          "steps": "tests/b1.test.ts 对应用例；浏览器步骤见 output/local-development-2026-10-31/report.md",
+          "actualResult": "测试库按同一快照备份并恢复至独立临时库，17 表核对一致；记录／AI／删除期限及恢复点后流水待验。",
+          "evidence": [
+            "tests/b1.test.ts",
+            "output/local-development-2026-10-31/report.md",
+            "output/local-development-2026-10-31/backup-verification.json"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/local-development-2026-10-31/backup-verification.json",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/recovery.test.ts",
+          "output/b4-local-2026-10-31/recovery-drill.json"
+        ],
+        "remaining": [
+          "生产外置流水、容量／周期／RPO／RTO及隔离开放流程；丢失写入不可据本轮补造"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-01",
@@ -1073,7 +2023,26 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "scripts/verify-b4-device-flows.ts",
+          "output/b4-local-2026-10-31/device-flows.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-02",
@@ -1083,13 +2052,33 @@
       "testGroupIds": [
         "TG-11"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "管理员不能读取或确认其他成员私有内容；只发布正式资源事件，AI 消息和草稿不进入家庭 SSE；同浏览器不刷新页面切换身份验证通过。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-03",
@@ -1099,13 +2088,35 @@
       "testGroupIds": [
         "TG-10"
       ],
-      "status": "not_run",
-      "executionVersion": null,
-      "environment": null,
-      "steps": null,
-      "actualResult": null,
-      "evidence": [],
-      "defectIds": []
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "租约、SKIP LOCKED、旧 worker 栅栏、业务去重和重启恢复通过；真实 OS worker 在模型调用中被 SIGKILL，新进程恢复；自动任务并发人工保存及失败回滚通过。",
+      "evidence": [
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
+      ],
+      "defectIds": [],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "实际任务运行环境及工程指标"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-05",
@@ -1124,7 +2135,22 @@
         "tests/b2.test.ts",
         "output/b2-local-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-06",
@@ -1144,7 +2170,26 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json",
+          "tests/recovery.test.ts",
+          "output/b4-local-2026-10-31/recovery-drill.json"
+        ],
+        "remaining": [
+          "真实设备、外部邮箱、生产会话及账号恢复"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-07",
@@ -1158,18 +2203,56 @@
         "TG-08",
         "TG-11"
       ],
-      "status": "partial",
-      "executionVersion": "local-b2-2026-10-31",
-      "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
-      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
-      "actualResult": "普通成员食材、偏好、模板可写，关键宝宝资料、内容启用和共同提醒写入拒绝；AI 和自动生成字段待 B3。",
+      "status": "passed",
+      "executionVersion": "local-b3-2026-10-31",
+      "environment": "真实 PostgreSQL 5433 + Mailpit；明确标记的 loopback 天气／模型 HTTP 服务；Chrome 156 模拟手机／平板／桌面；非真实供应商、真机或生产",
+      "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts、tests/b3.test.ts；浏览器和独立恢复见 output/b3-local-2026-10-31/report.md",
+      "actualResult": "成员可维护食材、期限偏好和模板；关键资料、禁忌、内容启用与自动设置受管理员权限保护；模型越权字段／SQL／成员／账号／付费／记录删除输出全部拒绝。",
       "evidence": [
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md",
         "tests/b2.test.ts",
-        "output/b2-local-2026-10-31/report.md"
+        "output/b2-local-2026-10-31/report.md",
+        "tests/b3.test.ts",
+        "output/b3-local-2026-10-31/report.md",
+        "output/b3-local-2026-10-31/integration-evidence.json"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "executionHistory": [
+        {
+          "status": "partial",
+          "executionVersion": "local-b2-2026-10-31",
+          "environment": "本机隔离 PostgreSQL 5433 + Mailpit + Chrome 156 模拟视口 + A4 PDF；非生产／真机／纸质打印",
+          "steps": "npm run check；tests/b1.test.ts、tests/b2.test.ts；浏览器与打印步骤见 output/b2-local-2026-10-31/report.md",
+          "actualResult": "普通成员食材、偏好、模板可写，关键宝宝资料、内容启用和共同提醒写入拒绝；AI 和自动生成字段待 B3。",
+          "evidence": [
+            "tests/b1.test.ts",
+            "output/local-development-2026-10-31/report.md",
+            "tests/b2.test.ts",
+            "output/b2-local-2026-10-31/report.md"
+          ]
+        }
+      ],
+      "localLogicStatus": "passed",
+      "realServiceStatus": "not_applicable_or_pending_S1",
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "tests/b2.test.ts",
+          "output/b2-local-2026-10-31/report.md",
+          "tests/b3.test.ts",
+          "output/b3-local-2026-10-31/report.md",
+          "output/b3-local-2026-10-31/integration-evidence.json",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-08",
@@ -1188,7 +2271,24 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [
+          "外部邮箱验证与实际邀请准入"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-09",
@@ -1207,7 +2307,22 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "外部重置邮件与真实设备会话失效"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "SPEC-10",
@@ -1226,7 +2341,22 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log"
+        ],
+        "remaining": [
+          "外部投递、退信及未收到邮件的处理"
+        ],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     },
     {
       "id": "MB-08",
@@ -1245,8 +2375,66 @@
         "tests/b1.test.ts",
         "output/local-development-2026-10-31/report.md"
       ],
-      "defectIds": []
+      "defectIds": [],
+      "b4Review": {
+        "reviewedAt": "2026-10-31T07:22:31.969Z",
+        "executionVersion": "local-b4-2026-10-31",
+        "localLogicStatus": "passed",
+        "realServiceStatus": "not_applicable_or_separately_pending",
+        "evidence": [
+          "tests/b1.test.ts",
+          "output/local-development-2026-10-31/report.md",
+          "output/b4-local-2026-10-31/check.log",
+          "tests/b4.test.ts",
+          "output/b4-local-2026-10-31/browser-verification.json"
+        ],
+        "remaining": [],
+        "acceptanceBoundary": "本地通过只代表所列工程子范围；不自动完成完整 S1、真机、生产或七天使用。"
+      }
     }
   ],
-  "updatedOn": "2026-10-31"
+  "updatedOn": "2026-10-31",
+  "b3": {
+    "version": "local-b3-2026-10-31",
+    "logic": "passed",
+    "realWeather": "not_configured",
+    "realModel": "not_configured",
+    "contentReview": "pending",
+    "realDevices": "not_run",
+    "physicalPrinting": "not_run",
+    "production": "not_deployed",
+    "sevenDayTrial": "not_run",
+    "originalRegressionTests": 44,
+    "newIntegrationTests": 54,
+    "totalTests": 98
+  },
+  "b4": {
+    "reviewedAt": "2026-10-31T07:22:31.969Z",
+    "version": "local-b4-2026-10-31",
+    "reviewedRequirements": 55,
+    "localLogicPassed": 54,
+    "localLogicPartial": [
+      "AC-42"
+    ],
+    "fullCheckTests": 140,
+    "browserChecks": 104,
+    "realServicesPassed": 0,
+    "physicalDeviceAcceptance": false,
+    "paperPrinterAcceptance": false,
+    "productionRecoveryAcceptance": false,
+    "sevenDayTrialDays": 0,
+    "S1Complete": false,
+    "formalB4AdmissionPassed": false,
+    "trialAdmissionPassed": false,
+    "evidenceDirectory": "output/b4-local-2026-10-31",
+    "globalOutstanding": [
+      "真实天气／模型与费用条件",
+      "真实家庭资料与首批内容",
+      "外部邮件与受控真机访问",
+      "手机／平板与纸质打印",
+      "容量告警、生产外置备份和恢复指标",
+      "生产部署／回退及服务有效期",
+      "连续七天真实家庭使用"
+    ]
+  }
 }

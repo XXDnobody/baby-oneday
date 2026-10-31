@@ -10,7 +10,7 @@
     "dev": "next dev --webpack --hostname 127.0.0.1 --port 3000",
     "dev:test": "tsx scripts/dev-test.ts",
     "build": "next build --webpack",
-    "start": "next start --hostname 127.0.0.1 --port 3000",
+    "start": "tsx scripts/start-local.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src scripts tests --no-error-on-unmatched-pattern",
     "test": "vitest run",
@@ -27,16 +27,28 @@
     "env:reset-test": "sh scripts/reset-test-database.sh",
     "env:verify-persistence": "sh scripts/verify-dev-persistence.sh",
     "env:verify-browser": "tsx scripts/verify-browser.ts",
-    "db:verify-backup": "tsx scripts/verify-backup.ts"
+    "db:verify-backup": "tsx scripts/verify-backup.ts",
+    "recovery:checkpoint": "tsx scripts/recovery-checkpoint.ts",
+    "recovery:reconcile": "tsx scripts/reconcile-restore.ts",
+    "env:verify-b4": "tsx scripts/verify-b4-browser.ts",
+    "worker": "tsx scripts/worker.ts",
+    "worker:once": "tsx scripts/worker.ts --once",
+    "env:services": "tsx scripts/check-services.ts",
+    "dev:test:b3": "tsx scripts/b3-browser-test-app.ts"
   },
   "dependencies": {
+    "@daypicker/react": "10.0.2",
+    "@floating-ui/dom": "1.7.4",
     "@node-rs/argon2": "2.2.2",
+    "@vant/area-data": "2.2.0",
     "lucide-react": "1.65.0",
     "next": "16.4.3",
     "nodemailer": "^10.3.1",
     "pg": "8.23.1",
     "react": "19.3.1",
     "react-dom": "19.3.1",
+    "react-select": "5.10.2",
+    "sharp": "0.35.5",
     "zod": "4.6.7"
   },
   "devDependencies": {

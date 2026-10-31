@@ -1,0 +1,2906 @@
+{
+  "source": "https://download.geonames.org/export/dump/cities15000.zip",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "updatedOn": "2026-10-31",
+  "cities": [
+    {
+      "code": "110000",
+      "id": "1816670",
+      "name": "北京市",
+      "label": "北京市",
+      "search": "北京市 北京市 Beijing",
+      "latitude": 39.91,
+      "longitude": 116.4
+    },
+    {
+      "code": "120000",
+      "id": "1792947",
+      "name": "天津市",
+      "label": "天津市",
+      "search": "天津市 天津市 Tianjin",
+      "latitude": 39.14,
+      "longitude": 117.18
+    },
+    {
+      "code": "130100",
+      "id": "1795270",
+      "name": "石家庄市",
+      "label": "河北省 石家庄市",
+      "search": "石家庄市 河北省 Shijiazhuang",
+      "latitude": 38.04,
+      "longitude": 114.48
+    },
+    {
+      "code": "130200",
+      "id": "1793346",
+      "name": "唐山市",
+      "label": "河北省 唐山市",
+      "search": "唐山市 河北省 Tangshan",
+      "latitude": 39.64,
+      "longitude": 118.18
+    },
+    {
+      "code": "130300",
+      "id": "1797595",
+      "name": "秦皇岛市",
+      "label": "河北省 秦皇岛市",
+      "search": "秦皇岛市 河北省 Qinhuangdao",
+      "latitude": 39.94,
+      "longitude": 119.59
+    },
+    {
+      "code": "130400",
+      "id": "1808963",
+      "name": "邯郸市",
+      "label": "河北省 邯郸市",
+      "search": "邯郸市 河北省 Handan",
+      "latitude": 36.61,
+      "longitude": 114.49
+    },
+    {
+      "code": "130500",
+      "id": "1788927",
+      "name": "邢台市",
+      "label": "河北省 邢台市",
+      "search": "邢台市 河北省 Xingtai",
+      "latitude": 37.06,
+      "longitude": 114.49
+    },
+    {
+      "code": "130600",
+      "id": "1816971",
+      "name": "保定市",
+      "label": "河北省 保定市",
+      "search": "保定市 河北省 Baoding",
+      "latitude": 38.87,
+      "longitude": 115.46
+    },
+    {
+      "code": "130700",
+      "id": "2033196",
+      "name": "张家口市",
+      "label": "河北省 张家口市",
+      "search": "张家口市 河北省 Zhangjiakou",
+      "latitude": 40.78,
+      "longitude": 114.87
+    },
+    {
+      "code": "130800",
+      "id": "2038087",
+      "name": "承德市",
+      "label": "河北省 承德市",
+      "search": "承德市 河北省 Chengde",
+      "latitude": 40.95,
+      "longitude": 117.96
+    },
+    {
+      "code": "130900",
+      "id": "1816080",
+      "name": "沧州市",
+      "label": "河北省 沧州市",
+      "search": "沧州市 河北省 Cangzhou",
+      "latitude": 38.31,
+      "longitude": 116.85
+    },
+    {
+      "code": "131000",
+      "id": "1804540",
+      "name": "廊坊市",
+      "label": "河北省 廊坊市",
+      "search": "廊坊市 河北省 Langfang",
+      "latitude": 39.52,
+      "longitude": 116.71
+    },
+    {
+      "code": "131100",
+      "id": "1808392",
+      "name": "衡水市",
+      "label": "河北省 衡水市",
+      "search": "衡水市 河北省 Hengshui",
+      "latitude": 37.74,
+      "longitude": 115.68
+    },
+    {
+      "code": "140100",
+      "id": "1793511",
+      "name": "太原市",
+      "label": "山西省 太原市",
+      "search": "太原市 山西省 Taiyuan",
+      "latitude": 37.87,
+      "longitude": 112.56
+    },
+    {
+      "code": "140200",
+      "id": "2037799",
+      "name": "大同市",
+      "label": "山西省 大同市",
+      "search": "大同市 山西省 Datong",
+      "latitude": 40.09,
+      "longitude": 113.29
+    },
+    {
+      "code": "140300",
+      "id": "1787351",
+      "name": "阳泉市",
+      "label": "山西省 阳泉市",
+      "search": "阳泉市 山西省 Yangquan",
+      "latitude": 37.86,
+      "longitude": 113.56
+    },
+    {
+      "code": "140400",
+      "id": "1808956",
+      "name": "长治市",
+      "label": "山西省 长治市",
+      "search": "长治市 山西省 Changzhi",
+      "latitude": 36.18,
+      "longitude": 113.11
+    },
+    {
+      "code": "140500",
+      "id": "1678008",
+      "name": "晋城市",
+      "label": "山西省 晋城市",
+      "search": "晋城市 山西省 Jincheng",
+      "latitude": 24.43,
+      "longitude": 118.32
+    },
+    {
+      "code": "140600",
+      "id": "1794328",
+      "name": "朔州市",
+      "label": "山西省 朔州市",
+      "search": "朔州市 山西省 Shuozhou",
+      "latitude": 39.32,
+      "longitude": 112.42
+    },
+    {
+      "code": "140700",
+      "id": "10942283",
+      "name": "晋中市",
+      "label": "山西省 晋中市",
+      "search": "晋中市 山西省 Jinzhong",
+      "latitude": 37.68,
+      "longitude": 112.75
+    },
+    {
+      "code": "140800",
+      "id": "1785738",
+      "name": "运城市",
+      "label": "山西省 运城市",
+      "search": "运城市 山西省 Yuncheng",
+      "latitude": 35.02,
+      "longitude": 110.99
+    },
+    {
+      "code": "140900",
+      "id": "1788450",
+      "name": "忻州市",
+      "label": "山西省 忻州市",
+      "search": "忻州市 山西省 Xinzhou",
+      "latitude": 38.41,
+      "longitude": 112.73
+    },
+    {
+      "code": "141000",
+      "id": "1803567",
+      "name": "临汾市",
+      "label": "山西省 临汾市",
+      "search": "临汾市 山西省 Linfen",
+      "latitude": 36.09,
+      "longitude": 111.52
+    },
+    {
+      "code": "141100",
+      "id": "13512505",
+      "name": "吕梁市",
+      "label": "山西省 吕梁市",
+      "search": "吕梁市 山西省 Lueliang",
+      "latitude": 37.52,
+      "longitude": 111.14
+    },
+    {
+      "code": "150100",
+      "id": "2036892",
+      "name": "呼和浩特市",
+      "label": "内蒙古自治区 呼和浩特市",
+      "search": "呼和浩特市 内蒙古自治区 Hohhot",
+      "latitude": 40.81,
+      "longitude": 111.65
+    },
+    {
+      "code": "150200",
+      "id": "2038432",
+      "name": "包头市",
+      "label": "内蒙古自治区 包头市",
+      "search": "包头市 内蒙古自治区 Baotou",
+      "latitude": 40.65,
+      "longitude": 109.84
+    },
+    {
+      "code": "150300",
+      "id": "1791249",
+      "name": "乌海市",
+      "label": "内蒙古自治区 乌海市",
+      "search": "乌海市 内蒙古自治区 Wuhai",
+      "latitude": 39.68,
+      "longitude": 106.82
+    },
+    {
+      "code": "150400",
+      "id": "2038067",
+      "name": "赤峰市",
+      "label": "内蒙古自治区 赤峰市",
+      "search": "赤峰市 内蒙古自治区 Chifeng",
+      "latitude": 42.27,
+      "longitude": 118.96
+    },
+    {
+      "code": "150500",
+      "id": "2034400",
+      "name": "通辽市",
+      "label": "内蒙古自治区 通辽市",
+      "search": "通辽市 内蒙古自治区 Tongliao",
+      "latitude": 43.61,
+      "longitude": 122.27
+    },
+    {
+      "code": "150600",
+      "id": "8347664",
+      "name": "鄂尔多斯市",
+      "label": "内蒙古自治区 鄂尔多斯市",
+      "search": "鄂尔多斯市 内蒙古自治区 Ordos",
+      "latitude": 39.61,
+      "longitude": 109.78
+    },
+    {
+      "code": "150700",
+      "id": "12548253",
+      "name": "呼伦贝尔市",
+      "label": "内蒙古自治区 呼伦贝尔市",
+      "search": "呼伦贝尔市 内蒙古自治区 Hulunbuir",
+      "latitude": 49.21,
+      "longitude": 119.76
+    },
+    {
+      "code": "150800",
+      "id": "11838258",
+      "name": "巴彦淖尔市",
+      "label": "内蒙古自治区 巴彦淖尔市",
+      "search": "巴彦淖尔市 内蒙古自治区 Bayan Nur",
+      "latitude": 40.74,
+      "longitude": 107.39
+    },
+    {
+      "code": "150900",
+      "id": "8335361",
+      "name": "乌兰察布市",
+      "label": "内蒙古自治区 乌兰察布市",
+      "search": "乌兰察布市 内蒙古自治区 Ulanqab",
+      "latitude": 40.99,
+      "longitude": 113.13
+    },
+    {
+      "code": "210100",
+      "id": "2034937",
+      "name": "沈阳市",
+      "label": "辽宁省 沈阳市",
+      "search": "沈阳市 辽宁省 Shenyang",
+      "latitude": 41.79,
+      "longitude": 123.43
+    },
+    {
+      "code": "210200",
+      "id": "1814087",
+      "name": "大连市",
+      "label": "辽宁省 大连市",
+      "search": "大连市 辽宁省 Dalian",
+      "latitude": 38.91,
+      "longitude": 121.6
+    },
+    {
+      "code": "210300",
+      "id": "2038632",
+      "name": "鞍山市",
+      "label": "辽宁省 鞍山市",
+      "search": "鞍山市 辽宁省 Anshan",
+      "latitude": 41.12,
+      "longitude": 122.99
+    },
+    {
+      "code": "210400",
+      "id": "2037355",
+      "name": "抚顺市",
+      "label": "辽宁省 抚顺市",
+      "search": "抚顺市 辽宁省 Fushun",
+      "latitude": 41.89,
+      "longitude": 123.94
+    },
+    {
+      "code": "210500",
+      "id": "2038300",
+      "name": "本溪市",
+      "label": "辽宁省 本溪市",
+      "search": "本溪市 辽宁省 Benxi",
+      "latitude": 41.29,
+      "longitude": 123.77
+    },
+    {
+      "code": "210600",
+      "id": "2037886",
+      "name": "丹东市",
+      "label": "辽宁省 丹东市",
+      "search": "丹东市 辽宁省 Dandong",
+      "latitude": 40.13,
+      "longitude": 124.39
+    },
+    {
+      "code": "210700",
+      "id": "2036427",
+      "name": "锦州市",
+      "label": "辽宁省 锦州市",
+      "search": "锦州市 辽宁省 Jinzhou",
+      "latitude": 41.11,
+      "longitude": 121.14
+    },
+    {
+      "code": "210800",
+      "id": "2033370",
+      "name": "营口市",
+      "label": "辽宁省 营口市",
+      "search": "营口市 辽宁省 Yingkou",
+      "latitude": 40.66,
+      "longitude": 122.23
+    },
+    {
+      "code": "210900",
+      "id": "2037346",
+      "name": "阜新市",
+      "label": "辽宁省 阜新市",
+      "search": "阜新市 辽宁省 Fuxin",
+      "latitude": 42.02,
+      "longitude": 121.66
+    },
+    {
+      "code": "211000",
+      "id": "2036113",
+      "name": "辽阳市",
+      "label": "辽宁省 辽阳市",
+      "search": "辽阳市 辽宁省 Liaoyang",
+      "latitude": 41.27,
+      "longitude": 123.17
+    },
+    {
+      "code": "211100",
+      "id": "10794003",
+      "name": "盘锦市",
+      "label": "辽宁省 盘锦市",
+      "search": "盘锦市 辽宁省 Panjin",
+      "latitude": 41.12,
+      "longitude": 122.07
+    },
+    {
+      "code": "211200",
+      "id": "2034439",
+      "name": "铁岭市",
+      "label": "辽宁省 铁岭市",
+      "search": "铁岭市 辽宁省 Tieling",
+      "latitude": 42.29,
+      "longitude": 123.84
+    },
+    {
+      "code": "211300",
+      "id": "2038120",
+      "name": "朝阳市",
+      "label": "辽宁省 朝阳市",
+      "search": "朝阳市 辽宁省 Chaoyang",
+      "latitude": 41.57,
+      "longitude": 120.46
+    },
+    {
+      "code": "211400",
+      "id": "2036662",
+      "name": "葫芦岛市",
+      "label": "辽宁省 葫芦岛市",
+      "search": "葫芦岛市 辽宁省 Huludao",
+      "latitude": 40.75,
+      "longitude": 120.84
+    },
+    {
+      "code": "220100",
+      "id": "2038180",
+      "name": "长春市",
+      "label": "吉林省 长春市",
+      "search": "长春市 吉林省 Changchun",
+      "latitude": 43.88,
+      "longitude": 125.32
+    },
+    {
+      "code": "220200",
+      "id": "2036502",
+      "name": "吉林市",
+      "label": "吉林省 吉林市",
+      "search": "吉林市 吉林省 Jilin",
+      "latitude": 43.85,
+      "longitude": 126.56
+    },
+    {
+      "code": "220300",
+      "id": "2034714",
+      "name": "四平市",
+      "label": "吉林省 四平市",
+      "search": "四平市 吉林省 Siping",
+      "latitude": 43.16,
+      "longitude": 124.38
+    },
+    {
+      "code": "220400",
+      "id": "2036109",
+      "name": "辽源市",
+      "label": "吉林省 辽源市",
+      "search": "辽源市 吉林省 Longshan",
+      "latitude": 42.89,
+      "longitude": 125.14
+    },
+    {
+      "code": "220500",
+      "id": "2034414",
+      "name": "通化市",
+      "label": "吉林省 通化市",
+      "search": "通化市 吉林省 Tonghua",
+      "latitude": 41.72,
+      "longitude": 125.93
+    },
+    {
+      "code": "220600",
+      "id": "2038584",
+      "name": "白山市",
+      "label": "吉林省 白山市",
+      "search": "白山市 吉林省 Baishan",
+      "latitude": 41.94,
+      "longitude": 126.42
+    },
+    {
+      "code": "220700",
+      "id": "2035399",
+      "name": "松原市",
+      "label": "吉林省 松原市",
+      "search": "松原市 吉林省 Songyuan",
+      "latitude": 45.13,
+      "longitude": 124.83
+    },
+    {
+      "code": "220800",
+      "id": "2038569",
+      "name": "白城市",
+      "label": "吉林省 白城市",
+      "search": "白城市 吉林省 Baicheng",
+      "latitude": 45.62,
+      "longitude": 122.83
+    },
+    {
+      "code": "230100",
+      "id": "2037013",
+      "name": "哈尔滨市",
+      "label": "黑龙江省 哈尔滨市",
+      "search": "哈尔滨市 黑龙江省 Harbin",
+      "latitude": 45.75,
+      "longitude": 126.65
+    },
+    {
+      "code": "230200",
+      "id": "2035265",
+      "name": "齐齐哈尔市",
+      "label": "黑龙江省 齐齐哈尔市",
+      "search": "齐齐哈尔市 黑龙江省 Qiqihar",
+      "latitude": 47.34,
+      "longitude": 123.96
+    },
+    {
+      "code": "230300",
+      "id": "2036389",
+      "name": "鸡西市",
+      "label": "黑龙江省 鸡西市",
+      "search": "鸡西市 黑龙江省 Jixi",
+      "latitude": 45.29,
+      "longitude": 130.96
+    },
+    {
+      "code": "230400",
+      "id": "2036986",
+      "name": "鹤岗市",
+      "label": "黑龙江省 鹤岗市",
+      "search": "鹤岗市 黑龙江省 Hegang",
+      "latitude": 47.35,
+      "longitude": 130.29
+    },
+    {
+      "code": "230500",
+      "id": "2034786",
+      "name": "双鸭山市",
+      "label": "黑龙江省 双鸭山市",
+      "search": "双鸭山市 黑龙江省 Shuangyashan",
+      "latitude": 46.68,
+      "longitude": 131.13
+    },
+    {
+      "code": "230600",
+      "id": "2037860",
+      "name": "大庆市",
+      "label": "黑龙江省 大庆市",
+      "search": "大庆市 黑龙江省 Daqing",
+      "latitude": 46.58,
+      "longitude": 125
+    },
+    {
+      "code": "230700",
+      "id": "2033413",
+      "name": "伊春市",
+      "label": "黑龙江省 伊春市",
+      "search": "伊春市 黑龙江省 Yichun",
+      "latitude": 47.72,
+      "longitude": 128.88
+    },
+    {
+      "code": "230800",
+      "id": "2036581",
+      "name": "佳木斯市",
+      "label": "黑龙江省 佳木斯市",
+      "search": "佳木斯市 黑龙江省 Jiamusi",
+      "latitude": 46.8,
+      "longitude": 130.31
+    },
+    {
+      "code": "230900",
+      "id": "2035261",
+      "name": "七台河市",
+      "label": "黑龙江省 七台河市",
+      "search": "七台河市 黑龙江省 Qitaihe",
+      "latitude": 45.77,
+      "longitude": 131
+    },
+    {
+      "code": "231000",
+      "id": "2035715",
+      "name": "牡丹江市",
+      "label": "黑龙江省 牡丹江市",
+      "search": "牡丹江市 黑龙江省 Mudanjiang",
+      "latitude": 44.55,
+      "longitude": 129.63
+    },
+    {
+      "code": "231100",
+      "id": "2036973",
+      "name": "黑河市",
+      "label": "黑龙江省 黑河市",
+      "search": "黑河市 黑龙江省 Heihe",
+      "latitude": 50.24,
+      "longitude": 127.49
+    },
+    {
+      "code": "231200",
+      "id": "2034655",
+      "name": "绥化市",
+      "label": "黑龙江省 绥化市",
+      "search": "绥化市 黑龙江省 Suihua",
+      "latitude": 46.65,
+      "longitude": 126.97
+    },
+    {
+      "code": "310000",
+      "id": "1796236",
+      "name": "上海市",
+      "label": "上海市",
+      "search": "上海市 上海市 Shanghai",
+      "latitude": 31.22,
+      "longitude": 121.46
+    },
+    {
+      "code": "320100",
+      "id": "1799962",
+      "name": "南京市",
+      "label": "江苏省 南京市",
+      "search": "南京市 江苏省 Nanjing",
+      "latitude": 32.06,
+      "longitude": 118.78
+    },
+    {
+      "code": "320200",
+      "id": "1790923",
+      "name": "无锡市",
+      "label": "江苏省 无锡市",
+      "search": "无锡市 江苏省 Wuxi",
+      "latitude": 31.57,
+      "longitude": 120.29
+    },
+    {
+      "code": "320300",
+      "id": "10630003",
+      "name": "徐州市",
+      "label": "江苏省 徐州市",
+      "search": "徐州市 江苏省 Xuzhou",
+      "latitude": 34.2,
+      "longitude": 117.28
+    },
+    {
+      "code": "320400",
+      "id": "1815456",
+      "name": "常州市",
+      "label": "江苏省 常州市",
+      "search": "常州市 江苏省 Changzhou",
+      "latitude": 31.77,
+      "longitude": 119.95
+    },
+    {
+      "code": "320500",
+      "id": "1886760",
+      "name": "苏州市",
+      "label": "江苏省 苏州市",
+      "search": "苏州市 江苏省 Suzhou",
+      "latitude": 31.3,
+      "longitude": 120.6
+    },
+    {
+      "code": "320600",
+      "id": "1799722",
+      "name": "南通市",
+      "label": "江苏省 南通市",
+      "search": "南通市 江苏省 Nantong",
+      "latitude": 32.03,
+      "longitude": 120.87
+    },
+    {
+      "code": "320700",
+      "id": "10859300",
+      "name": "连云港市",
+      "label": "江苏省 连云港市",
+      "search": "连云港市 江苏省 Lianyungang",
+      "latitude": 34.6,
+      "longitude": 119.22
+    },
+    {
+      "code": "320800",
+      "id": "1797873",
+      "name": "淮安市",
+      "label": "江苏省 淮安市",
+      "search": "淮安市 江苏省 Huai'an",
+      "latitude": 33.59,
+      "longitude": 119.02
+    },
+    {
+      "code": "320900",
+      "id": "1787746",
+      "name": "盐城市",
+      "label": "江苏省 盐城市",
+      "search": "盐城市 江苏省 Yancheng",
+      "latitude": 33.36,
+      "longitude": 120.16
+    },
+    {
+      "code": "321000",
+      "id": "1787227",
+      "name": "扬州市",
+      "label": "江苏省 扬州市",
+      "search": "扬州市 江苏省 Yangzhou",
+      "latitude": 32.4,
+      "longitude": 119.44
+    },
+    {
+      "code": "321100",
+      "id": "1784642",
+      "name": "镇江市",
+      "label": "江苏省 镇江市",
+      "search": "镇江市 江苏省 Zhenjiang",
+      "latitude": 32.21,
+      "longitude": 119.46
+    },
+    {
+      "code": "321200",
+      "id": "1793505",
+      "name": "泰州市",
+      "label": "江苏省 泰州市",
+      "search": "泰州市 江苏省 Taizhou",
+      "latitude": 32.49,
+      "longitude": 119.91
+    },
+    {
+      "code": "321300",
+      "id": "1793771",
+      "name": "宿迁市",
+      "label": "江苏省 宿迁市",
+      "search": "宿迁市 江苏省 Suqian",
+      "latitude": 33.95,
+      "longitude": 118.3
+    },
+    {
+      "code": "330100",
+      "id": "1808926",
+      "name": "杭州市",
+      "label": "浙江省 杭州市",
+      "search": "杭州市 浙江省 Hangzhou",
+      "latitude": 30.29,
+      "longitude": 120.16
+    },
+    {
+      "code": "330200",
+      "id": "1799397",
+      "name": "宁波市",
+      "label": "浙江省 宁波市",
+      "search": "宁波市 浙江省 Ningbo",
+      "latitude": 29.88,
+      "longitude": 121.55
+    },
+    {
+      "code": "330300",
+      "id": "1791388",
+      "name": "温州市",
+      "label": "浙江省 温州市",
+      "search": "温州市 浙江省 Wenzhou",
+      "latitude": 28,
+      "longitude": 120.67
+    },
+    {
+      "code": "330400",
+      "id": "1805953",
+      "name": "嘉兴市",
+      "label": "浙江省 嘉兴市",
+      "search": "嘉兴市 浙江省 Jiaxing",
+      "latitude": 30.75,
+      "longitude": 120.75
+    },
+    {
+      "code": "330500",
+      "id": "1806535",
+      "name": "湖州市",
+      "label": "浙江省 湖州市",
+      "search": "湖州市 浙江省 Huzhou",
+      "latitude": 30.87,
+      "longitude": 120.09
+    },
+    {
+      "code": "330600",
+      "id": "1795855",
+      "name": "绍兴市",
+      "label": "浙江省 绍兴市",
+      "search": "绍兴市 浙江省 Shaoxing",
+      "latitude": 30,
+      "longitude": 120.58
+    },
+    {
+      "code": "330700",
+      "id": "1805528",
+      "name": "金华市",
+      "label": "浙江省 金华市",
+      "search": "金华市 浙江省 Jinhua",
+      "latitude": 29.11,
+      "longitude": 119.64
+    },
+    {
+      "code": "330800",
+      "id": "1797264",
+      "name": "衢州市",
+      "label": "浙江省 衢州市",
+      "search": "衢州市 浙江省 Quzhou",
+      "latitude": 28.96,
+      "longitude": 118.87
+    },
+    {
+      "code": "330900",
+      "id": "1886762",
+      "name": "舟山市",
+      "label": "浙江省 舟山市",
+      "search": "舟山市 浙江省 Zhoushan",
+      "latitude": 29.99,
+      "longitude": 122.2
+    },
+    {
+      "code": "331000",
+      "id": "8400694",
+      "name": "台州市",
+      "label": "浙江省 台州市",
+      "search": "台州市 浙江省 Taizhou",
+      "latitude": 28.66,
+      "longitude": 121.43
+    },
+    {
+      "code": "331100",
+      "id": "1803245",
+      "name": "丽水市",
+      "label": "浙江省 丽水市",
+      "search": "丽水市 浙江省 Lishui",
+      "latitude": 28.46,
+      "longitude": 119.91
+    },
+    {
+      "code": "340100",
+      "id": "1808722",
+      "name": "合肥市",
+      "label": "安徽省 合肥市",
+      "search": "合肥市 安徽省 Hefei",
+      "latitude": 31.86,
+      "longitude": 117.28
+    },
+    {
+      "code": "340200",
+      "id": "1791236",
+      "name": "芜湖市",
+      "label": "安徽省 芜湖市",
+      "search": "芜湖市 安徽省 Wuhu",
+      "latitude": 31.35,
+      "longitude": 118.43
+    },
+    {
+      "code": "340300",
+      "id": "1816440",
+      "name": "蚌埠市",
+      "label": "安徽省 蚌埠市",
+      "search": "蚌埠市 安徽省 Bengbu",
+      "latitude": 32.94,
+      "longitude": 117.36
+    },
+    {
+      "code": "340400",
+      "id": "1807681",
+      "name": "淮南市",
+      "label": "安徽省 淮南市",
+      "search": "淮南市 安徽省 Huainan",
+      "latitude": 32.63,
+      "longitude": 117
+    },
+    {
+      "code": "340500",
+      "id": "1801620",
+      "name": "马鞍山市",
+      "label": "安徽省 马鞍山市",
+      "search": "马鞍山市 安徽省 Ma'anshan",
+      "latitude": 31.69,
+      "longitude": 118.51
+    },
+    {
+      "code": "340600",
+      "id": "1807700",
+      "name": "淮北市",
+      "label": "安徽省 淮北市",
+      "search": "淮北市 安徽省 Huaibei",
+      "latitude": 33.97,
+      "longitude": 116.79
+    },
+    {
+      "code": "340700",
+      "id": "1792621",
+      "name": "铜陵市",
+      "label": "安徽省 铜陵市",
+      "search": "铜陵市 安徽省 Tongling",
+      "latitude": 30.95,
+      "longitude": 117.78
+    },
+    {
+      "code": "340800",
+      "id": "1817993",
+      "name": "安庆市",
+      "label": "安徽省 安庆市",
+      "search": "安庆市 安徽省 Anqing",
+      "latitude": 30.51,
+      "longitude": 117.05
+    },
+    {
+      "code": "341000",
+      "id": "1792359",
+      "name": "黄山市",
+      "label": "安徽省 黄山市",
+      "search": "黄山市 安徽省 Huangshan",
+      "latitude": 29.71,
+      "longitude": 118.31
+    },
+    {
+      "code": "341100",
+      "id": "1814757",
+      "name": "滁州市",
+      "label": "安徽省 滁州市",
+      "search": "滁州市 安徽省 Chuzhou",
+      "latitude": 32.32,
+      "longitude": 118.3
+    },
+    {
+      "code": "341200",
+      "id": "1810845",
+      "name": "阜阳市",
+      "label": "安徽省 阜阳市",
+      "search": "阜阳市 安徽省 Fuyang",
+      "latitude": 32.9,
+      "longitude": 115.82
+    },
+    {
+      "code": "341300",
+      "id": "1793743",
+      "name": "宿州市",
+      "label": "安徽省 宿州市",
+      "search": "宿州市 安徽省 Suzhou",
+      "latitude": 33.64,
+      "longitude": 116.98
+    },
+    {
+      "code": "341500",
+      "id": "1802206",
+      "name": "六安市",
+      "label": "安徽省 六安市",
+      "search": "六安市 安徽省 Lu'an",
+      "latitude": 31.74,
+      "longitude": 116.52
+    },
+    {
+      "code": "341600",
+      "id": "1816234",
+      "name": "亳州市",
+      "label": "安徽省 亳州市",
+      "search": "亳州市 安徽省 Bozhou",
+      "latitude": 33.88,
+      "longitude": 115.77
+    },
+    {
+      "code": "341700",
+      "id": "1814934",
+      "name": "池州市",
+      "label": "安徽省 池州市",
+      "search": "池州市 安徽省 Chizhou",
+      "latitude": 30.66,
+      "longitude": 117.48
+    },
+    {
+      "code": "341800",
+      "id": "1788081",
+      "name": "宣城市",
+      "label": "安徽省 宣城市",
+      "search": "宣城市 安徽省 Xuancheng",
+      "latitude": 30.95,
+      "longitude": 118.76
+    },
+    {
+      "code": "350100",
+      "id": "1810821",
+      "name": "福州市",
+      "label": "福建省 福州市",
+      "search": "福州市 福建省 Fuzhou",
+      "latitude": 26.06,
+      "longitude": 119.31
+    },
+    {
+      "code": "350200",
+      "id": "1790645",
+      "name": "厦门市",
+      "label": "福建省 厦门市",
+      "search": "厦门市 福建省 Xiamen",
+      "latitude": 24.48,
+      "longitude": 118.08
+    },
+    {
+      "code": "350300",
+      "id": "1798449",
+      "name": "莆田市",
+      "label": "福建省 莆田市",
+      "search": "莆田市 福建省 Putian",
+      "latitude": 25.44,
+      "longitude": 119.01
+    },
+    {
+      "code": "350400",
+      "id": "1796663",
+      "name": "三明市",
+      "label": "福建省 三明市",
+      "search": "三明市 福建省 Sanming",
+      "latitude": 26.25,
+      "longitude": 117.62
+    },
+    {
+      "code": "350500",
+      "id": "1797353",
+      "name": "泉州市",
+      "label": "福建省 泉州市",
+      "search": "泉州市 福建省 Quanzhou",
+      "latitude": 24.91,
+      "longitude": 118.59
+    },
+    {
+      "code": "350600",
+      "id": "1785018",
+      "name": "漳州市",
+      "label": "福建省 漳州市",
+      "search": "漳州市 福建省 Zhangzhou",
+      "latitude": 24.51,
+      "longitude": 117.66
+    },
+    {
+      "code": "350700",
+      "id": "1799846",
+      "name": "南平市",
+      "label": "福建省 南平市",
+      "search": "南平市 福建省 Nanping",
+      "latitude": 26.65,
+      "longitude": 118.17
+    },
+    {
+      "code": "350800",
+      "id": "1802276",
+      "name": "龙岩市",
+      "label": "福建省 龙岩市",
+      "search": "龙岩市 福建省 Longyan",
+      "latitude": 25.07,
+      "longitude": 117.02
+    },
+    {
+      "code": "350900",
+      "id": "1806097",
+      "name": "宁德市",
+      "label": "福建省 宁德市",
+      "search": "宁德市 福建省 Ningde",
+      "latitude": 26.66,
+      "longitude": 119.52
+    },
+    {
+      "code": "360100",
+      "id": "1800163",
+      "name": "南昌市",
+      "label": "江西省 南昌市",
+      "search": "南昌市 江西省 Nanchang",
+      "latitude": 28.68,
+      "longitude": 115.85
+    },
+    {
+      "code": "360200",
+      "id": "1805680",
+      "name": "景德镇市",
+      "label": "江西省 景德镇市",
+      "search": "景德镇市 江西省 Jingdezhen",
+      "latitude": 29.29,
+      "longitude": 117.21
+    },
+    {
+      "code": "360300",
+      "id": "1798654",
+      "name": "萍乡市",
+      "label": "江西省 萍乡市",
+      "search": "萍乡市 江西省 Pingxiang",
+      "latitude": 27.62,
+      "longitude": 113.85
+    },
+    {
+      "code": "360400",
+      "id": "1805179",
+      "name": "九江市",
+      "label": "江西省 九江市",
+      "search": "九江市 江西省 Jiujiang",
+      "latitude": 29.7,
+      "longitude": 116
+    },
+    {
+      "code": "360500",
+      "id": "1788508",
+      "name": "新余市",
+      "label": "江西省 新余市",
+      "search": "新余市 江西省 Xinyu",
+      "latitude": 27.8,
+      "longitude": 114.93
+    },
+    {
+      "code": "360600",
+      "id": "1786577",
+      "name": "鹰潭市",
+      "label": "江西省 鹰潭市",
+      "search": "鹰潭市 江西省 Yingtan",
+      "latitude": 28.23,
+      "longitude": 117
+    },
+    {
+      "code": "360700",
+      "id": "1810638",
+      "name": "赣州市",
+      "label": "江西省 赣州市",
+      "search": "赣州市 江西省 Ganzhou",
+      "latitude": 25.85,
+      "longitude": 114.93
+    },
+    {
+      "code": "360800",
+      "id": "1806445",
+      "name": "吉安市",
+      "label": "江西省 吉安市",
+      "search": "吉安市 江西省 Ji'an",
+      "latitude": 27.12,
+      "longitude": 114.98
+    },
+    {
+      "code": "360900",
+      "id": "1786746",
+      "name": "宜春市",
+      "label": "江西省 宜春市",
+      "search": "宜春市 江西省 Yichun",
+      "latitude": 27.83,
+      "longitude": 114.4
+    },
+    {
+      "code": "361000",
+      "id": "1810820",
+      "name": "抚州市",
+      "label": "江西省 抚州市",
+      "search": "抚州市 江西省 Fuzhou",
+      "latitude": 27.96,
+      "longitude": 116.33
+    },
+    {
+      "code": "361100",
+      "id": "1787858",
+      "name": "上饶市",
+      "label": "江西省 上饶市",
+      "search": "上饶市 江西省 Shangrao",
+      "latitude": 28.45,
+      "longitude": 117.94
+    },
+    {
+      "code": "370100",
+      "id": "1805753",
+      "name": "济南市",
+      "label": "山东省 济南市",
+      "search": "济南市 山东省 Jinan",
+      "latitude": 36.67,
+      "longitude": 117
+    },
+    {
+      "code": "370200",
+      "id": "1797929",
+      "name": "青岛市",
+      "label": "山东省 青岛市",
+      "search": "青岛市 山东省 Qingdao",
+      "latitude": 36.06,
+      "longitude": 120.38
+    },
+    {
+      "code": "370300",
+      "id": "1785286",
+      "name": "淄博市",
+      "label": "山东省 淄博市",
+      "search": "淄博市 山东省 Zibo",
+      "latitude": 36.79,
+      "longitude": 118.06
+    },
+    {
+      "code": "370400",
+      "id": "1785453",
+      "name": "枣庄市",
+      "label": "山东省 枣庄市",
+      "search": "枣庄市 山东省 Zaozhuang",
+      "latitude": 34.86,
+      "longitude": 117.55
+    },
+    {
+      "code": "370500",
+      "id": "1812101",
+      "name": "东营市",
+      "label": "山东省 东营市",
+      "search": "东营市 山东省 Dongying",
+      "latitude": 37.46,
+      "longitude": 118.49
+    },
+    {
+      "code": "370600",
+      "id": "1787093",
+      "name": "烟台市",
+      "label": "山东省 烟台市",
+      "search": "烟台市 山东省 Yantai",
+      "latitude": 37.48,
+      "longitude": 121.44
+    },
+    {
+      "code": "370700",
+      "id": "1791681",
+      "name": "潍坊市",
+      "label": "山东省 潍坊市",
+      "search": "潍坊市 山东省 Weifang",
+      "latitude": 36.71,
+      "longitude": 119.1
+    },
+    {
+      "code": "370800",
+      "id": "1805518",
+      "name": "济宁市",
+      "label": "山东省 济宁市",
+      "search": "济宁市 山东省 Jining",
+      "latitude": 35.41,
+      "longitude": 116.58
+    },
+    {
+      "code": "370900",
+      "id": "1793724",
+      "name": "泰安市",
+      "label": "山东省 泰安市",
+      "search": "泰安市 山东省 Tai'an",
+      "latitude": 36.19,
+      "longitude": 117.12
+    },
+    {
+      "code": "371000",
+      "id": "1791673",
+      "name": "威海市",
+      "label": "山东省 威海市",
+      "search": "威海市 山东省 Weihai",
+      "latitude": 37.51,
+      "longitude": 122.11
+    },
+    {
+      "code": "371100",
+      "id": "9072919",
+      "name": "日照市",
+      "label": "山东省 日照市",
+      "search": "日照市 山东省 Rizhao",
+      "latitude": 35.41,
+      "longitude": 119.53
+    },
+    {
+      "code": "371300",
+      "id": "1803318",
+      "name": "临沂市",
+      "label": "山东省 临沂市",
+      "search": "临沂市 山东省 Linyi",
+      "latitude": 35.06,
+      "longitude": 118.34
+    },
+    {
+      "code": "371400",
+      "id": "1812955",
+      "name": "德州市",
+      "label": "山东省 德州市",
+      "search": "德州市 山东省 Dezhou",
+      "latitude": 37.45,
+      "longitude": 116.37
+    },
+    {
+      "code": "371500",
+      "id": "1803834",
+      "name": "聊城市",
+      "label": "山东省 聊城市",
+      "search": "聊城市 山东省 Liaocheng",
+      "latitude": 36.45,
+      "longitude": 116
+    },
+    {
+      "code": "371600",
+      "id": "1816336",
+      "name": "滨州市",
+      "label": "山东省 滨州市",
+      "search": "滨州市 山东省 Binzhou",
+      "latitude": 37.37,
+      "longitude": 118.02
+    },
+    {
+      "code": "371700",
+      "id": "1808198",
+      "name": "菏泽市",
+      "label": "山东省 菏泽市",
+      "search": "菏泽市 山东省 Heze",
+      "latitude": 35.24,
+      "longitude": 115.47
+    },
+    {
+      "code": "410100",
+      "id": "1784658",
+      "name": "郑州市",
+      "label": "河南省 郑州市",
+      "search": "郑州市 河南省 Zhengzhou",
+      "latitude": 34.76,
+      "longitude": 113.65
+    },
+    {
+      "code": "410200",
+      "id": "1804879",
+      "name": "开封市",
+      "label": "河南省 开封市",
+      "search": "开封市 河南省 Kaifeng",
+      "latitude": 34.8,
+      "longitude": 114.31
+    },
+    {
+      "code": "410300",
+      "id": "1801792",
+      "name": "洛阳市",
+      "label": "河南省 洛阳市",
+      "search": "洛阳市 河南省 Luoyang",
+      "latitude": 34.67,
+      "longitude": 112.44
+    },
+    {
+      "code": "410400",
+      "id": "1798827",
+      "name": "平顶山市",
+      "label": "河南省 平顶山市",
+      "search": "平顶山市 河南省 Pingdingshan",
+      "latitude": 33.73,
+      "longitude": 113.32
+    },
+    {
+      "code": "410500",
+      "id": "1785294",
+      "name": "安阳市",
+      "label": "河南省 安阳市",
+      "search": "安阳市 河南省 Anyang",
+      "latitude": 36.1,
+      "longitude": 114.38
+    },
+    {
+      "code": "410600",
+      "id": "1808770",
+      "name": "鹤壁市",
+      "label": "河南省 鹤壁市",
+      "search": "鹤壁市 河南省 Hebi",
+      "latitude": 35.73,
+      "longitude": 114.29
+    },
+    {
+      "code": "410700",
+      "id": "1788572",
+      "name": "新乡市",
+      "label": "河南省 新乡市",
+      "search": "新乡市 河南省 Xinxiang",
+      "latitude": 35.19,
+      "longitude": 113.8
+    },
+    {
+      "code": "410800",
+      "id": "1805987",
+      "name": "焦作市",
+      "label": "河南省 焦作市",
+      "search": "焦作市 河南省 Jiaozuo",
+      "latitude": 35.24,
+      "longitude": 113.24
+    },
+    {
+      "code": "410900",
+      "id": "9181182",
+      "name": "濮阳市",
+      "label": "河南省 濮阳市",
+      "search": "濮阳市 河南省 Puyang",
+      "latitude": 35.76,
+      "longitude": 115.04
+    },
+    {
+      "code": "411000",
+      "id": "1788046",
+      "name": "许昌市",
+      "label": "河南省 许昌市",
+      "search": "许昌市 河南省 Xuchang",
+      "latitude": 34.03,
+      "longitude": 113.86
+    },
+    {
+      "code": "411100",
+      "id": "1801934",
+      "name": "漯河市",
+      "label": "河南省 漯河市",
+      "search": "漯河市 河南省 Luohe",
+      "latitude": 33.57,
+      "longitude": 114.03
+    },
+    {
+      "code": "411200",
+      "id": "1796669",
+      "name": "三门峡市",
+      "label": "河南省 三门峡市",
+      "search": "三门峡市 河南省 Sanmenxia",
+      "latitude": 34.78,
+      "longitude": 111.19
+    },
+    {
+      "code": "411300",
+      "id": "1799629",
+      "name": "南阳市",
+      "label": "河南省 南阳市",
+      "search": "南阳市 河南省 Nanyang",
+      "latitude": 33.01,
+      "longitude": 112.55
+    },
+    {
+      "code": "411400",
+      "id": "1796134",
+      "name": "商丘市",
+      "label": "河南省 商丘市",
+      "search": "商丘市 河南省 Shangqiu",
+      "latitude": 34.41,
+      "longitude": 115.66
+    },
+    {
+      "code": "411500",
+      "id": "1788534",
+      "name": "信阳市",
+      "label": "河南省 信阳市",
+      "search": "信阳市 河南省 Xinyang",
+      "latitude": 32.12,
+      "longitude": 114.07
+    },
+    {
+      "code": "411600",
+      "id": "1784130",
+      "name": "周口市",
+      "label": "河南省 周口市",
+      "search": "周口市 河南省 Zhoukou",
+      "latitude": 33.61,
+      "longitude": 114.65
+    },
+    {
+      "code": "411700",
+      "id": "1783873",
+      "name": "驻马店市",
+      "label": "河南省 驻马店市",
+      "search": "驻马店市 河南省 Zhumadian",
+      "latitude": 32.98,
+      "longitude": 114.03
+    },
+    {
+      "code": "419001",
+      "id": "1805012",
+      "name": "济源市",
+      "label": "河南省 济源市",
+      "search": "济源市 河南省 Jiyuan",
+      "latitude": 35.09,
+      "longitude": 112.59
+    },
+    {
+      "code": "420100",
+      "id": "1791247",
+      "name": "武汉市",
+      "label": "湖北省 武汉市",
+      "search": "武汉市 湖北省 Wuhan",
+      "latitude": 30.58,
+      "longitude": 114.27
+    },
+    {
+      "code": "420200",
+      "id": "1807234",
+      "name": "黄石市",
+      "label": "湖北省 黄石市",
+      "search": "黄石市 湖北省 Huangshi",
+      "latitude": 30.25,
+      "longitude": 115.05
+    },
+    {
+      "code": "420300",
+      "id": "1794903",
+      "name": "十堰市",
+      "label": "湖北省 十堰市",
+      "search": "十堰市 湖北省 Shiyan",
+      "latitude": 32.65,
+      "longitude": 110.78
+    },
+    {
+      "code": "420500",
+      "id": "1786764",
+      "name": "宜昌市",
+      "label": "湖北省 宜昌市",
+      "search": "宜昌市 湖北省 Yichang",
+      "latitude": 30.71,
+      "longitude": 111.28
+    },
+    {
+      "code": "420600",
+      "id": "1790587",
+      "name": "襄阳市",
+      "label": "湖北省 襄阳市",
+      "search": "襄阳市 湖北省 Xiangyang",
+      "latitude": 32.04,
+      "longitude": 112.14
+    },
+    {
+      "code": "420700",
+      "id": "6642286",
+      "name": "鄂州市",
+      "label": "湖北省 鄂州市",
+      "search": "鄂州市 湖北省 E'zhou",
+      "latitude": 30.4,
+      "longitude": 114.89
+    },
+    {
+      "code": "420800",
+      "id": "1805611",
+      "name": "荆门市",
+      "label": "湖北省 荆门市",
+      "search": "荆门市 湖北省 Jingmen",
+      "latitude": 31.03,
+      "longitude": 112.2
+    },
+    {
+      "code": "420900",
+      "id": "1790254",
+      "name": "孝感市",
+      "label": "湖北省 孝感市",
+      "search": "孝感市 湖北省 Xiaogan",
+      "latitude": 30.93,
+      "longitude": 113.92
+    },
+    {
+      "code": "421000",
+      "id": "1805540",
+      "name": "荆州市",
+      "label": "湖北省 荆州市",
+      "search": "荆州市 湖北省 Jingzhou",
+      "latitude": 30.35,
+      "longitude": 112.19
+    },
+    {
+      "code": "421100",
+      "id": "8537264",
+      "name": "黄冈市",
+      "label": "湖北省 黄冈市",
+      "search": "黄冈市 湖北省 Huanggang",
+      "latitude": 30.45,
+      "longitude": 114.87
+    },
+    {
+      "code": "421200",
+      "id": "1790396",
+      "name": "咸宁市",
+      "label": "湖北省 咸宁市",
+      "search": "咸宁市 湖北省 Xianning",
+      "latitude": 29.84,
+      "longitude": 114.32
+    },
+    {
+      "code": "421300",
+      "id": "1793879",
+      "name": "随州市",
+      "label": "湖北省 随州市",
+      "search": "随州市 湖北省 Suizhou",
+      "latitude": 31.71,
+      "longitude": 113.36
+    },
+    {
+      "code": "430100",
+      "id": "1815577",
+      "name": "长沙市",
+      "label": "湖南省 长沙市",
+      "search": "长沙市 湖南省 Changsha",
+      "latitude": 28.2,
+      "longitude": 112.97
+    },
+    {
+      "code": "430200",
+      "id": "1783763",
+      "name": "株洲市",
+      "label": "湖南省 株洲市",
+      "search": "株洲市 湖南省 Zhuzhou",
+      "latitude": 27.83,
+      "longitude": 113.15
+    },
+    {
+      "code": "430300",
+      "id": "1790492",
+      "name": "湘潭市",
+      "label": "湖南省 湘潭市",
+      "search": "湘潭市 湖南省 Xiangtan",
+      "latitude": 27.85,
+      "longitude": 112.9
+    },
+    {
+      "code": "430400",
+      "id": "1808370",
+      "name": "衡阳市",
+      "label": "湖南省 衡阳市",
+      "search": "衡阳市 湖南省 Hengyang",
+      "latitude": 26.89,
+      "longitude": 112.62
+    },
+    {
+      "code": "430500",
+      "id": "1816920",
+      "name": "邵阳市",
+      "label": "湖南省 邵阳市",
+      "search": "邵阳市 湖南省 Shaoyang",
+      "latitude": 27.24,
+      "longitude": 111.46
+    },
+    {
+      "code": "430600",
+      "id": "1927639",
+      "name": "岳阳市",
+      "label": "湖南省 岳阳市",
+      "search": "岳阳市 湖南省 Yueyang",
+      "latitude": 29.37,
+      "longitude": 113.09
+    },
+    {
+      "code": "430700",
+      "id": "1791121",
+      "name": "常德市",
+      "label": "湖南省 常德市",
+      "search": "常德市 湖南省 Changde",
+      "latitude": 29.03,
+      "longitude": 111.7
+    },
+    {
+      "code": "430800",
+      "id": "1813171",
+      "name": "张家界市",
+      "label": "湖南省 张家界市",
+      "search": "张家界市 湖南省 Zhangjiajie",
+      "latitude": 29.13,
+      "longitude": 110.48
+    },
+    {
+      "code": "430900",
+      "id": "1808316",
+      "name": "益阳市",
+      "label": "湖南省 益阳市",
+      "search": "益阳市 湖南省 Heshan",
+      "latitude": 28.57,
+      "longitude": 112.35
+    },
+    {
+      "code": "431000",
+      "id": "1815059",
+      "name": "郴州市",
+      "label": "湖南省 郴州市",
+      "search": "郴州市 湖南省 Chenzhou",
+      "latitude": 25.8,
+      "longitude": 113.03
+    },
+    {
+      "code": "431100",
+      "id": "1786217",
+      "name": "永州市",
+      "label": "湖南省 永州市",
+      "search": "永州市 湖南省 Yongzhou",
+      "latitude": 26.42,
+      "longitude": 111.61
+    },
+    {
+      "code": "431200",
+      "id": "1807689",
+      "name": "怀化市",
+      "label": "湖南省 怀化市",
+      "search": "怀化市 湖南省 Huaihua",
+      "latitude": 27.56,
+      "longitude": 110
+    },
+    {
+      "code": "431300",
+      "id": "1802238",
+      "name": "娄底市",
+      "label": "湖南省 娄底市",
+      "search": "娄底市 湖南省 Loudi",
+      "latitude": 27.73,
+      "longitude": 111.99
+    },
+    {
+      "code": "440100",
+      "id": "1809858",
+      "name": "广州市",
+      "label": "广东省 广州市",
+      "search": "广州市 广东省 Guangzhou",
+      "latitude": 23.12,
+      "longitude": 113.25
+    },
+    {
+      "code": "440200",
+      "id": "1795874",
+      "name": "韶关市",
+      "label": "广东省 韶关市",
+      "search": "韶关市 广东省 Shaoguan",
+      "latitude": 24.8,
+      "longitude": 113.58
+    },
+    {
+      "code": "440300",
+      "id": "1795565",
+      "name": "深圳市",
+      "label": "广东省 深圳市",
+      "search": "深圳市 广东省 Shenzhen",
+      "latitude": 22.55,
+      "longitude": 114.07
+    },
+    {
+      "code": "440400",
+      "id": "1790437",
+      "name": "珠海市",
+      "label": "广东省 珠海市",
+      "search": "珠海市 广东省 Zhuhai",
+      "latitude": 22.28,
+      "longitude": 113.57
+    },
+    {
+      "code": "440500",
+      "id": "1795940",
+      "name": "汕头市",
+      "label": "广东省 汕头市",
+      "search": "汕头市 广东省 Shantou",
+      "latitude": 23.35,
+      "longitude": 116.68
+    },
+    {
+      "code": "440600",
+      "id": "1811103",
+      "name": "佛山市",
+      "label": "广东省 佛山市",
+      "search": "佛山市 广东省 Foshan",
+      "latitude": 23.03,
+      "longitude": 113.13
+    },
+    {
+      "code": "440700",
+      "id": "1806299",
+      "name": "江门市",
+      "label": "广东省 江门市",
+      "search": "江门市 广东省 Jiangmen",
+      "latitude": 22.58,
+      "longitude": 113.08
+    },
+    {
+      "code": "440800",
+      "id": "1784990",
+      "name": "湛江市",
+      "label": "广东省 湛江市",
+      "search": "湛江市 广东省 Zhanjiang",
+      "latitude": 21.23,
+      "longitude": 110.39
+    },
+    {
+      "code": "440900",
+      "id": "1801180",
+      "name": "茂名市",
+      "label": "广东省 茂名市",
+      "search": "茂名市 广东省 Maoming",
+      "latitude": 21.67,
+      "longitude": 110.91
+    },
+    {
+      "code": "441200",
+      "id": "1784853",
+      "name": "肇庆市",
+      "label": "广东省 肇庆市",
+      "search": "肇庆市 广东省 Zhaoqing",
+      "latitude": 23.05,
+      "longitude": 112.46
+    },
+    {
+      "code": "441300",
+      "id": "1806776",
+      "name": "惠州市",
+      "label": "广东省 惠州市",
+      "search": "惠州市 广东省 Huizhou",
+      "latitude": 23.11,
+      "longitude": 114.42
+    },
+    {
+      "code": "441400",
+      "id": "1800779",
+      "name": "梅州市",
+      "label": "广东省 梅州市",
+      "search": "梅州市 广东省 Meizhou",
+      "latitude": 24.29,
+      "longitude": 116.12
+    },
+    {
+      "code": "441500",
+      "id": "1795928",
+      "name": "汕尾市",
+      "label": "广东省 汕尾市",
+      "search": "汕尾市 广东省 Shanwei",
+      "latitude": 22.78,
+      "longitude": 115.35
+    },
+    {
+      "code": "441600",
+      "id": "1786112",
+      "name": "河源市",
+      "label": "广东省 河源市",
+      "search": "河源市 广东省 Heyuan",
+      "latitude": 23.73,
+      "longitude": 114.68
+    },
+    {
+      "code": "441700",
+      "id": "1806408",
+      "name": "阳江市",
+      "label": "广东省 阳江市",
+      "search": "阳江市 广东省 Yangjiang",
+      "latitude": 21.86,
+      "longitude": 111.96
+    },
+    {
+      "code": "441800",
+      "id": "1797945",
+      "name": "清远市",
+      "label": "广东省 清远市",
+      "search": "清远市 广东省 Qingyuan",
+      "latitude": 23.7,
+      "longitude": 113.03
+    },
+    {
+      "code": "441900",
+      "id": "1812545",
+      "name": "东莞市",
+      "label": "广东省 东莞市",
+      "search": "东莞市 广东省 Dongguan",
+      "latitude": 23.02,
+      "longitude": 113.75
+    },
+    {
+      "code": "442000",
+      "id": "6986104",
+      "name": "中山市",
+      "label": "广东省 中山市",
+      "search": "中山市 广东省 Zhongshan",
+      "latitude": 22.52,
+      "longitude": 113.38
+    },
+    {
+      "code": "445100",
+      "id": "1815395",
+      "name": "潮州市",
+      "label": "广东省 潮州市",
+      "search": "潮州市 广东省 Chaozhou",
+      "latitude": 23.65,
+      "longitude": 116.62
+    },
+    {
+      "code": "445200",
+      "id": "1797121",
+      "name": "揭阳市",
+      "label": "广东省 揭阳市",
+      "search": "揭阳市 广东省 Jieyang",
+      "latitude": 23.54,
+      "longitude": 116.37
+    },
+    {
+      "code": "445300",
+      "id": "1785725",
+      "name": "云浮市",
+      "label": "广东省 云浮市",
+      "search": "云浮市 广东省 Yunfu",
+      "latitude": 22.93,
+      "longitude": 112.04
+    },
+    {
+      "code": "450100",
+      "id": "1799869",
+      "name": "南宁市",
+      "label": "广西壮族自治区 南宁市",
+      "search": "南宁市 广西壮族自治区 Nanning",
+      "latitude": 22.82,
+      "longitude": 108.32
+    },
+    {
+      "code": "450200",
+      "id": "1803300",
+      "name": "柳州市",
+      "label": "广西壮族自治区 柳州市",
+      "search": "柳州市 广西壮族自治区 Liuzhou",
+      "latitude": 24.32,
+      "longitude": 109.41
+    },
+    {
+      "code": "450300",
+      "id": "1809498",
+      "name": "桂林市",
+      "label": "广西壮族自治区 桂林市",
+      "search": "桂林市 广西壮族自治区 Guilin",
+      "latitude": 25.28,
+      "longitude": 110.3
+    },
+    {
+      "code": "450400",
+      "id": "1790840",
+      "name": "梧州市",
+      "label": "广西壮族自治区 梧州市",
+      "search": "梧州市 广西壮族自治区 Wuzhou",
+      "latitude": 23.48,
+      "longitude": 111.29
+    },
+    {
+      "code": "450500",
+      "id": "1816705",
+      "name": "北海市",
+      "label": "广西壮族自治区 北海市",
+      "search": "北海市 广西壮族自治区 Beihai",
+      "latitude": 21.48,
+      "longitude": 109.12
+    },
+    {
+      "code": "450600",
+      "id": "12269572",
+      "name": "防城港市",
+      "label": "广西壮族自治区 防城港市",
+      "search": "防城港市 广西壮族自治区 Fangchenggang",
+      "latitude": 21.77,
+      "longitude": 108.36
+    },
+    {
+      "code": "450700",
+      "id": "1797551",
+      "name": "钦州市",
+      "label": "广西壮族自治区 钦州市",
+      "search": "钦州市 广西壮族自治区 Qinzhou",
+      "latitude": 21.98,
+      "longitude": 108.65
+    },
+    {
+      "code": "450800",
+      "id": "1809532",
+      "name": "贵港市",
+      "label": "广西壮族自治区 贵港市",
+      "search": "贵港市 广西壮族自治区 Guigang",
+      "latitude": 23.12,
+      "longitude": 109.59
+    },
+    {
+      "code": "450900",
+      "id": "1785781",
+      "name": "玉林市",
+      "label": "广西壮族自治区 玉林市",
+      "search": "玉林市 广西壮族自治区 Yulin",
+      "latitude": 22.63,
+      "longitude": 110.15
+    },
+    {
+      "code": "451000",
+      "id": "1816269",
+      "name": "百色市",
+      "label": "广西壮族自治区 百色市",
+      "search": "百色市 广西壮族自治区 Baise",
+      "latitude": 23.89,
+      "longitude": 106.63
+    },
+    {
+      "code": "451100",
+      "id": "7576887",
+      "name": "贺州市",
+      "label": "广西壮族自治区 贺州市",
+      "search": "贺州市 广西壮族自治区 Hezhou",
+      "latitude": 24.4,
+      "longitude": 111.57
+    },
+    {
+      "code": "451200",
+      "id": "12358476",
+      "name": "河池市",
+      "label": "广西壮族自治区 河池市",
+      "search": "河池市 广西壮族自治区 Hechi",
+      "latitude": 24.69,
+      "longitude": 108.08
+    },
+    {
+      "code": "451300",
+      "id": "1804609",
+      "name": "来宾市",
+      "label": "广西壮族自治区 来宾市",
+      "search": "来宾市 广西壮族自治区 Laibin",
+      "latitude": 23.75,
+      "longitude": 109.22
+    },
+    {
+      "code": "451400",
+      "id": "12159964",
+      "name": "崇左市",
+      "label": "广西壮族自治区 崇左市",
+      "search": "崇左市 广西壮族自治区 Chongzuo",
+      "latitude": 22.38,
+      "longitude": 107.37
+    },
+    {
+      "code": "460100",
+      "id": "1809078",
+      "name": "海口市",
+      "label": "海南省 海口市",
+      "search": "海口市 海南省 Haikou",
+      "latitude": 20.03,
+      "longitude": 110.35
+    },
+    {
+      "code": "460200",
+      "id": "1796556",
+      "name": "三亚市",
+      "label": "海南省 三亚市",
+      "search": "三亚市 海南省 Sanya",
+      "latitude": 18.25,
+      "longitude": 109.51
+    },
+    {
+      "code": "460400",
+      "id": "1800234",
+      "name": "儋州市",
+      "label": "海南省 儋州市",
+      "search": "儋州市 海南省 Nada",
+      "latitude": 19.52,
+      "longitude": 109.58
+    },
+    {
+      "code": "469001",
+      "id": "1916012",
+      "name": "五指山市",
+      "label": "海南省 五指山市",
+      "search": "五指山市 海南省 Wuzhishan",
+      "latitude": 18.78,
+      "longitude": 109.5
+    },
+    {
+      "code": "469002",
+      "id": "1806488",
+      "name": "琼海市",
+      "label": "海南省 琼海市",
+      "search": "琼海市 海南省 Qionghai",
+      "latitude": 19.24,
+      "longitude": 110.46
+    },
+    {
+      "code": "469005",
+      "id": "1791544",
+      "name": "文昌市",
+      "label": "海南省 文昌市",
+      "search": "文昌市 海南省 Wenchang",
+      "latitude": 19.55,
+      "longitude": 110.8
+    },
+    {
+      "code": "469006",
+      "id": "1791779",
+      "name": "万宁市",
+      "label": "海南省 万宁市",
+      "search": "万宁市 海南省 Wanning",
+      "latitude": 18.8,
+      "longitude": 110.38
+    },
+    {
+      "code": "469007",
+      "id": "1816858",
+      "name": "东方市",
+      "label": "海南省 东方市",
+      "search": "东方市 海南省 Basuo",
+      "latitude": 19.1,
+      "longitude": 108.67
+    },
+    {
+      "code": "469023",
+      "id": "1805505",
+      "name": "澄迈县",
+      "label": "海南省 澄迈县",
+      "search": "澄迈县 海南省 Jinjiang",
+      "latitude": 19.74,
+      "longitude": 110.01
+    },
+    {
+      "code": "469024",
+      "id": "1803560",
+      "name": "临高县",
+      "label": "海南省 临高县",
+      "search": "临高县 海南省 Lingao",
+      "latitude": 19.91,
+      "longitude": 109.69
+    },
+    {
+      "code": "469029",
+      "id": "1816904",
+      "name": "保亭黎族苗族自治县",
+      "label": "海南省 保亭黎族苗族自治县",
+      "search": "保亭黎族苗族自治县 海南省 Baocheng",
+      "latitude": 18.64,
+      "longitude": 109.7
+    },
+    {
+      "code": "469030",
+      "id": "1786620",
+      "name": "琼中黎族苗族自治县",
+      "label": "海南省 琼中黎族苗族自治县",
+      "search": "琼中黎族苗族自治县 海南省 Yinggen",
+      "latitude": 19.04,
+      "longitude": 109.84
+    },
+    {
+      "code": "500000",
+      "id": "1814906",
+      "name": "重庆市",
+      "label": "重庆市",
+      "search": "重庆市 重庆市 Chongqing",
+      "latitude": 29.56,
+      "longitude": 106.56
+    },
+    {
+      "code": "510100",
+      "id": "1815286",
+      "name": "成都市",
+      "label": "四川省 成都市",
+      "search": "成都市 四川省 Chengdu",
+      "latitude": 30.67,
+      "longitude": 104.07
+    },
+    {
+      "code": "510300",
+      "id": "1783745",
+      "name": "自贡市",
+      "label": "四川省 自贡市",
+      "search": "自贡市 四川省 Zigong",
+      "latitude": 29.34,
+      "longitude": 104.78
+    },
+    {
+      "code": "510400",
+      "id": "6929460",
+      "name": "攀枝花市",
+      "label": "四川省 攀枝花市",
+      "search": "攀枝花市 四川省 Panzhihua",
+      "latitude": 26.59,
+      "longitude": 101.71
+    },
+    {
+      "code": "510500",
+      "id": "1801640",
+      "name": "泸州市",
+      "label": "四川省 泸州市",
+      "search": "泸州市 四川省 Luzhou",
+      "latitude": 28.89,
+      "longitude": 105.43
+    },
+    {
+      "code": "510600",
+      "id": "1812961",
+      "name": "德阳市",
+      "label": "四川省 德阳市",
+      "search": "德阳市 四川省 Deyang",
+      "latitude": 31.13,
+      "longitude": 104.38
+    },
+    {
+      "code": "510700",
+      "id": "1800627",
+      "name": "绵阳市",
+      "label": "四川省 绵阳市",
+      "search": "绵阳市 四川省 Mianyang",
+      "latitude": 31.47,
+      "longitude": 104.68
+    },
+    {
+      "code": "510800",
+      "id": "1806466",
+      "name": "广元市",
+      "label": "四川省 广元市",
+      "search": "广元市 四川省 Guangyuan",
+      "latitude": 32.44,
+      "longitude": 105.82
+    },
+    {
+      "code": "510900",
+      "id": "1793900",
+      "name": "遂宁市",
+      "label": "四川省 遂宁市",
+      "search": "遂宁市 四川省 Suining",
+      "latitude": 30.51,
+      "longitude": 105.57
+    },
+    {
+      "code": "511000",
+      "id": "1799491",
+      "name": "内江市",
+      "label": "四川省 内江市",
+      "search": "内江市 四川省 Neijiang",
+      "latitude": 29.58,
+      "longitude": 105.06
+    },
+    {
+      "code": "511100",
+      "id": "1804153",
+      "name": "乐山市",
+      "label": "四川省 乐山市",
+      "search": "乐山市 四川省 Leshan",
+      "latitude": 29.56,
+      "longitude": 103.76
+    },
+    {
+      "code": "511300",
+      "id": "1800146",
+      "name": "南充市",
+      "label": "四川省 南充市",
+      "search": "南充市 四川省 Nanchong",
+      "latitude": 30.8,
+      "longitude": 106.08
+    },
+    {
+      "code": "511400",
+      "id": "1800818",
+      "name": "眉山市",
+      "label": "四川省 眉山市",
+      "search": "眉山市 四川省 Meishan",
+      "latitude": 30.04,
+      "longitude": 103.84
+    },
+    {
+      "code": "511500",
+      "id": "1786770",
+      "name": "宜宾市",
+      "label": "四川省 宜宾市",
+      "search": "宜宾市 四川省 Yibin",
+      "latitude": 28.76,
+      "longitude": 104.64
+    },
+    {
+      "code": "511600",
+      "id": "1799194",
+      "name": "广安市",
+      "label": "四川省 广安市",
+      "search": "广安市 四川省 Guang'an",
+      "latitude": 30.47,
+      "longitude": 106.64
+    },
+    {
+      "code": "511700",
+      "id": "1813325",
+      "name": "达州市",
+      "label": "四川省 达州市",
+      "search": "达州市 四川省 Dazhou",
+      "latitude": 31.21,
+      "longitude": 107.46
+    },
+    {
+      "code": "511800",
+      "id": "1787816",
+      "name": "雅安市",
+      "label": "四川省 雅安市",
+      "search": "雅安市 四川省 Ya'an",
+      "latitude": 29.99,
+      "longitude": 103
+    },
+    {
+      "code": "511900",
+      "id": "11995100",
+      "name": "巴中市",
+      "label": "四川省 巴中市",
+      "search": "巴中市 四川省 Bazhong",
+      "latitude": 31.87,
+      "longitude": 106.74
+    },
+    {
+      "code": "512000",
+      "id": "1783683",
+      "name": "资阳市",
+      "label": "四川省 资阳市",
+      "search": "资阳市 四川省 Ziyang",
+      "latitude": 30.12,
+      "longitude": 104.65
+    },
+    {
+      "code": "520100",
+      "id": "1809461",
+      "name": "贵阳市",
+      "label": "贵州省 贵阳市",
+      "search": "贵阳市 贵州省 Guiyang",
+      "latitude": 26.58,
+      "longitude": 106.72
+    },
+    {
+      "code": "520200",
+      "id": "8533133",
+      "name": "六盘水市",
+      "label": "贵州省 六盘水市",
+      "search": "六盘水市 贵州省 Liupanshui",
+      "latitude": 26.59,
+      "longitude": 104.83
+    },
+    {
+      "code": "520300",
+      "id": "1783621",
+      "name": "遵义市",
+      "label": "贵州省 遵义市",
+      "search": "遵义市 贵州省 Zunyi",
+      "latitude": 27.69,
+      "longitude": 106.91
+    },
+    {
+      "code": "520400",
+      "id": "1817968",
+      "name": "安顺市",
+      "label": "贵州省 安顺市",
+      "search": "安顺市 贵州省 Anshun",
+      "latitude": 26.25,
+      "longitude": 105.93
+    },
+    {
+      "code": "520500",
+      "id": "1816373",
+      "name": "毕节市",
+      "label": "贵州省 毕节市",
+      "search": "毕节市 贵州省 Bijie",
+      "latitude": 27.3,
+      "longitude": 105.29
+    },
+    {
+      "code": "520600",
+      "id": "1792592",
+      "name": "铜仁市",
+      "label": "贵州省 铜仁市",
+      "search": "铜仁市 贵州省 Tongren",
+      "latitude": 27.72,
+      "longitude": 109.19
+    },
+    {
+      "code": "530100",
+      "id": "1804651",
+      "name": "昆明市",
+      "label": "云南省 昆明市",
+      "search": "昆明市 云南省 Kunming",
+      "latitude": 25.04,
+      "longitude": 102.72
+    },
+    {
+      "code": "530300",
+      "id": "1797318",
+      "name": "曲靖市",
+      "label": "云南省 曲靖市",
+      "search": "曲靖市 云南省 Qujing",
+      "latitude": 25.48,
+      "longitude": 103.78
+    },
+    {
+      "code": "530400",
+      "id": "1784185",
+      "name": "玉溪市",
+      "label": "云南省 玉溪市",
+      "search": "玉溪市 云南省 Yuxi",
+      "latitude": 24.36,
+      "longitude": 102.54
+    },
+    {
+      "code": "530500",
+      "id": "1281673",
+      "name": "保山市",
+      "label": "云南省 保山市",
+      "search": "保山市 云南省 Baoshan",
+      "latitude": 25.12,
+      "longitude": 99.16
+    },
+    {
+      "code": "530600",
+      "id": "1784841",
+      "name": "昭通市",
+      "label": "云南省 昭通市",
+      "search": "昭通市 云南省 Zhaotong",
+      "latitude": 27.32,
+      "longitude": 103.72
+    },
+    {
+      "code": "530700",
+      "id": "1813253",
+      "name": "丽江市",
+      "label": "云南省 丽江市",
+      "search": "丽江市 云南省 Lijiang",
+      "latitude": 26.87,
+      "longitude": 100.22
+    },
+    {
+      "code": "530800",
+      "id": "1794209",
+      "name": "普洱市",
+      "label": "云南省 普洱市",
+      "search": "普洱市 云南省 Pu'er",
+      "latitude": 22.79,
+      "longitude": 100.97
+    },
+    {
+      "code": "530900",
+      "id": "1803590",
+      "name": "临沧市",
+      "label": "云南省 临沧市",
+      "search": "临沧市 云南省 Lincang",
+      "latitude": 23.88,
+      "longitude": 100.09
+    },
+    {
+      "code": "540100",
+      "id": "1280737",
+      "name": "拉萨市",
+      "label": "西藏自治区 拉萨市",
+      "search": "拉萨市 西藏自治区 Lhasa",
+      "latitude": 29.65,
+      "longitude": 91.1
+    },
+    {
+      "code": "540200",
+      "id": "1279715",
+      "name": "日喀则市",
+      "label": "西藏自治区 日喀则市",
+      "search": "日喀则市 西藏自治区 Xigaze",
+      "latitude": 29.25,
+      "longitude": 88.88
+    },
+    {
+      "code": "540300",
+      "id": "1280281",
+      "name": "昌都市",
+      "label": "西藏自治区 昌都市",
+      "search": "昌都市 西藏自治区 Qamdo",
+      "latitude": 31.13,
+      "longitude": 97.18
+    },
+    {
+      "code": "540400",
+      "id": "13512708",
+      "name": "林芝市",
+      "label": "西藏自治区 林芝市",
+      "search": "林芝市 西藏自治区 Nyingchi",
+      "latitude": 29.65,
+      "longitude": 94.36
+    },
+    {
+      "code": "540500",
+      "id": "8067345",
+      "name": "山南市",
+      "label": "西藏自治区 山南市",
+      "search": "山南市 西藏自治区 Lhoka",
+      "latitude": 29.24,
+      "longitude": 91.77
+    },
+    {
+      "code": "540600",
+      "id": "1280517",
+      "name": "那曲市",
+      "label": "西藏自治区 那曲市",
+      "search": "那曲市 西藏自治区 Nagqu",
+      "latitude": 31.48,
+      "longitude": 92.06
+    },
+    {
+      "code": "542500",
+      "id": "1280003",
+      "name": "阿里地区",
+      "label": "西藏自治区 阿里地区",
+      "search": "阿里地区 西藏自治区 Gar",
+      "latitude": 32.5,
+      "longitude": 80.1
+    },
+    {
+      "code": "610100",
+      "id": "1790630",
+      "name": "西安市",
+      "label": "陕西省 西安市",
+      "search": "西安市 陕西省 Xi'an",
+      "latitude": 34.26,
+      "longitude": 108.93
+    },
+    {
+      "code": "610200",
+      "id": "7064006",
+      "name": "铜川市",
+      "label": "陕西省 铜川市",
+      "search": "铜川市 陕西省 Tongchuan",
+      "latitude": 34.9,
+      "longitude": 108.95
+    },
+    {
+      "code": "610300",
+      "id": "10942359",
+      "name": "宝鸡市",
+      "label": "陕西省 宝鸡市",
+      "search": "宝鸡市 陕西省 Baoji",
+      "latitude": 34.37,
+      "longitude": 107.24
+    },
+    {
+      "code": "610400",
+      "id": "1790353",
+      "name": "咸阳市",
+      "label": "陕西省 咸阳市",
+      "search": "咸阳市 陕西省 Xianyang",
+      "latitude": 34.34,
+      "longitude": 108.7
+    },
+    {
+      "code": "610500",
+      "id": "1791636",
+      "name": "渭南市",
+      "label": "陕西省 渭南市",
+      "search": "渭南市 陕西省 Weinan",
+      "latitude": 34.5,
+      "longitude": 109.51
+    },
+    {
+      "code": "610600",
+      "id": "1787765",
+      "name": "延安市",
+      "label": "陕西省 延安市",
+      "search": "延安市 陕西省 Yan'an",
+      "latitude": 36.6,
+      "longitude": 109.49
+    },
+    {
+      "code": "610700",
+      "id": "1808857",
+      "name": "汉中市",
+      "label": "陕西省 汉中市",
+      "search": "汉中市 陕西省 Hanzhong",
+      "latitude": 33.08,
+      "longitude": 107.02
+    },
+    {
+      "code": "610800",
+      "id": "1785777",
+      "name": "榆林市",
+      "label": "陕西省 榆林市",
+      "search": "榆林市 陕西省 Yulinshi",
+      "latitude": 38.29,
+      "longitude": 109.74
+    },
+    {
+      "code": "610900",
+      "id": "1789065",
+      "name": "安康市",
+      "label": "陕西省 安康市",
+      "search": "安康市 陕西省 Ankang",
+      "latitude": 32.68,
+      "longitude": 109.02
+    },
+    {
+      "code": "611000",
+      "id": "1796068",
+      "name": "商洛市",
+      "label": "陕西省 商洛市",
+      "search": "商洛市 陕西省 Shangluo",
+      "latitude": 33.87,
+      "longitude": 109.93
+    },
+    {
+      "code": "620100",
+      "id": "1804430",
+      "name": "兰州市",
+      "label": "甘肃省 兰州市",
+      "search": "兰州市 甘肃省 Lanzhou",
+      "latitude": 36.06,
+      "longitude": 103.84
+    },
+    {
+      "code": "620200",
+      "id": "1280957",
+      "name": "嘉峪关市",
+      "label": "甘肃省 嘉峪关市",
+      "search": "嘉峪关市 甘肃省 Jiayuguan",
+      "latitude": 39.81,
+      "longitude": 98.29
+    },
+    {
+      "code": "620300",
+      "id": "1805733",
+      "name": "金昌市",
+      "label": "甘肃省 金昌市",
+      "search": "金昌市 甘肃省 Jinchang",
+      "latitude": 38.5,
+      "longitude": 102.19
+    },
+    {
+      "code": "620400",
+      "id": "1817240",
+      "name": "白银市",
+      "label": "甘肃省 白银市",
+      "search": "白银市 甘肃省 Baiyin",
+      "latitude": 36.55,
+      "longitude": 104.17
+    },
+    {
+      "code": "620500",
+      "id": "1792892",
+      "name": "天水市",
+      "label": "甘肃省 天水市",
+      "search": "天水市 甘肃省 Tianshui",
+      "latitude": 34.58,
+      "longitude": 105.74
+    },
+    {
+      "code": "620600",
+      "id": "1803936",
+      "name": "武威市",
+      "label": "甘肃省 武威市",
+      "search": "武威市 甘肃省 Wuwei",
+      "latitude": 37.93,
+      "longitude": 102.63
+    },
+    {
+      "code": "620700",
+      "id": "1785036",
+      "name": "张掖市",
+      "label": "甘肃省 张掖市",
+      "search": "张掖市 甘肃省 Zhangye",
+      "latitude": 38.93,
+      "longitude": 100.45
+    },
+    {
+      "code": "620800",
+      "id": "1798760",
+      "name": "平凉市",
+      "label": "甘肃省 平凉市",
+      "search": "平凉市 甘肃省 Pingliang",
+      "latitude": 35.54,
+      "longitude": 106.69
+    },
+    {
+      "code": "620900",
+      "id": "1279945",
+      "name": "酒泉市",
+      "label": "甘肃省 酒泉市",
+      "search": "酒泉市 甘肃省 Jiuquan",
+      "latitude": 39.74,
+      "longitude": 98.52
+    },
+    {
+      "code": "621000",
+      "id": "12359313",
+      "name": "庆阳市",
+      "label": "甘肃省 庆阳市",
+      "search": "庆阳市 甘肃省 Qingyang",
+      "latitude": 35.71,
+      "longitude": 107.64
+    },
+    {
+      "code": "621100",
+      "id": "1812749",
+      "name": "定西市",
+      "label": "甘肃省 定西市",
+      "search": "定西市 甘肃省 Dingxi",
+      "latitude": 35.57,
+      "longitude": 104.62
+    },
+    {
+      "code": "621200",
+      "id": "11778484",
+      "name": "陇南市",
+      "label": "甘肃省 陇南市",
+      "search": "陇南市 甘肃省 Longnan",
+      "latitude": 33.4,
+      "longitude": 104.92
+    },
+    {
+      "code": "630100",
+      "id": "1788852",
+      "name": "西宁市",
+      "label": "青海省 西宁市",
+      "search": "西宁市 青海省 Xining",
+      "latitude": 36.63,
+      "longitude": 101.76
+    },
+    {
+      "code": "630200",
+      "id": "1799471",
+      "name": "海东市",
+      "label": "青海省 海东市",
+      "search": "海东市 青海省 Nianbo",
+      "latitude": 36.48,
+      "longitude": 102.42
+    },
+    {
+      "code": "640100",
+      "id": "1786657",
+      "name": "银川市",
+      "label": "宁夏回族自治区 银川市",
+      "search": "银川市 宁夏回族自治区 Yinchuan",
+      "latitude": 38.47,
+      "longitude": 106.27
+    },
+    {
+      "code": "640200",
+      "id": "12324556",
+      "name": "石嘴山市",
+      "label": "宁夏回族自治区 石嘴山市",
+      "search": "石嘴山市 宁夏回族自治区 Shizuishan",
+      "latitude": 38.98,
+      "longitude": 106.39
+    },
+    {
+      "code": "640300",
+      "id": "1790842",
+      "name": "吴忠市",
+      "label": "宁夏回族自治区 吴忠市",
+      "search": "吴忠市 宁夏回族自治区 Wuzhong",
+      "latitude": 37.99,
+      "longitude": 106.2
+    },
+    {
+      "code": "640400",
+      "id": "1809152",
+      "name": "固原市",
+      "label": "宁夏回族自治区 固原市",
+      "search": "固原市 宁夏回族自治区 Guyuan",
+      "latitude": 36.01,
+      "longitude": 106.28
+    },
+    {
+      "code": "640500",
+      "id": "1784285",
+      "name": "中卫市",
+      "label": "宁夏回族自治区 中卫市",
+      "search": "中卫市 宁夏回族自治区 Zhongwei",
+      "latitude": 37.51,
+      "longitude": 105.19
+    },
+    {
+      "code": "650100",
+      "id": "1529102",
+      "name": "乌鲁木齐市",
+      "label": "新疆维吾尔自治区 乌鲁木齐市",
+      "search": "乌鲁木齐市 新疆维吾尔自治区 UEruemqi",
+      "latitude": 43.8,
+      "longitude": 87.6
+    },
+    {
+      "code": "650200",
+      "id": "1529401",
+      "name": "克拉玛依市",
+      "label": "新疆维吾尔自治区 克拉玛依市",
+      "search": "克拉玛依市 新疆维吾尔自治区 Karamay",
+      "latitude": 45.58,
+      "longitude": 84.89
+    },
+    {
+      "code": "650400",
+      "id": "1529114",
+      "name": "吐鲁番市",
+      "label": "新疆维吾尔自治区 吐鲁番市",
+      "search": "吐鲁番市 新疆维吾尔自治区 Turpan",
+      "latitude": 42.95,
+      "longitude": 89.18
+    },
+    {
+      "code": "650500",
+      "id": "1529484",
+      "name": "哈密市",
+      "label": "新疆维吾尔自治区 哈密市",
+      "search": "哈密市 新疆维吾尔自治区 Hami",
+      "latitude": 42.83,
+      "longitude": 93.51
+    },
+    {
+      "code": "654000",
+      "id": "1529435",
+      "name": "伊犁哈萨克自治州",
+      "label": "新疆维吾尔自治区 伊犁哈萨克自治州",
+      "search": "伊犁哈萨克自治州 新疆维吾尔自治区 Ghulja",
+      "latitude": 43.92,
+      "longitude": 81.32
+    },
+    {
+      "code": "659001",
+      "id": "1529195",
+      "name": "石河子市",
+      "label": "新疆维吾尔自治区 石河子市",
+      "search": "石河子市 新疆维吾尔自治区 Shihezi",
+      "latitude": 44.3,
+      "longitude": 86.04
+    },
+    {
+      "code": "659002",
+      "id": "1529641",
+      "name": "阿拉尔市",
+      "label": "新疆维吾尔自治区 阿拉尔市",
+      "search": "阿拉尔市 新疆维吾尔自治区 Ala'er",
+      "latitude": 40.54,
+      "longitude": 81.27
+    },
+    {
+      "code": "659003",
+      "id": "12022102",
+      "name": "图木舒克市",
+      "label": "新疆维吾尔自治区 图木舒克市",
+      "search": "图木舒克市 新疆维吾尔自治区 Tumxuk",
+      "latitude": 39.87,
+      "longitude": 79.06
+    },
+    {
+      "code": "659004",
+      "id": "1529085",
+      "name": "五家渠市",
+      "label": "新疆维吾尔自治区 五家渠市",
+      "search": "五家渠市 新疆维吾尔自治区 Wujiaqu",
+      "latitude": 44.16,
+      "longitude": 87.52
+    },
+    {
+      "code": "659005",
+      "id": "1529594",
+      "name": "北屯市",
+      "label": "新疆维吾尔自治区 北屯市",
+      "search": "北屯市 新疆维吾尔自治区 Beitun",
+      "latitude": 47.35,
+      "longitude": 87.82
+    },
+    {
+      "code": "659007",
+      "id": "1794700",
+      "name": "双河市",
+      "label": "新疆维吾尔自治区 双河市",
+      "search": "双河市 新疆维吾尔自治区 Shuanghe",
+      "latitude": 29.32,
+      "longitude": 105.57
+    },
+    {
+      "code": "659010",
+      "id": "13561750",
+      "name": "胡杨河市",
+      "label": "新疆维吾尔自治区 胡杨河市",
+      "search": "胡杨河市 新疆维吾尔自治区 Huyanghe",
+      "latitude": 44.7,
+      "longitude": 84.83
+    },
+    {
+      "code": "710100",
+      "id": "1668341",
+      "name": "台北市",
+      "label": "台湾省 台北市",
+      "search": "台北市 台湾省 Taipei",
+      "latitude": 25.05,
+      "longitude": 121.53
+    },
+    {
+      "code": "710200",
+      "id": "1673820",
+      "name": "高雄市",
+      "label": "台湾省 高雄市",
+      "search": "高雄市 台湾省 Kaohsiung",
+      "latitude": 22.62,
+      "longitude": 120.31
+    },
+    {
+      "code": "710300",
+      "id": "1668355",
+      "name": "台南市",
+      "label": "台湾省 台南市",
+      "search": "台南市 台湾省 Tainan",
+      "latitude": 22.99,
+      "longitude": 120.21
+    },
+    {
+      "code": "710400",
+      "id": "1668399",
+      "name": "台中市",
+      "label": "台湾省 台中市",
+      "search": "台中市 台湾省 Taichung",
+      "latitude": 24.15,
+      "longitude": 120.68
+    },
+    {
+      "code": "710700",
+      "id": "1678228",
+      "name": "基隆市",
+      "label": "台湾省 基隆市",
+      "search": "基隆市 台湾省 Keelung",
+      "latitude": 25.13,
+      "longitude": 121.74
+    },
+    {
+      "code": "710800",
+      "id": "1675151",
+      "name": "新竹市",
+      "label": "台湾省 新竹市",
+      "search": "新竹市 台湾省 Hsinchu",
+      "latitude": 24.8,
+      "longitude": 120.97
+    },
+    {
+      "code": "711100",
+      "id": "12908892",
+      "name": "新北市",
+      "label": "台湾省 新北市",
+      "search": "新北市 台湾省 New Taipei City",
+      "latitude": 25.06,
+      "longitude": 121.46
+    }
+  ]
+}

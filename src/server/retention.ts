@@ -11,7 +11,7 @@ export async function purgeExpiredTrash() {
     const counts = { records: 0, planItems: 0, printSnapshots: 0, cachedResults: 0, households: households.rowCount ?? 0 };
     for (const { id: householdId } of households.rows) {
       const records = await db.query<{ id: string }>("UPDATE activity_records SET text='',participation=NULL,interest=NULL,plan_snapshot=NULL,body_purged_at=clock_timestamp() WHERE household_id=$1 AND deleted_at IS NOT NULL AND restore_until<=clock_timestamp() AND body_purged_at IS NULL RETURNING id", [householdId]);
-      const items = await db.query<{ id: string }>("UPDATE plan_items SET title='已过期删除的安排',notes='',caregiver_name=NULL,content_snapshot=NULL,body_purged_at=clock_timestamp() WHERE household_id=$1 AND deleted_at IS NOT NULL AND restore_until<=clock_timestamp() AND body_purged_at IS NULL RETURNING id", [householdId]);
+      const items = await db.query<{ id: string }>("UPDATE plan_items SET title='已过期删除的安排',notes='',caregiver_name=NULL,content_snapshot=NULL,ai_suggestion=NULL,body_purged_at=clock_timestamp() WHERE household_id=$1 AND deleted_at IS NOT NULL AND restore_until<=clock_timestamp() AND body_purged_at IS NULL RETURNING id", [householdId]);
       const recordIds = records.rows.map((r) => r.id), itemIds = items.rows.map((r) => r.id);
       await db.query("DELETE FROM record_revisions WHERE household_id=$1 AND record_id=ANY($2::uuid[])", [householdId, recordIds]);
       await db.query("DELETE FROM plan_item_versions WHERE household_id=$1 AND plan_item_id=ANY($2::uuid[])", [householdId, itemIds]);

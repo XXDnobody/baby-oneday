@@ -1,0 +1,91 @@
+.page{display:grid;gap:24px;min-width:0}
+.intro{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px 32px;border:1px solid #dbe5d8;border-radius:18px;background:linear-gradient(115deg,#e7efe3,#f4f6ed)}
+.intro h2{font-size:28px;color:var(--pine);letter-spacing:-.6px}
+.intro p:not(:first-child){margin-top:10px;color:#536952;font-size:15px}
+.intro>button{flex-shrink:0}
+.page :global(.section-heading)>button{white-space:nowrap;flex-shrink:0}
+.libraryCount{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:13px;color:#50694f}
+.tabs{display:flex;gap:24px;border-bottom:1px solid var(--border)}
+.tabs button{display:flex;align-items:center;gap:8px;padding:8px 4px 16px;border-bottom:3px solid transparent;color:var(--muted);font-size:16px}
+.tabs .activeTab{border-color:var(--pine);color:var(--pine);font-weight:600}
+.tabs span{font-size:12px;border-radius:20px;background:var(--sage-2);padding:1px 8px;color:var(--pine)}
+.planner{display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;align-items:start}
+.conditions{padding:24px}
+.conditions h2{font-size:21px}
+.conditions input,.conditions select{min-width:0}
+.conditionNote{margin-top:22px;font-size:12px;line-height:1.8}
+.times{gap:10px;grid-template-columns:1fr 1fr}
+.times input{padding:8px}
+.results{display:grid;gap:20px;min-width:0}
+.weatherSummary{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px 24px}
+.weatherTitle{display:flex;gap:14px;align-items:center;min-width:0}
+.weatherTitle>svg{color:#8c9464}
+.weatherTitle h3{font-size:21px;margin-top:2px}
+.weatherTitle p{font-size:12px}
+.weatherSummary button{font-size:13px;min-height:44px}
+.resultHeading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.resultHeading h2{font-size:20px}
+.outfits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,275px),1fr));gap:16px}
+.outfitCard{padding:22px;min-width:0}
+.setHeading,.cardTitle{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.setHeading{padding-bottom:18px;border-bottom:1px solid var(--border)}
+.complete,.incomplete{border-radius:6px;font-size:11px;line-height:1.7;padding:3px 8px;white-space:nowrap;flex-shrink:0}
+.complete{color:#356348;background:#edf3e9}
+.incomplete{color:#83622c;background:#f8f1df}
+.outfitItems{display:grid;gap:18px;margin-top:20px}
+.outfitItem{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;align-items:center;min-width:0}
+.outfitItem strong{font-size:15px;overflow-wrap:anywhere}
+.outfitItem p{font-size:12px;margin-top:4px;line-height:1.7}
+.garmentNote{color:#7a6947}
+.photo,.miniPhoto{background:#f3f4ee;overflow:hidden;position:relative}
+.photo{aspect-ratio:1.13;border-radius:13px 13px 0 0}
+.miniPhoto{width:76px;height:86px;border:1px solid #e7eae0;border-radius:9px}
+.photo img,.miniPhoto img{width:100%;height:100%;object-fit:contain;display:block}
+.photoFallback{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:6px;height:100%;font-size:12px;color:var(--muted)}
+.miniPhoto .photoFallback{gap:0;font-size:10px}
+.miniPhoto .photoFallback svg{display:none}
+.miniPhoto .photoFallback button{font-size:10px;padding:0}
+.missing{background:#fbf7ed;border-radius:10px;padding:14px;margin-top:20px;font-size:13px;color:#7e662f}
+.missing strong{font-size:13px;font-weight:500}
+.missing ul{margin:6px 0 0;padding-left:18px}
+.missing button{font-size:12px;padding-bottom:0}
+.noClothes{padding:30px 0 10px;display:grid;justify-items:center;gap:12px;font-size:13px;text-align:center;color:var(--muted)}
+.reminders{padding:22px 24px}
+.reminders h3{display:flex;align-items:center;gap:8px;font-size:16px;color:var(--pine)}
+.reminders ul{font-size:13px;padding-left:20px;margin:12px 0;color:var(--muted);line-height:1.9}
+.reminders details{font-size:12px;color:var(--muted)}
+.reminders summary{cursor:pointer;min-height:44px;display:list-item;padding:10px 0}
+.reminders details p{margin-top:8px}
+.attribution{font-size:12px;color:var(--muted)}
+.filters{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:16px;margin-top:24px}
+.categories{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 26px}
+.categories button{padding:8px 15px;border-radius:8px;font-size:13px;color:var(--muted)}
+.categories button[aria-pressed=true]{color:var(--pine);background:var(--sage-2);font-weight:600}
+.library{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,235px),1fr));gap:20px}
+.garmentCard{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#fff;min-width:0}
+.garmentInfo{padding:18px}
+.cardTitle{align-items:flex-start}
+.cardTitle h3{font-size:17px;line-height:1.5;overflow-wrap:anywhere}
+.garmentInfo>p{font-size:12px;margin-top:8px;line-height:1.8}
+.activities{color:#61765d}
+.cardActions{display:flex;align-items:center;gap:4px;margin-top:16px;flex-wrap:wrap}
+.cardActions button{font-size:12px;min-height:44px;flex:1 1 auto;padding:8px}
+.cardActions button:last-child{color:var(--muted)}
+.editor{max-width:680px;width:calc(100% - 32px)}
+.editorFields{border:0;margin:0;padding:0;display:grid;gap:20px;min-width:0}
+.photoPicker{display:grid;grid-template-columns:180px minmax(0,1fr);gap:20px;align-items:center}
+.uploadPreview{height:180px;border:1px dashed #bfcdbb;background:#f3f5ef;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#83957b;font-size:12px}
+.uploadPreview img{width:100%;height:100%;object-fit:contain}
+.photoButtons{display:grid;gap:10px;justify-items:start}
+.photoButtons p{font-size:11px}
+.activityFields{border:1px solid var(--border);border-radius:10px;padding:14px;margin:0;min-width:0}
+.activityFields legend{font-size:13px;padding:0 5px}
+.checks{display:flex;flex-wrap:wrap;gap:12px 24px}
+.checks label{min-height:44px;font-size:13px}
+:global(.tablet-mode) .intro h2{font-size:32px}
+:global(.tablet-mode) .outfitItem strong,:global(.tablet-mode) .cardTitle h3{font-size:21px}
+:global(.tablet-mode) .outfitItem p,:global(.tablet-mode) .garmentInfo>p,:global(.tablet-mode) .reminders ul{font-size:16px}
+@media(max-width:1150px){.planner{grid-template-columns:250px minmax(0,1fr);gap:18px}.conditions{padding:20px}.weatherSummary{padding:18px}.outfits{grid-template-columns:1fr}}
+@media(max-width:900px){.planner{grid-template-columns:minmax(0,1fr)}.conditions>div{display:grid;grid-template-columns:1fr 1fr;gap:16px}.conditions h2{font-size:23px}.conditionNote{margin-top:16px}.outfits{grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))}}
+@media(max-width:650px){.page{gap:20px}.intro{padding:24px 20px;align-items:flex-start;flex-direction:column;gap:20px}.intro h2{font-size:25px}.intro>button{width:100%}.intro p:not(:first-child){font-size:13px}.libraryCount{margin-top:16px}.tabs{gap:24px}.tabs button{font-size:15px}.conditions>div{grid-template-columns:1fr}.conditions{padding:22px 18px}.conditions .times{grid-template-columns:1fr 1fr}.resultHeading h2{font-size:19px}.weatherTitle h3{font-size:20px}.weatherTitle{gap:10px}.outfitCard{padding:20px 18px}.outfitItems{grid-template-columns:1fr}.library{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.garmentInfo{padding:12px}.cardTitle{flex-wrap:wrap;gap:6px}.cardTitle h3{font-size:15px}.cardActions{gap:0}.cardActions button{font-size:11px;padding:6px}.filters{grid-template-columns:1fr;gap:12px}.categories{gap:4px;margin-bottom:20px}.categories button{padding:6px 10px;font-size:12px}.photoPicker{grid-template-columns:120px minmax(0,1fr);gap:14px}.uploadPreview{height:150px}.photoButtons button{font-size:12px;padding:8px 10px}.photoButtons p{font-size:10px}.checks{gap:6px 16px}.editor .checks label{font-size:12px}.editor{padding:24px 18px}.editor :global(.form-columns){grid-template-columns:1fr 1fr;gap:12px}.reminders{padding:20px 18px}}
+@media(max-width:360px){.library{grid-template-columns:1fr}.photoPicker{grid-template-columns:1fr}.uploadPreview{height:200px}.photoButtons{grid-template-columns:1fr 1fr;justify-items:stretch}.photoButtons p{grid-column:1/-1}.editor :global(.form-columns){grid-template-columns:1fr}}

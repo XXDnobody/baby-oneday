@@ -1,7 +1,7 @@
 import { randomInt } from "node:crypto";
 import type { PoolClient } from "pg";
 import type { z } from "zod";
-import type { loginInput, registerInput, verificationInput, verifyInput, resetInput } from "../shared/contracts";
+import type { loginInput, registerInput, verificationInput, verifyInput, resetInput, changePasswordInput } from "../shared/contracts";
 import type { Me, Person } from "../shared/contracts";
 import { limits, readConfig } from "./config";
 import { digest, equals, hashPassword, protectedDigest, token, verifyPassword } from "./crypto";
@@ -162,6 +162,23 @@ export async function me(raw: string | undefined): Promise<Me> {
 export async function logout(raw: string | undefined) {
   if (raw) await query("UPDATE sessions SET revoked_at=now() WHERE token_hash=$1", [digest(raw)]);
   return { loggedOut: true };
+}
+
+export async function changePassword(raw: string | undefined, input: z.infer<typeof changePasswordInput>) {
+  // Verify the old credential outside the transaction, then check its version under
+  // withUser's user lock. A concurrent reset/change must invalidate this attempt.
+  const actor = await withUser(raw, async (_db, actor) => actor);
+  await rateLimit("password-change", actor.id, 5, 600);
+  const credential = (await query<Credential>("SELECT id,password_hash,credential_version FROM users WHERE id=$1 AND disabled_at IS NULL", [actor.id]))[0];
+  ensure(credential && await verifyPassword(input.currentPassword, credential.password_hash), "INVALID_PASSWORD", "当前密码不正确，请重新输入。", 422);
+  const encoded = await hashPassword(input.password);
+  return withUser(raw, async (db, current) => {
+    const changed = await db.query("UPDATE users SET password_hash=$2,credential_version=credential_version+1 WHERE id=$1 AND credential_version=$3 RETURNING id", [current.id, encoded, credential.credential_version]);
+    ensure(changed.rowCount, "SESSION_EXPIRED", "账号凭证已经变化，请重新登录。", 401);
+    await db.query("UPDATE sessions SET revoked_at=now() WHERE user_id=$1 AND revoked_at IS NULL", [current.id]);
+    await db.query("UPDATE password_resets SET consumed_at=now() WHERE user_id=$1 AND consumed_at IS NULL", [current.id]);
+    return { changed: true, loginRequired: true };
+  }, true);
 }
 
 export async function requestRecovery(email: string) {

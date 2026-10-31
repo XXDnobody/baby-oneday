@@ -1,0 +1,29 @@
+
+> baby-plan@0.1.0 check
+> npm run typecheck && npm run lint && npm test && npm run build
+
+
+> baby-plan@0.1.0 typecheck
+> tsc --noEmit
+
+
+> baby-plan@0.1.0 lint
+> eslint src scripts tests --no-error-on-unmatched-pattern
+
+
+/Users/jackx/Documents/ChatGPT/宝宝计划/src/components/ai-assistant.tsx
+  35:135  error  Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+/Users/jackx/Documents/ChatGPT/宝宝计划/src/components/ai-assistant.tsx:35:135
+  33 |   const busy = send.busy || !!progress.job && ["queued", "running", "retry"].includes(progress.job.state);
+  34 |   const current = detail.data; const proposal = current?.proposals[0];
+> 35 |   const canConfirm = proposal?.state === "pending" && proposal.turn === current?.revision && new Date(proposal.expiresAt).getTime() > Date.now() && !busy;
+     |                                                                                                                                       ^^^^^^^^^^ Cannot call impure function
+  36 |   const metrics = useResource<{ usage: Array<{ provider: string; model: string; testService: boolean; inputTokens: number | null; outputTokens: number | null; usageKnown: boolean; durationMs: number | null }> }>(root + "/jobs/" + activeJobId, current?.revision ?? 0, !!activeJobId && !!progress.job && ["succeeded", "failed"].includes(progress.job.state));
+  37 |   return <div className={"ai-layout" + (proposal ? " proposal-layout" : "")} key={userId}><details className="panel ai-discussions" open={!proposal}><summary className="discussion-switch"><MessageCircle size={18} aria-hidden /><strong>我的 AI 讨论</strong><span>{current ? current.from + " 至 " + current.to : "选择日期与讨论"}</span><span className="muted">切换／新建</span></summary><div className="section-heading"><div><p className="eyebrow">只与你讨论</p><h2><MessageCircle size={24} aria-hidden />AI 助手</h2></div><LockKeyhole size={21} aria-hidden /></div><p className="small muted">聊天、草稿与任务结果仅你可见。一次确认后，正式改动才与家人共享。</p>
+  38 |     <form className="form-stack" onSubmit={(e) => { e.preventDefault(); void create.run({ from, to }, async (key) => { const next = await api<{ id: string }>(root + "/ai-conversations", "POST", { from, to }, key); setSelected(next.id); setJobId(""); setText(""); setNotice(""); list.reload(); }); }}><div className="form-columns"><CalendarPicker label="讨论开始日期" required value={from} onChange={setFrom} /><CalendarPicker label="讨论结束日期" required min={from} value={to} onChange={setTo} /></div><button className="secondary" disabled={create.busy}><Plus size={17} aria-hidden />新建这段日期的讨论</button></form>{create.error && <p className="error" role="alert">{create.error}</p>}  react-hooks/purity
+
+✖ 1 problem (1 error, 0 warnings)
+

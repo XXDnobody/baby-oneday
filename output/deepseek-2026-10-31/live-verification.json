@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-10-31T12:29:26.144Z",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "testService": false,
+  "range": [
+    "2026-11-01",
+    "2026-11-01"
+  ],
+  "formalStateUnchanged": true,
+  "confirmedExecutions": 0,
+  "calls": [
+    {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "testService": false,
+      "state": "succeeded",
+      "inputTokens": 2520,
+      "outputTokens": 877,
+      "totalTokens": 3397,
+      "usageKnown": true,
+      "durationMs": 4844,
+      "cost": null,
+      "currency": null
+    },
+    {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "testService": false,
+      "state": "succeeded",
+      "inputTokens": 2520,
+      "outputTokens": 182,
+      "totalTokens": 2702,
+      "usageKnown": true,
+      "durationMs": 2103,
+      "cost": null,
+      "currency": null
+    },
+    {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "testService": false,
+      "state": "succeeded",
+      "inputTokens": 2748,
+      "outputTokens": 266,
+      "totalTokens": 3014,
+      "usageKnown": true,
+      "durationMs": 2622,
+      "cost": null,
+      "currency": null
+    },
+    {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "testService": false,
+      "state": "succeeded",
+      "inputTokens": 3083,
+      "outputTokens": 321,
+      "totalTokens": 3404,
+      "usageKnown": true,
+      "durationMs": 2574,
+      "cost": null,
+      "currency": null
+    }
+  ],
+  "jobs": [
+    {
+      "state": "succeeded",
+      "errorCode": null,
+      "durationMs": 2151
+    },
+    {
+      "state": "succeeded",
+      "errorCode": null,
+      "durationMs": 2673
+    },
+    {
+      "state": "succeeded",
+      "errorCode": null,
+      "durationMs": 2615
+    }
+  ],
+  "proposals": [
+    {
+      "turn": 4,
+      "state": "pending",
+      "changes": 2
+    }
+  ],
+  "totalCalls": 4,
+  "totalTokens": 12517,
+  "firstAttempt": {
+    "result": "business validation rejected model output",
+    "code": "MODEL_OUTPUT_REJECTED",
+    "durationMs": 4935,
+    "formalWrites": 0,
+    "explicitRetrySucceeded": true
+  },
+  "qualityCases": [
+    {
+      "case": "insufficient-data",
+      "result": "explained missing templates, pantry and enabled content; no operations"
+    },
+    {
+      "case": "read-only-boundaries",
+      "result": "explained disallowed operations; no operations"
+    },
+    {
+      "case": "pending-proposal",
+      "result": "two requested pending slots; proposal pending; no confirmation"
+    }
+  ],
+  "realModelVerified": true
+}

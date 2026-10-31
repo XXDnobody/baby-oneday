@@ -1,0 +1,209 @@
+{
+  "verifiedAt": "2026-10-31T07:30:02.759Z",
+  "source": "isolated test database",
+  "target": "baby_plan_restore_1793431802258",
+  "snapshotConsistent": true,
+  "tables": [
+    {
+      "table": "activity_records",
+      "rows": 31,
+      "matched": true
+    },
+    {
+      "table": "ai_conversations",
+      "rows": 62,
+      "matched": true
+    },
+    {
+      "table": "ai_messages",
+      "rows": 115,
+      "matched": true
+    },
+    {
+      "table": "b3_jobs",
+      "rows": 111,
+      "matched": true
+    },
+    {
+      "table": "bootstrap_grants",
+      "rows": 1,
+      "matched": true
+    },
+    {
+      "table": "business_audit",
+      "rows": 225,
+      "matched": true
+    },
+    {
+      "table": "change_proposals",
+      "rows": 41,
+      "matched": true
+    },
+    {
+      "table": "children",
+      "rows": 64,
+      "matched": true
+    },
+    {
+      "table": "content_import_results",
+      "rows": 26,
+      "matched": true
+    },
+    {
+      "table": "content_items",
+      "rows": 49,
+      "matched": true
+    },
+    {
+      "table": "content_settings",
+      "rows": 17,
+      "matched": true
+    },
+    {
+      "table": "content_versions",
+      "rows": 54,
+      "matched": true
+    },
+    {
+      "table": "daily_plans",
+      "rows": 43,
+      "matched": true
+    },
+    {
+      "table": "email_challenges",
+      "rows": 8,
+      "matched": true
+    },
+    {
+      "table": "household_agreements",
+      "rows": 2,
+      "matched": true
+    },
+    {
+      "table": "household_automation",
+      "rows": 4,
+      "matched": true
+    },
+    {
+      "table": "household_events",
+      "rows": 380,
+      "matched": true
+    },
+    {
+      "table": "household_templates",
+      "rows": 130,
+      "matched": true
+    },
+    {
+      "table": "households",
+      "rows": 65,
+      "matched": true
+    },
+    {
+      "table": "idempotency_requests",
+      "rows": 444,
+      "matched": true
+    },
+    {
+      "table": "invites",
+      "rows": 12,
+      "matched": true
+    },
+    {
+      "table": "memberships",
+      "rows": 178,
+      "matched": true
+    },
+    {
+      "table": "pantry_snapshots",
+      "rows": 6,
+      "matched": true
+    },
+    {
+      "table": "password_resets",
+      "rows": 3,
+      "matched": true
+    },
+    {
+      "table": "plan_item_versions",
+      "rows": 70,
+      "matched": true
+    },
+    {
+      "table": "plan_items",
+      "rows": 59,
+      "matched": true
+    },
+    {
+      "table": "plan_slot_guards",
+      "rows": 49,
+      "matched": true
+    },
+    {
+      "table": "print_snapshots",
+      "rows": 13,
+      "matched": true
+    },
+    {
+      "table": "proposal_executions",
+      "rows": 11,
+      "matched": true
+    },
+    {
+      "table": "rate_limits",
+      "rows": 31,
+      "matched": true
+    },
+    {
+      "table": "recent_preferences",
+      "rows": 11,
+      "matched": true
+    },
+    {
+      "table": "record_revisions",
+      "rows": 34,
+      "matched": true
+    },
+    {
+      "table": "recovery_events",
+      "rows": 73,
+      "matched": true
+    },
+    {
+      "table": "recovery_identity",
+      "rows": 1,
+      "matched": true
+    },
+    {
+      "table": "schema_migrations",
+      "rows": 7,
+      "matched": true
+    },
+    {
+      "table": "service_calls",
+      "rows": 113,
+      "matched": true
+    },
+    {
+      "table": "sessions",
+      "rows": 39,
+      "matched": true
+    },
+    {
+      "table": "users",
+      "rows": 22,
+      "matched": true
+    },
+    {
+      "table": "weather_locations",
+      "rows": 11,
+      "matched": true
+    },
+    {
+      "table": "weather_snapshots",
+      "rows": 42,
+      "matched": true
+    }
+  ],
+  "targetRemovedAfterCheck": true
+}

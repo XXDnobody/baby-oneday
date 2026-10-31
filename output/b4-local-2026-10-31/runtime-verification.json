@@ -1,0 +1,51 @@
+{
+  "verifiedAt": "2026-10-31T07:30:27.610Z",
+  "buildId": "uBbHIFiCKpKFyZ_M8PeP8",
+  "application": "local standalone build, 127.0.0.1:3000, development database 5432",
+  "testApplicationStopped": true,
+  "developmentWorkerRunning": true,
+  "restoreDatabasesRemaining": 0,
+  "checks": [
+    {
+      "label": "home",
+      "url": "http://127.0.0.1:3000",
+      "status": 200
+    },
+    {
+      "label": "unauthenticated me",
+      "url": "http://127.0.0.1:3000/api/v1/me",
+      "status": 401
+    },
+    {
+      "label": "Mailpit",
+      "url": "http://127.0.0.1:8025/readyz",
+      "status": 200
+    }
+  ],
+  "standaloneAssets": [
+    {
+      "kind": "css",
+      "status": 200
+    },
+    {
+      "kind": "js",
+      "status": 200
+    }
+  ],
+  "untouchedDraftTestHousehold": {
+    "recipes": 11,
+    "activities": 2,
+    "enabled": 0
+  },
+  "realServiceCallsMade": false,
+  "productionDeployed": false,
+  "realFamilyAccountCreatedOrReset": false,
+  "processes": [
+    "7028  6997 node /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/.bin/tsx scripts/start-local.ts",
+    "7029  7028 /usr/local/bin/node --require /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/tsx/dist/preflight.cjs --import file:///Users/jackx/Documents/ChatGPT/%E5%AE%9D%E5%AE%9D%E8%AE%A1%E5%88%92/node_modules/tsx/dist/loader.mjs scripts/start-local.ts",
+    "7136  7121 node /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/.bin/tsx scripts/worker.ts",
+    "7137  7136 /usr/local/bin/node --require /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/tsx/dist/preflight.cjs --import file:///Users/jackx/Documents/ChatGPT/%E5%AE%9D%E5%AE%9D%E8%AE%A1%E5%88%92/node_modules/tsx/dist/loader.mjs scripts/worker.ts",
+    "11582 11567 node /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/.bin/tsx scripts/start-local.ts",
+    "11583 11582 /usr/local/bin/node --require /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/tsx/dist/preflight.cjs --import file:///Users/jackx/Documents/ChatGPT/%E5%AE%9D%E5%AE%9D%E8%AE%A1%E5%88%92/node_modules/tsx/dist/loader.mjs scripts/start-local.ts"
+  ]
+}

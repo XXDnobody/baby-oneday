@@ -1,0 +1,87 @@
+
+> baby-plan@0.1.0 check
+> npm run typecheck && npm run lint && npm test && npm run build
+
+
+> baby-plan@0.1.0 typecheck
+> tsc --noEmit
+
+
+> baby-plan@0.1.0 lint
+> eslint src scripts tests --no-error-on-unmatched-pattern
+
+
+> baby-plan@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /Users/jackx/Documents/ChatGPT/宝宝计划
+
+
+ Test Files  11 passed (11)
+      Tests  206 passed (206)
+   Start at  22:07:03
+   Duration  13.62s (tests 93%, import 5%, setup 2%, transform 1%)
+
+
+> baby-plan@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.4.3 (webpack)
+- Environments: .env.local
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+✓ Running next.config.ts took 87ms
+  Skipping creating a lockfile at /Users/jackx/Documents/ChatGPT/宝宝计划/.next/lock because we're using WASM bindings
+
+  Creating an optimized production build ...
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+✓ Compiled successfully in 2.4s
+  Running TypeScript ...
+  Finished TypeScript in 1596ms ...
+  Collecting page data using 9 workers ...
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+⚠ Attempted to load /Users/jackx/Documents/ChatGPT/宝宝计划/node_modules/next/next-swc-fallback/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, but it was not installed
+⚠ Attempted to load @next/swc-darwin-arm64, but it was not installed
+  Generating static pages using 9 workers (0/8) ...
+  Generating static pages using 9 workers (2/8) 
+  Generating static pages using 9 workers (4/8) 
+  Generating static pages using 9 workers (6/8) 
+✓ Generating static pages using 9 workers (8/8) in 213ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/v1/[...path]
+├ ○ /icon.svg
+├ ƒ /join
+├ ƒ /print
+├ ƒ /register
+└ ƒ /reset-password
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

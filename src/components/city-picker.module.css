@@ -1,0 +1,130 @@
+.picker {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.picker legend {
+  margin-bottom: 9px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.picker > p {
+  margin-top: 12px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field > label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.select {
+  min-width: 0;
+  font-size: max(16px, 1em);
+}
+
+.select :global(.city-select__control) {
+  min-height: 46px;
+  border: 1px solid #cbd5cc;
+  border-radius: 9px;
+  background: white;
+  cursor: pointer;
+}
+
+.select :global(.city-select__control--is-focused) {
+  outline: 3px solid #347762;
+  outline-offset: 3px;
+}
+
+.select :global(.city-select__control--is-disabled) {
+  background: var(--canvas);
+  color: var(--muted);
+}
+
+.select :global(.city-select__value-container) {
+  padding: 10px 12px;
+}
+
+.select :global(.city-select__input-container) {
+  margin: 0;
+  padding: 0;
+}
+
+.select :global(.city-select__input-container) input {
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.select :global(.city-select__placeholder) {
+  color: var(--muted);
+}
+
+.select :global(.city-select__indicators) {
+  padding-right: 10px;
+  color: var(--pine);
+}
+
+.select :global(.city-select__menu) {
+  z-index: 10;
+  margin: 8px 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 8px 24px #24362f1a;
+}
+
+.select :global(.city-select__menu-list) {
+  padding: 4px;
+  overscroll-behavior: contain;
+}
+
+.select :global(.city-select__option) {
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.select :global(.city-select__option--is-focused) {
+  background: var(--sage);
+}
+
+.select :global(.city-select__option--is-selected) {
+  background: var(--pine);
+  color: white;
+}
+
+.select :global(.city-select__menu-notice) {
+  padding: 14px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

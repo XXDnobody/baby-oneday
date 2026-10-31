@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-10-31T04:33:23.142Z",
+  "purpose": "Distinct current/hourly metadata credits both remain visible",
+  "testOnly": true,
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "bothProductAttributionsVisible": true,
+      "testMarkerVisible": true,
+      "noOverflow": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bothProductAttributionsVisible": true,
+      "testMarkerVisible": true,
+      "noOverflow": true
+    }
+  ],
+  "passed": true
+}

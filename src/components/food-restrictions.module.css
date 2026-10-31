@@ -1,0 +1,121 @@
+.editor {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.editor > legend {
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.entries {
+  display: grid;
+  gap: 14px;
+}
+
+.entry {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 8px 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--canvas);
+}
+
+.entry > legend {
+  padding: 0 5px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.entryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(110px, 1fr) minmax(0, 2fr);
+  gap: 12px;
+}
+
+.entry label {
+  min-width: 0;
+}
+
+.entry input, .entry select, .entry textarea {
+  font-size: 16px;
+}
+
+.entryHeader button {
+  min-height: 44px;
+}
+
+.badge {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--sage-2);
+  color: var(--pine);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.add {
+  align-self: flex-start;
+}
+
+.summary {
+  min-width: 0;
+  flex: 1;
+}
+
+.summary ul {
+  display: grid;
+  gap: 10px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.summary li {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.food {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.note {
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .entry {
+    padding-inline: 12px;
+  }
+}

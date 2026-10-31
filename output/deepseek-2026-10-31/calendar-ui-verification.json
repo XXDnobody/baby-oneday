@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-31",
+  "browser": "Chrome",
+  "proposalTurn": 6,
+  "checks": {
+    "desktop42EventsInWeekCalendar": true,
+    "chatCollapsedByDefault": true,
+    "mobile375AutoDayViewSixEvents": true,
+    "mobileDateChangeUpdatesEventsAndPrep": true,
+    "tablet834WeekAndDaySwitch": true,
+    "noPageHorizontalOverflowAt3758341570": true,
+    "recipeShowsServingsIngredientsBasisMinutesAndNumberedSteps": true,
+    "escapeClosesDialogAndRestoresOriginalCardFocus": true,
+    "dailyPrepCombinesFourMeals": true,
+    "temporaryViewportReset": true,
+    "realProposalNotConfirmed": true
+  },
+  "screenshots": [
+    "calendar-desktop.png",
+    "calendar-mobile.png",
+    "calendar-tablet.png",
+    "recipe-desktop.png",
+    "recipe-mobile.png",
+    "daily-preparation-desktop.png"
+  ],
+  "checksExecuted": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "vitest": { "files": 11, "passed": 205 }
+  }
+}

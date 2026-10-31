@@ -115,6 +115,50 @@ describe("B1 真实 PostgreSQL + Mailpit + HTTP 契约", () => {
     expect(saved.response.status).toBe(200);
     expect((await owner.request("households/" + householdId + "/setup", "PUT", { expectedRevision: h.revision, child })).response.status).toBe(409);
   });
+  test("多项食物过敏与忌口可保存、编辑和移除，空项与重复食物不写入", async () => {
+    const path = "households/" + householdId;
+    let family = (await owner.request<Household>(path)).data;
+    const child = { name: family.child!.name, birthDate: null, ageMonths: 17, foodStatus: "restricted" };
+    const items = [
+      { kind: "allergy", food: " 鸡蛋 ", note: " 已确认，供家人核对 " },
+      { kind: "allergy", food: "花生", note: "" },
+      { kind: "avoid", food: "测试忌口食物", note: "已记录的忌口原因" },
+    ];
+    expect((await owner.request(path + "/child", "PATCH", { expectedRevision: family.revision, child: { ...child, foodRestrictionItems: items } })).response.status).toBe(200);
+    family = (await owner.request<Household>(path)).data;
+    const saved = items.map((item) => ({ ...item, food: item.food.trim(), note: item.note.trim() }));
+    expect(family.child!.foodRestrictionItems).toEqual(saved);
+    expect(family.child!.foodRestrictions).toBe("过敏：鸡蛋；备注：已确认，供家人核对\n过敏：花生\n其他忌口：测试忌口食物；备注：已记录的忌口原因");
+    const rejected = [[], [{ kind: "allergy", food: "  ", note: "" }], [saved[0], { ...saved[0], kind: "avoid" }], Array.from({ length: 21 }, (_, i) => ({ kind: "allergy", food: "测试食物" + i, note: "" }))];
+    for (const entries of rejected) {
+      const response = await owner.request(path + "/child", "PATCH", { expectedRevision: family.revision, child: { ...child, foodRestrictionItems: entries } });
+      expect(response.response.status).toBe(422);
+    }
+    expect((await owner.request<Household>(path)).data.child!.foodRestrictionItems).toEqual(saved);
+    expect((await owner.request(path + "/child", "PATCH", { expectedRevision: family.revision, child: { ...child, foodRestrictionItems: [{ ...saved[1], note: "更新后的备注" }, saved[2]] } })).response.status).toBe(200);
+    family = (await owner.request<Household>(path)).data;
+    expect(family.child!.foodRestrictionItems).toEqual([{ ...saved[1], note: "更新后的备注" }, saved[2]]);
+    expect(family.child!.foodRestrictions).not.toContain("鸡蛋");
+    expect((await owner.request(path + "/child", "PATCH", { expectedRevision: family.revision, child: { ...child, foodStatus: "none", foodRestrictionItems: [] } })).response.status).toBe(200);
+    family = (await owner.request<Household>(path)).data;
+    expect(family.child!.foodRestrictionItems).toEqual([]);
+    expect(family.child!.foodRestrictions).toBe("");
+  });
+  test("旧食物限制原文保留为待分类记录，保存后不推断为过敏", async () => {
+    const path = "households/" + householdId;
+    let family = (await owner.request<Household>(path)).data;
+    const child = { name: family.child!.name, birthDate: null, ageMonths: 17, foodStatus: "restricted" };
+    const original = "鸡蛋需要避开\n花生情况待核对";
+    expect((await owner.request(path + "/child", "PATCH", { expectedRevision: family.revision, child: { ...child, foodRestrictions: original } })).response.status).toBe(200);
+    family = (await owner.request<Household>(path)).data;
+    expect(family.child!.foodRestrictions).toBe(original);
+    expect(family.child!.foodRestrictionItems).toEqual([{ kind: "unspecified", food: original, note: "" }]);
+    expect((await owner.request(path + "/child", "PATCH", { expectedRevision: family.revision, child: { ...child, foodRestrictionItems: family.child!.foodRestrictionItems } })).response.status).toBe(200);
+    family = (await owner.request<Household>(path)).data;
+    expect(family.child!.foodRestrictions).toBe(original);
+    expect(family.child!.foodRestrictionItems[0].kind).toBe("unspecified");
+    expect((await owner.request(path + "/child", "PATCH", { expectedRevision: family.revision, child: { ...child, foodStatus: "unknown", foodRestrictionItems: [] } })).response.status).toBe(200);
+  });
   test("邀请新家人注册、失效码尝试持久化，成员不能改关键资料", async () => {
     const invite = await invitation(owner, householdId); memberInvite = invite.token;
     const challenge = await member.request<{ challengeId: string }>("auth/email/verification", "POST", { email: memberEmail, registrationToken: invite.token });

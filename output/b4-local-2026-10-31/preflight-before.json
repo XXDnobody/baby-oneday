@@ -1,0 +1,251 @@
+{
+  "checkedAt": "2026-10-31T06:39:10.568Z",
+  "environment": "development 5432; read-only",
+  "registration": {
+    "grants": 1,
+    "consumed": 1,
+    "users": 1,
+    "linkFilePresent": true,
+    "action": "use existing login"
+  },
+  "households": {
+    "count": 1,
+    "initialized": 1
+  },
+  "contents": [],
+  "services": {
+    "weather": {
+      "ready": false,
+      "missing": [
+        "QWEATHER_API_HOST",
+        "QWEATHER_KEY_ID",
+        "QWEATHER_DEVELOPER_ID",
+        "QWEATHER_PROJECT_ID",
+        "QWEATHER_PRIVATE_KEY",
+        "WEATHER_DAILY_REQUEST_LIMIT"
+      ],
+      "testService": false
+    },
+    "ai": {
+      "ready": false,
+      "missing": [
+        "AI_PROVIDER",
+        "AI_BASE_URL",
+        "AI_API_KEY",
+        "AI_MODEL",
+        "AI_REGION",
+        "AI_DAILY_REQUEST_LIMIT",
+        "AI_DAILY_TOKEN_LIMIT"
+      ],
+      "testService": false,
+      "provider": null,
+      "model": null,
+      "region": null
+    }
+  },
+  "tables": [
+    {
+      "table": "activity_records",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "ai_conversations",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "ai_messages",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "b3_jobs",
+      "rows": 1,
+      "digest": "01c734f168dd380eb4384d0acd9369b3"
+    },
+    {
+      "table": "bootstrap_grants",
+      "rows": 1,
+      "digest": "7a5f8ebb2e27029b1fcca08318aeaa7c"
+    },
+    {
+      "table": "business_audit",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "change_proposals",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "children",
+      "rows": 1,
+      "digest": "059eb1a25866e96cbd3af8bc637f3c0f"
+    },
+    {
+      "table": "content_import_results",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "content_items",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "content_settings",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "content_versions",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "daily_plans",
+      "rows": 1,
+      "digest": "56bc78adc38fb80dd6f308f31dc0e159"
+    },
+    {
+      "table": "email_challenges",
+      "rows": 1,
+      "digest": "294cda989be06246d650d292e1bfa86f"
+    },
+    {
+      "table": "env_persistence_probe",
+      "rows": 1,
+      "digest": "581e0658356e4bbb2d0a900360f8a165"
+    },
+    {
+      "table": "household_agreements",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "household_automation",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "household_events",
+      "rows": 3,
+      "digest": "0a71feae7d1274f70935741f24a028be"
+    },
+    {
+      "table": "household_templates",
+      "rows": 2,
+      "digest": "04047535858c3798cb4c8d7480e1908e"
+    },
+    {
+      "table": "households",
+      "rows": 1,
+      "digest": "faf7f0828fd688d88c3ffcddc148f63a"
+    },
+    {
+      "table": "idempotency_requests",
+      "rows": 1,
+      "digest": "f1ac0f0e8bea89ea5f8b5e02db435e9c"
+    },
+    {
+      "table": "invites",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "memberships",
+      "rows": 1,
+      "digest": "779d35ff0cd884d79c3b78a87beaeba2"
+    },
+    {
+      "table": "pantry_snapshots",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "password_resets",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "plan_item_versions",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "plan_items",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "plan_slot_guards",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "print_snapshots",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "proposal_executions",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "rate_limits",
+      "rows": 3,
+      "digest": "2cd852e1efd632c8dfedc2d03cd2112f"
+    },
+    {
+      "table": "recent_preferences",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "record_revisions",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "schema_migrations",
+      "rows": 6,
+      "digest": "ccd028b17f16b84c4d243f9424c82b40"
+    },
+    {
+      "table": "service_calls",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "sessions",
+      "rows": 1,
+      "digest": "6757bc6732b760d9ba6b71bcf81f93bb"
+    },
+    {
+      "table": "users",
+      "rows": 1,
+      "digest": "6306b70e9e1ddf77fd7832493f77195e"
+    },
+    {
+      "table": "weather_locations",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "table": "weather_snapshots",
+      "rows": 0,
+      "digest": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+  ],
+  "migrations": {
+    "001_b1.sql": "6424202d561e9d2bff050bc61c9932afa2faa7869fb3b87e9597923df62b4f9e",
+    "002_b2.sql": "95bf08ca6060a0c93ca785b9e20a74cd1ea1c04d874d80f2d76e579d0531229f",
+    "003_b2_reminders.sql": "7aeb5af5b964ae6fa1503c391adc4f6c095a12539214b25b063bf5d56263f26b",
+    "004_b2_expired_body_cleanup.sql": "050d62fe7ba3665970697a592955237b8708cf1a7f40215e5c5b50cda0ecac9d",
+    "005_b3.sql": "e2ccd27f9d8c0fa226d531a2df5905626f69475c160c272e413cb55b604ef5be",
+    "006_food_restriction_items.sql": "fac9e9542e8e23ccdeaff536afb3dc96a4274a09c4cace6340d4fdd9709a7bb2"
+  }
+}

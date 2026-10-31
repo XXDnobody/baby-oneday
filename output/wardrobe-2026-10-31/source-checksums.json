@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-10-31T14:15:04.642Z",
+  "files": {
+    "src/shared/wardrobe.ts": "3ff3bf775ed5a8b17ccc59af194e11ca8427805fdc94c6e26e0a351c3b3e5fc4",
+    "src/shared/wardrobe-match.ts": "dac1f53f01d39103e2240e1db0c6e5005440f6b86595acb2ee8e81a2aeddf2e8",
+    "src/server/wardrobe.ts": "e7f82f48c909b1c7e0d6a30ea28ac34e945dd981d0ec1ae2df7558ba0729e266",
+    "src/server/http.ts": "7bcc75b6cd36d9921b4f706e1b45a1fdc80a5517774ff99de3b67b1801f9e11f",
+    "src/components/wardrobe.tsx": "b553d5df6796c11210b7dc45cc26c8b96d20551cc8fc4df614ce3a02b663d0c8",
+    "src/components/wardrobe.module.css": "676d4c991b8328e8d0717ac9f2e08feef7a51af04219188258b010f09c323849",
+    "src/components/workspace.tsx": "d7cf144f66034884ceddca5726c7eda1ef78d434f9bc549844c9b2e1f0299268",
+    "src/components/weather.tsx": "e5bbb40d1c511e5fa8a8b90a5ca3319d0d457c1ce9d75974bd52e390cbf48d43",
+    "src/app/globals.css": "f6b501811c0f42d61b95c99e166fc869ae7f439c8443a7e1a0e01ab198c23b5b",
+    "migrations/008_wardrobe.sql": "fe98216e10593b309b61ed949105beb14574eb791df2dee0887286ee51e164c2",
+    "tests/wardrobe.test.ts": "40393e92da2cd4753611f260ab214640435dc5bc49eb8d84e104cc00fe0d99ad"
+  }
+}
